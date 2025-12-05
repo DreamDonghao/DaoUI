@@ -6,7 +6,7 @@
 #include <SDL3/SDL_render.h>
 #include "texture_data.hpp"
 #include <vector>
-namespace name_ {
+namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
     struct AtlasDrawBatch {

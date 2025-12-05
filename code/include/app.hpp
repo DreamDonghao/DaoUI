@@ -5,7 +5,7 @@
 #define APP_HPP
 #include <window.hpp>
 
-namespace name_ {
+namespace dao {
     /// @brief 管理一个应用程序
     /// @details 用来管理整个应用程序
     ///

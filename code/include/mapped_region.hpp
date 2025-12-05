@@ -6,7 +6,7 @@
 #include <bounding_box.hpp>
 #include <tuple>
 
-namespace name_ {
+namespace dao {
     /// @brief 映射区域
     /// @details 一个边界框（左上右下边界坐标）到另一个边界框（左上右下边界坐标）的映射
     class MappedRegion {

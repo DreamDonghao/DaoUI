@@ -9,7 +9,7 @@
 #include <entt/entt.hpp>
 #include <page.hpp>
 
-namespace name_ {
+namespace dao {
     class Window {
     public:
         Window(const int width, const int height) {

@@ -5,17 +5,17 @@
 #define TESTPAGE_HPP
 #include "page.hpp"
 
-namespace name_ {
+namespace dao {
     class TestPage final : public Page {
         AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
-        TextureData im{TextureEnum::food_apple, 0, 0, 100, 100};
-        TextureData im1{TextureEnum::food_banana, 100, 0, 200, 100};
+        TextureData appleImg{TextureEnum::food_apple, 0, 0, 100, 100};
+        TextureData bananaImg{TextureEnum::food_banana, 100, 0, 200, 100};
 
     public:
         explicit TestPage(std::string title): Page(std::move(title)) {
         }
 
-        std::vector<TextureEnum> registerTexture() const override {
+        [[nodiscard]] std::vector<TextureEnum> registerTexture() const override {
             std::vector registerTexture{
                 TextureEnum::food_apple,
                 TextureEnum::food_banana,
@@ -27,10 +27,10 @@ namespace name_ {
             m_atlasVertexBatchBuilder.clearDrawBatches();
             for (int i = 0; i < 30; ++i) {
                 for (int j = 0; j < 200; ++j) {
-                    m_atlasVertexBatchBuilder.addToBatch(im);
+                    m_atlasVertexBatchBuilder.addToBatch(appleImg);
                 }
                 for (int j = 0; j < 200; ++j) {
-                    m_atlasVertexBatchBuilder.addToBatch(im1);
+                    m_atlasVertexBatchBuilder.addToBatch(bananaImg);
                 }
             }
         }

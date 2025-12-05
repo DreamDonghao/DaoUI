@@ -3,9 +3,9 @@
 //
 #ifndef PAGE_HPP
 #define PAGE_HPP
-#include <Atlas_vertex_batch_builder.hpp>
+#include <atlas_vertex_batch_builder.hpp>
 
-namespace name_ {
+namespace dao {
     class Page {
     public:
         virtual void update() = 0;

@@ -6,7 +6,7 @@
 #include "atlas_region_data.hpp"
 #include "mapped_region.hpp"
 
-namespace name_ {
+namespace dao {
     class TextureData {
     public:
         TextureData() = default;

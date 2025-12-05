@@ -1,11 +1,13 @@
 #include <app.hpp>
-#include <testPage.hpp>
+#include <test_page.hpp>
 
 int main(int argc, char *argv[]) {
-    auto &app = name_::App::getApp();
+    /// 创建一个应用
+    auto &app = dao::App::getApp();
+    /// 创建一个窗口并添加一个页面
     app.createWindow(800, 600)
-            .addPage(std::make_unique<name_::TestPage>("test1"));
-
+            .addPage(std::make_unique<dao::TestPage>("test1"));
+    /// 启动程序
     app.run();
     return 0;
 }

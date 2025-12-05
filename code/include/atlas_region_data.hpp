@@ -3,7 +3,7 @@
 #include "atlas_region_data.hpp"
 #include <iterator>
 
-namespace name_ {
+namespace dao {
     /// @brief 图集区域数据
     struct AtlasRegion {
         const char *const atlasPath; ///< 图集区域对应的纹理图集文件路径
@@ -14,14 +14,13 @@ namespace name_ {
 
     enum class TextureEnum:int32_t {
         /// python 脚本生成
-        #include <../../inc/textures.inc>
-
+        #include <textures.inc>
         EmptyTexture
     };
 
     inline constexpr AtlasRegion regions[] = {
         /// python 脚本生成
-        #include <../../inc/texture_datas.inc>
+        #include <texture_datas.inc>
     };
 
     static_assert(static_cast<uint32_t>(TextureEnum::EmptyTexture) == std::size(regions), "纹理图集数据错误");

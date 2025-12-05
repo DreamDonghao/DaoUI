@@ -4,7 +4,7 @@
 #ifndef BOUNDING_BOX_HPP
 #define BOUNDING_BOX_HPP
 
-namespace name_ {
+namespace dao {
     ///@brief 边界框
     ///@details 用来表示一个矩形范围区域左上右下边界的坐标
     class BoundingBox {

@@ -1,0 +1,18 @@
+{
+  "food_apple": {
+    "atlas_file": "atlas_0000.png",
+    "atlas_id": 0,
+    "left": 0,
+    "top": 0,
+    "right": 32,
+    "bottom": 32
+  },
+  "food_banana": {
+    "atlas_file": "atlas_0000.png",
+    "atlas_id": 0,
+    "left": 34,
+    "top": 0,
+    "right": 66,
+    "bottom": 32
+  }
+}

@@ -2,7 +2,6 @@
 /cmake-build*
 /out
 /.vs
-/.idea/codeStyles
 /tool/.idea
-/inc
-/doxygen
+/doxygen_output
+CMakeSettings.json

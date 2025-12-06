@@ -17,11 +17,8 @@ namespace dao {
             : m_boundingBoxA(boundingBoxA), m_boundingBoxB(boundingBoxB) {
         }
 
-        MappedRegion(const float leftA, const float upA, const float rightA, const float downA,
-                     const float leftB, const float upB, const float rightB, const float downB)
-            : m_boundingBoxA(leftA, upA, rightA, downA),
-              m_boundingBoxB(leftB, upB, rightB, downB) {
-        }
+        MappedRegion(float leftA, float upA, float rightA, float downA,
+                     float leftB, float upB, float rightB, float downB);
 
         [[nodiscard]] std::tuple<BoundingBox, BoundingBox> getBoundingBoxs() const {
             return {m_boundingBoxA, m_boundingBoxB};

@@ -11,20 +11,23 @@ namespace dao {
                 normalizedRight, normalizedBottom; ///< 归一化的图集区域的左上右下坐标
     };
 
+    /// @brief 纹理名称枚举体
     enum class TextureEnum:int32_t {
         /// python 脚本生成
         #include <textures.inc>
         EmptyTexture
     };
 
+
     inline constexpr AtlasRegion regions[] = {
         /// python 脚本生成
         #include <texture_datas.inc>
-    };
+    }; ///< 纹理图集区域信息
 
+    /// 当纹理数量与纹理图集区域数据冲突时中断编译
     static_assert(static_cast<uint32_t>(TextureEnum::EmptyTexture) == std::size(regions), "纹理图集数据错误");
 
-    /// @brief 通过纹理名称获取图集区域数据
+    /// @brief 通过纹理名称枚举获取图集区域数据
     inline const AtlasRegion &getAtlasRegion(const TextureEnum textureName) {
         return regions[static_cast<uint32_t>(textureName)];
     }

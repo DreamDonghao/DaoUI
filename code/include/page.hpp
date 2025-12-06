@@ -10,7 +10,7 @@ namespace dao {
     /// @details 提供了所有页面的接口，所有页面都应继承这个类
     class Page {
     public:
-        [[nodiscard]] virtual std::vector<TextureEnum> registerTexture() const = 0;
+        [[nodiscard]] virtual eastl::vector<TextureEnum> registerTexture() const = 0;
 
         /// @brief 更新
         virtual void update() = 0;
@@ -30,7 +30,7 @@ namespace dao {
 
     protected:
         std::string m_title; ///< 标题
-        AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
+        AtlasVertexBatchBuilder<120000> m_atlasVertexBatchBuilder;
     };
 }
 #endif //PAGE_HPP

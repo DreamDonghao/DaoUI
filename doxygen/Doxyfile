@@ -5,6 +5,7 @@ PROJECT_NAME           = "DaoUI"
 PROJECT_BRIEF          = "A cross-platform C++ framework"
 PROJECT_NUMBER         = 0.1.0
 OUTPUT_DIRECTORY       = doxygen
+OUTPUT_LANGUAGE = Chinese
 
 #-----------------------------------------------------------
 # What to scan
@@ -19,6 +20,11 @@ EXCLUDE                = thirdparty external
 #-----------------------------------------------------------
 # Build options
 #-----------------------------------------------------------
+HTML_EXTRA_STYLESHEET  = my_style.css
+HTML_EXTRA_FILES       = my_style.js
+GENERATE_TREEVIEW       = YES
+DISABLE_INDEX           = NO
+FULL_SIDEBAR            = NO
 GENERATE_HTML          = YES
 GENERATE_LATEX         = NO
 GENERATE_MAN           = NO
@@ -67,3 +73,7 @@ WARN_IF_DOC_ERROR      = YES
 HTML_TIMESTAMP         = NO
 GENERATE_TREEVIEW      = YES
 DISABLE_INDEX          = NO
+
+ENABLE_PREPROCESSING = YES
+MACRO_EXPANSION = YES
+CLANG_ASSISTED_PARSING = YES

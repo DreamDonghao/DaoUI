@@ -7,36 +7,33 @@
 #include "mapped_region.hpp"
 
 namespace dao {
-    /// @brief 图集纹理。
-    /// @details 表示纹理图集中的一个纹理区域。
-    /// 本类型本身不持有实际纹理数据，只保存纹理名称的枚举值。
-    /// 可通过 getAtlasRegion() 获取其所在图集及在图集中的区域数据。
+    /// @brief 图集纹理
+    /// @details 表示纹理图集中的一个纹理区域
+    /// 本类型本身不持有实际纹理数据，只保存纹理名称的枚举值
+    /// 可通过 getAtlasRegion() 获取其所在图集及在图集中的区域数据
     class AtlasTexture {
     public:
         AtlasTexture() = default;
 
         /// @brief 构造函数
-        /// @param textureName
-        /// @param left
-        /// @param up
-        /// @param right
-        /// @param down
-        AtlasTexture(const TextureEnum textureName,
-                     const float left, const float up, const float right, const float down)
-            : m_textureName(textureName), m_boundingBox(left, up, right, down) {
-        }
+        /// @param textureName 纹理枚举名
+        /// @param left 左边界坐标
+        /// @param up 上区边界标
+        /// @param right 右边界坐标
+        /// @param down 下边界坐标
+        AtlasTexture(TextureEnum textureName, float left, float up, float right, float down);
 
-        [[nodiscard]] const TextureEnum &getName() const {
-            return m_textureName;
-        }
+        /// @brief 获取枚举名
+        /// @returns 纹理枚举名
+        [[nodiscard]] const TextureEnum &getName() const { return m_textureName; }
 
-        [[nodiscard]] const BoundingBox &getBoundingBox() const {
-            return m_boundingBox;
-        }
+        /// @brief 获取显示边界框
+        /// @returns 边界框
+        [[nodiscard]] const BoundingBox &getBoundingBox() const { return m_boundingBox; }
 
     private:
-        TextureEnum m_textureName = TextureEnum::EmptyTexture;
-        BoundingBox m_boundingBox; ///< 纹理要显示的位置
+        TextureEnum m_textureName = TextureEnum::EmptyTexture; ///< 纹理枚举名
+        BoundingBox m_boundingBox;                             ///< 纹理要显示的位置
     };
 }
 

@@ -18,8 +18,11 @@
         {
             "name": "sdl3",
             "version>=": "3.2.26"
+        },
+        {
+            "name": "eastl",
+            "version>=": "3.21.23"
         }
     ],
-    "overrides": [
-    ]
+    "overrides": []
 }

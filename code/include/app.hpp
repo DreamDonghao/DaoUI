@@ -4,59 +4,44 @@
 #ifndef APP_HPP
 #define APP_HPP
 #include <window.hpp>
-#include <ranges>
+
 namespace dao {
     /// @brief 应用
     /// @details 用来管理整个应用程序
-    ///
     class App final {
     public:
-        static App &getApp() {
+        ~App() = default;
+
+        /// @brief 创建应用
+        /// @returns 一个应用实例
+        [[nodiscard]] static App &getApp() {
             static App app{};
             return app;
         }
 
-        Window &createWindow(const uint32_t width, const uint32_t height) {
-            auto nowWindow = std::make_unique<Window>(width, height);
-            const uint32_t windowId = nowWindow->getId();
-            m_windows[windowId] = std::move(nowWindow);
-            return *m_windows[windowId];
-        }
+        /// @brief 创建窗口
+        /// @param width 窗口默认宽度
+        /// @param height 窗口默认高度
+        /// @returns 窗口对象的引用
+        Window &createWindow(uint32_t width, uint32_t height);
 
-        void render() {
-            for (const auto &window: m_windows | std::views::values) {
-                window->render();
-            }
-        }
+        /// @brief 获取窗口
+        /// @param windowId 窗口 id
+        /// @returns 窗口对象的引用
+        Window &getWindow(const uint32_t windowId) { return *m_windows[windowId]; }
 
-        Window &getWindow(const uint32_t windowId) {
-            return *m_windows[windowId];
-        }
-
-        void run() {
-            while (m_runWindowNum) {
-                m_runWindowNum = 0;
-                for (const auto &window: m_windows | std::views::values) {
-                    render();
-                    m_runWindowNum += window->isRunning();
-                }
-                SDL_Event event;
-                while (SDL_PollEvent(&event)) {
-                    for (const auto &window: m_windows | std::views::values) {
-                        window->run(event);
-                    }
-                }
-            }
-            SDL_Quit();
-        }
+        /// @brief 启动应用
+        void run();
 
     private:
-        uint32_t m_runWindowNum = 1;
-        std::unordered_map<uint32_t, std::unique_ptr<Window> > m_windows;
+        uint32_t m_runWindowNum = 1;                                      ///< 当前正在运行的窗口数量
+        std::unordered_map<uint32_t, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
 
+        /// 设置默认构造函数为私有成员，使 App 成为单例模式
         App() = default;
 
-        ~App() = default;
+        /// 渲染所有窗口内容
+        void render();
     };
 }
 #endif //APP_HPP

@@ -4,19 +4,21 @@ OUTPUT_DIRECTORY    = "doxygen_output/zh"     # 指定生成文档的输出目�
 # 项目元数据
 #-----------------------------------------------------------
 PROJECT_NAME           = "DaoUI"              # 项目名称，将显示在文档页眉和标题中
-PROJECT_BRIEF          = "A cross-platform C++ framework"  # 项目的简短描述或标语
+PROJECT_BRIEF          = "C++跨平台通用 GUI 框架"  # 项目的简短描述或标语
 PROJECT_NUMBER         = 0.1.0                # 项目版本号
+USE_MDFILE_AS_MAINPAGE = doxygen/docs_md/zh/main_page.md
+
 #-----------------------------------------------------------
 # 需要扫描的内容
 #-----------------------------------------------------------
-INPUT                  = code                 # 源代码所在的根目录（相对于Doxyfile位置）
-FILE_PATTERNS          = *.h *.hpp *.cpp      # 要解析的文件类型模式（支持通配符）
-RECURSIVE              = YES                  # 是否递归搜索INPUT目录下的子目录
-EXCLUDE                = thirdparty external  # 排除的目录或文件列表（不生成文档）
+INPUT                  = code doxygen/docs_md/zh     # 源代码所在的根目录（相对于Doxyfile位置）
+FILE_PATTERNS          = *.md *.h *.hpp *.cpp           # 要解析的文件类型模式（支持通配符）
+RECURSIVE              = YES                            # 是否递归搜索INPUT目录下的子目录
+EXCLUDE                = thirdparty external            # 排除的目录或文件列表（不生成文档）
 #-----------------------------------------------------------
 # 构建选项
 #-----------------------------------------------------------
-HTML_EXTRA_STYLESHEET   = doxygen/style/my_style.css   # 附加的CSS样式表文件，用于自定义HTML输出样式
+HTML_EXTRA_STYLESHEET   = doxygen/style/style.css   # 附加的CSS样式表文件，用于自定义HTML输出样式
 HTML_EXTRA_FILES        = doxygen/style/style.js         # 额外的文件将被复制到HTML输出目录（如JavaScript文件）
 HTML_FOOTER             = doxygen/style/footer.html        # 自定义HTML页脚文件
 GENERATE_TREEVIEW       = YES                # 在侧边栏生成树状导航视图（旧式）
@@ -30,7 +32,7 @@ GENERATE_RTF           = NO                  # 生成RTF（富文本格式）输
 # 图表 (Graphviz)
 #-----------------------------------------------------------
 HAVE_DOT               = YES                  # 启用Graphviz工具生成图表（需要安装Graphviz）
-DOT_NUM_THREADS        = 4                    # Graphviz dot工具使用的线程数
+DOT_NUM_THREADS        = 8                    # Graphviz dot工具使用的线程数
 CALL_GRAPH             = YES                  # 生成函数调用图（显示函数调用了哪些其他函数）
 CALLER_GRAPH           = YES                  # 生成调用者图（显示哪些函数调用了当前函数）
 CLASS_GRAPH            = YES                  # 生成类继承图
@@ -61,9 +63,7 @@ WARN_IF_DOC_ERROR      = YES                  # 是否为文档错误生成警�
 #-----------------------------------------------------------
 # HTML 配置
 #-----------------------------------------------------------
-HTML_TIMESTAMP         = NO                   # 是否在HTML页面底部添加时间戳
-GENERATE_TREEVIEW      = YES                  # 再次确认启用树状视图（与上面GENERATE_TREEVIEW重复）
-DISABLE_INDEX          = NO                   # 再次确认不禁用索引（与上面DISABLE_INDEX重复）
+HTML_TIMESTAMP         = YES                   # 是否在HTML页面底部添加时间戳
 ENABLE_PREPROCESSING = YES                    # 启用C/C++预处理
 MACRO_EXPANSION = YES                         # 展开宏定义（有助于文档化使用宏的代码）
 CLANG_ASSISTED_PARSING = YES                  # 使用Clang库辅助解析（提供更准确的C++解析，需要Clang）

@@ -16,14 +16,20 @@ namespace dao {
 
         ~Window();
 
+        /// @brief 添加页面
+        /// @param page 要添加页面的unique_ptr指针
         void addPage(std::unique_ptr<Page> page);
 
+        /// @brief 加载纹理图集
         void registerTexture(const TextureEnum &textureName);
 
+        /// @brief 获取 id
         [[nodiscard]] uint32_t getId() const { return m_id; }
 
+        /// 更新一帧
         void run(const SDL_Event &event);
 
+        /// 判断是否在运行
         [[nodiscard]] bool isRunning() const { return m_running; }
 
         /// @brief 渲染

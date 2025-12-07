@@ -73,15 +73,19 @@ namespace dao {
         }
 
         /// @brief 检查是否有效
-        /// @returns 判断有效的布尔值
+        /// @returns 有效返回 ture 否则 false
         [[nodiscard]] bool isValid() const {
             return m_left <= m_right && m_up <= m_down;
         }
 
+        /// @brief 判断点 (x,y) 是否在边界框内
+        /// @returns 点 (x,y) 在边界框 返回 true 否则 false
         [[nodiscard]] bool isInBoundingBox(const float x, const float y) const {
             return (x >= m_left && x <= m_right) && (y >= m_up && y <= m_down);
         }
 
+        /// @brief 判断两个边界框是否有重合部分
+        /// @returns 有重合部分返回 true 否者false
         [[nodiscard]] bool isIntersects(const BoundingBox &other) const {
             return std::max(m_left, other.m_left) <= std::min(m_right, other.m_right) &&
                    std::max(m_up, other.m_up) <= std::min(m_down, other.m_down);
@@ -104,10 +108,12 @@ namespace dao {
         /// @return 下边界坐标值
         [[nodiscard]] float getBottom() const { return m_down; }
 
-
+        /// @brief 获取宽度
+        /// @returns 宽度值
         [[nodiscard]] float getWidth() const { return m_right - m_left; }
 
-
+        /// @brief 获取高度
+        /// @returns 高度值
         [[nodiscard]] float getHeight() const { return m_down - m_up; }
 
     private:

@@ -1,91 +1,38 @@
-[中文](./docs/README.ch-ZN.md)
+# DaoUI
 
-# Dao
+[Chinese](README.zh.md) | [English](README.md)
 
 This is a cross platform C++GUI program development framework that can be used to develop GUI programs and applications such as games.
 
-## Use
+------
 
-Due to the project being in its early stages, the library files and framework system are being refined
+You can click on this link to learn how to use DaoUI and participate in its development
 
-### Environmental requirements
+[ https://dreamdonghao.github.io/DaoUI/zh/ ]( https://dreamdonghao.github.io/DaoUI/zh/ )
 
-The following is a tested and constructible version, other versions can be tried on their own
+## Introduction
 
-- C++ 23
-- Cmake 3.31
-- Vcpkg: `sdl3 3.2.26` `sdl3-image 3.2.4 [png]` For specific content of third-party libraries, please refer to the vcpkg.json file
+DaoUI is a cross platform C++GUI library developed in C++, 
+allowing you to quickly develop desktop applications using DaoUI.
 
-### Get started quickly
+DaoUI is developed based on SDL3 and can be accelerated by hardware.
+All content is drawn in batches using vertex arrays,
+which has good performance when used properly. 
+Therefore, it can also be used for game development.
+However, as DaoUI is not a professional game engine, 
+there may be higher requirements in terms of program optimization.
+You can use DaoUI to create your 2D games or other visual applications.
 
-You can directly edit the contents of **main.cpp** and **test\u page.hpp** in the project to quickly familiarize yourself with how to use
+DaoUI does not have as many components for developers to use as Qt does,
+but only provides basic content such as textures, geometric shapes,
+buttons, etc. Therefore, DaoUI has an extremely low learning cost,
+and as long as you have experience using C++,
+you can get started in a very short time.
+And various commonly used components are currently under development.
 
-```C++
-/// code/main.cpp
-#include <app.hpp>
-#include <test_page.hpp>
+You can boldly participate in the development of DaoUI,
+whether you are a student without any development experience or interested in programming, 
+you can use this project to increase your development experience.
 
-int main(int argc, char *argv[]) {
-    ///Create an app
-    auto &app = dao::App::getApp();
-    ///Create a window and add a page
-    app.createWindow(800, 600)
-            .addPage(std::make_unique<dao::TestPage>("test1"));
-    ///Start up procedure
-    app.run();
-    return 0;
-}
-
-```
-
-```c++
-/// code/test/test_page.hpp
-#ifndef TESTPAGE_HPP
-#define TESTPAGE_HPP
-#include "page.hpp"
-
-namespace dao {
-    class TestPage final : public Page {
-        ///Texture atlas batch vertex array builder
-        AtlasVertexBatchBuilder m_atlasVertexBatchBuilder;
-        ///An apple picture
-        TextureData appleImg{TextureEnum::food_apple, 0, 0, 100, 100};
-        ///A banana picture
-        TextureData bananaImg{TextureEnum::food_banana, 100, 0, 200, 100};
-
-    public:
-        explicit TestPage(std::string title): Page(std::move(title)) {
-        }
-
-        ///Submit the picture and load it into the video memory when creating the window
-        [[nodiscard]] std::vector<TextureEnum> registerTexture() const override {
-            std::vector registerTexture{
-                TextureEnum::food_apple,
-                TextureEnum::food_banana,
-            };
-            return registerTexture;
-        }
-
-        ///Update logic per frame of window
-        void update() override {
-            m_atlasVertexBatchBuilder.clearDrawBatches();
-            for (int i = 0; i < 30; ++i) {
-                for (int j = 0; j < 200; ++j) {
-                    m_atlasVertexBatchBuilder.addToBatch(appleImg);
-                }
-                for (int j = 0; j < 200; ++j) {
-                    m_atlasVertexBatchBuilder.addToBatch(bananaImg);
-                }
-            }
-        }
-
-        ///Submit vertex array drawing
-        [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const override {
-            return m_atlasVertexBatchBuilder.getDrawBatches();
-        }
-    };
-}
-
-#endif //TESTPAGE_HPP
-
-```
+You may wonder why there is still a need to write a duplicate when there are already many existing libraries.
+Perhaps it's out of interest.

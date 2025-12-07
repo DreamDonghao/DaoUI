@@ -18,6 +18,13 @@
     document.body.appendChild(container);
     const parentElement = document.getElementById('titlearea');
     parentElement.appendChild(container);
+
+    const link = document.createElement("div");
+    link.innerHTML = `
+        <a href="https://github.com/DreamDonghao/DaoUI" target="_blank"
+           style="color: #9d1dc9; font-weight: bold;">
+           github.com/DreamDonghao/DaoUI
+        </a>
+    `;
+    parentElement.appendChild(link);
 })();
-
-

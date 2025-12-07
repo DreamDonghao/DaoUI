@@ -8,11 +8,17 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
       - name: Install Doxygen and Graphviz
         run: sudo apt-get update && sudo apt-get install -y doxygen graphviz
+
+      - name: Create output directories
+        run: mkdir -p doxygen_output/zh/html doxygen_output/en/html
 
       - name: Build Chinese docs
         run: doxygen doxygen/Doxyfiles/Doxyfile.zh
@@ -20,10 +26,18 @@ jobs:
       - name: Build English docs
         run: doxygen doxygen/Doxyfiles/Doxyfile.en
 
-      - name: Deploy to gh-pages
+      - name: Deploy Chinese docs
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: |
-            doxygen_output/zh/html
-            doxygen_output/en/html
+          publish_dir: doxygen_output/zh/html
+          destination_dir: zh
+          publish_branch: gh-pages
+
+      - name: Deploy English docs
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: doxygen_output/en/html
+          destination_dir: en
+          publish_branch: gh-pages

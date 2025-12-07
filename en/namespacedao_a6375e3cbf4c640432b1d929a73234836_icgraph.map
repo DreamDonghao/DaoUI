@@ -1,0 +1,7 @@
+<map id="dao::getAtlasRegion" name="dao::getAtlasRegion">
+<area shape="rect" id="Node000001" title="当纹理数量与纹理图集区域数据冲突时中断编译" alt="" coords="265,42,419,67"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1AtlasVertexBatchBuilder.html#a78062c47c490c8aaa4ca34b10eefc0d2" title="添加绘制元素到批处理" alt="" coords="5,5,217,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,46,217,41,218,36,252,41"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Window.html#add1659124b90d0527dba4e13226e6e1f" title=" " alt="" coords="6,70,217,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="252,68,216,73,216,67,251,63"/>
+</map>

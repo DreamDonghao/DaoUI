@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,55,60,80"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1App.html#a0061703c1bb3e91629dffa39ad7aca00" title="创建窗口" alt="" coords="108,5,288,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,55,107,39,134,32,135,37,109,45,61,60"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050" title="创建应用 @en" alt="" coords="131,55,265,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,65,118,65,118,70,60,70"/>
+<area shape="rect" id="Node000004" href="$classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422" title="启动应用" alt="" coords="144,104,252,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,74,109,89,139,98,137,103,107,94,59,79"/>
+</map>

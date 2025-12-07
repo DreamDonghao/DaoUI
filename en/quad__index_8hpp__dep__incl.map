@@ -1,0 +1,20 @@
+<map id="code/include/quad_index.hpp" name="code/include/quad_index.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="173,5,384,31"/>
+<area shape="rect" id="Node000002" href="$atlas__vertex__batch__builder_8hpp.html" title=" " alt="" coords="182,79,375,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="281,44,281,79,276,79,276,44"/>
+<area shape="rect" id="Node000003" href="$page_8hpp.html" title=" " alt="" coords="195,167,363,192"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="281,132,281,166,276,166,276,132"/>
+<area shape="rect" id="Node000004" href="$window_8hpp.html" title=" " alt="" coords="82,240,267,265"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="252,202,193,242,190,238,249,198"/>
+<area shape="rect" id="Node000009" href="$test__page_8hpp.html" title=" " alt="" coords="291,240,477,265"/>
+<area shape="poly" id="edge8_Node000003_Node000009" title=" " alt="" coords="309,198,368,238,365,242,306,202"/>
+<area shape="rect" id="Node000005" href="$app_8hpp.html" title=" " alt="" coords="5,313,165,339"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="151,276,102,315,98,311,148,272"/>
+<area shape="rect" id="Node000008" href="$window_8cpp.html" title=" " alt="" coords="190,313,346,339"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="202,271,254,311,251,315,199,276"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="249,387,367,412"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="135,340,273,384,271,389,133,345"/>
+<area shape="rect" id="Node000007" href="$app_8cpp.html" title=" " alt="" coords="20,387,151,412"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="88,352,88,387,83,387,83,352"/>
+<area shape="poly" id="edge9_Node000009_Node000006" title=" " alt="" coords="382,280,374,309,361,340,342,367,322,388,319,385,338,364,356,337,369,308,377,278"/>
+</map>

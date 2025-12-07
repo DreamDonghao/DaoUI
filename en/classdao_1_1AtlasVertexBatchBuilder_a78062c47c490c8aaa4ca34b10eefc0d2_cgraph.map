@@ -1,0 +1,7 @@
+<map id="dao::AtlasVertexBatchBuilder::addToBatch" name="dao::AtlasVertexBatchBuilder::addToBatch">
+<area shape="rect" id="Node000001" title="添加绘制元素到批处理" alt="" coords="5,27,217,67"/>
+<area shape="rect" id="Node000002" href="$namespacedao.html#a6375e3cbf4c640432b1d929a73234836" title="当纹理数量与纹理图集区域数据冲突时中断编译" alt="" coords="265,5,419,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,31,251,27,252,32,218,36"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1AtlasTexture.html#ae967e297d286446742a734a0f31150c4" title="获取枚举名" alt="" coords="271,55,413,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,58,257,62,257,68,218,63"/>
+</map>

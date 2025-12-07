@@ -1,2 +1,2 @@
-@Page use developed using DaoUI
+@page use developed using DaoUI
 The function is currently under development .....

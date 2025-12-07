@@ -9,7 +9,7 @@ var searchData=
   ['app_6',['App',['../classdao_1_1App.html',1,'dao']]],
   ['app_2ecpp_7',['app.cpp',['../app_8cpp.html',1,'']]],
   ['app_2ehpp_8',['app.hpp',['../app_8hpp.html',1,'']]],
-  ['application_20using_20daoui_9',['Develop your own application using DaoUI',['../index.html#autotoc_md20',1,'']]],
+  ['application_20using_20daoui_9',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
   ['atlas_5fregion_5fdata_2ehpp_10',['atlas_region_data.hpp',['../atlas__region__data_8hpp.html',1,'']]],
   ['atlas_5ftexture_2ecpp_11',['atlas_texture.cpp',['../atlas__texture_8cpp.html',1,'']]],
   ['atlas_5ftexture_2ehpp_12',['atlas_texture.hpp',['../atlas__texture_8hpp.html',1,'']]],

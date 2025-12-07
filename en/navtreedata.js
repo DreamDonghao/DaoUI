@@ -38,7 +38,7 @@ var NAVTREE =
       ] ],
       [ "Project Dependencies", "join.html#autotoc_md18", null ]
     ] ],
-    [ "use", "md_doxygen_2docs__md_2en_2use.html", null ],
+    [ "developed using DaoUI", "use.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

@@ -1,4 +1,7 @@
 #include <app.hpp>
+//
+// Created by donghao on 25-11-28.
+//
 #include <test_page.hpp>
 
 int main(int argc, char *argv[]) {
@@ -6,7 +9,7 @@ int main(int argc, char *argv[]) {
     auto &app = dao::App::getApp();
     /// 创建一个窗口并添加一个页面
     app.createWindow(800, 600)
-            .addPage(std::make_unique<dao::TestPage>("test1"));
+            .addPage(std::make_unique<TestPage>("test1"));
     /// 启动程序
     app.run();
     return 0;

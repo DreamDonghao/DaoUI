@@ -1,1 +1,1 @@
-food_apple,food_banana,
+constexpr uint32_t food_apple = 1;constexpr uint32_t food_banana = 2;

@@ -1,0 +1,23 @@
+#ifndef ATLAS_REGION_DATA_HPP
+#define ATLAS_REGION_DATA_HPP
+#include <iterator>
+
+namespace dao {
+    /// @brief 图集区域数据
+    struct AtlasRegion {
+        const char *const atlasPath; ///< 图集区域对应的纹理图集文件路径
+        const uint32_t atlasId;      ///< 图集区域对应的纹理图集编号
+        const float normalizedLeft, normalizedTop,
+                normalizedRight, normalizedBottom; ///< 归一化的图集区域的左上右下坐标
+    };
+
+    extern const AtlasRegion regions[];
+
+
+    /// @brief 通过纹理名称枚举获取图集区域数据
+    inline const AtlasRegion &getAtlasRegion(const uint32_t textureId) {
+        return regions[textureId];
+    }
+}
+
+#endif //ATLAS_REGION_DATA_HPP

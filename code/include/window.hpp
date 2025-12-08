@@ -5,11 +5,12 @@
 #define WINDOW_HPP
 #include <string>
 #include <SDL3/SDL.h>
-#include <page.hpp>
+#include <interface/page.hpp>
 #include <unordered_map>
 #include <memory>
 
 namespace dao {
+    /// @brief 窗口
     class Window {
     public:
         Window(int width, int height);
@@ -21,7 +22,7 @@ namespace dao {
         void addPage(std::unique_ptr<Page> page);
 
         /// @brief 加载纹理图集
-        void registerTexture(const TextureEnum &textureName);
+        void registerTexture(const uint32_t &textureId);
 
         /// @brief 获取 id
         [[nodiscard]] uint32_t getId() const { return m_id; }
@@ -47,7 +48,7 @@ namespace dao {
             }
         };
 
-        std::unordered_map<uint32_t, SDL_Texture *> atlasTextures;
+        std::unordered_map<uint32_t, SDL_Texture *> m_atlasTextures;
         std::string m_nowPageTitle;
         std::unordered_map<std::string, std::unique_ptr<Page> > m_pages;
     };

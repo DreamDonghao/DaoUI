@@ -4,8 +4,8 @@
 #include <atlas_texture.hpp>
 
 namespace dao {
-    AtlasTexture::AtlasTexture(const TextureEnum textureName,
+    AtlasTexture::AtlasTexture(const uint32_t textureId,
                                const float left, const float up, const float right, const float down)
-        : m_textureName(textureName), m_boundingBox(left, up, right, down) {
+        : m_textureId(textureId), m_boundingBox(left, up, right, down) {
     }
 }

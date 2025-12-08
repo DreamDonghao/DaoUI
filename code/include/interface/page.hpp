@@ -1,0 +1,25 @@
+//
+// Created by donghao on 25-11-26.
+//
+#ifndef PAGE_HPP
+#define PAGE_HPP
+#include <atlas_vertex_batch_builder.hpp>
+
+namespace dao {
+    /// @brief 页面接口
+    /// @details 提供了所有页面的接口，所有页面都应继承这个类
+    class Page {
+    public:
+        virtual ~Page() = default;
+
+        [[nodiscard]] virtual std::vector<uint32_t> registerTexture() = 0;
+
+        /// @brief 更新
+        virtual void update() = 0;
+
+        [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() = 0;
+
+        [[nodiscard]] virtual const std::string &getTitle() = 0;
+    };
+}
+#endif //PAGE_HPP

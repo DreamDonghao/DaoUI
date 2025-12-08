@@ -7,9 +7,11 @@ def to_enum_name(s: str) -> str:
     return s.replace(".", "_").replace("-", "_")
 
 # textures.inc —— 全部放一行
-textures = ",".join(data.keys())
 with open("example/inc/textures.inc", "w", encoding="utf-8") as f:
-    f.write(textures + ',')
+    texture_id = 1
+    for key in data.keys():
+        f.write(f"constexpr uint32_t {key} = {texture_id};")
+        texture_id += 1
 
 # texture_datas.inc —— 全部放一行，无换行
 region_entries = []

@@ -3,16 +3,18 @@
 //
 #ifndef WINDOW_HPP
 #define WINDOW_HPP
+#include <expected>
 #include <string>
 #include <SDL3/SDL.h>
 #include <interface/page.hpp>
-#include <unordered_map>
 #include <memory>
 
 namespace dao {
     /// @brief 窗口
     class Window {
     public:
+        static std::expected<std::unique_ptr<Window>, std::string> create(int width, int height);
+
         Window(int width, int height);
 
         ~Window();
@@ -22,10 +24,10 @@ namespace dao {
         void addPage(std::unique_ptr<Page> page);
 
         /// @brief 加载纹理图集
-        void registerTexture(const uint32_t &textureId);
+        void registerTexture(const uint32 &textureId);
 
         /// @brief 获取 id
-        [[nodiscard]] uint32_t getId() const { return m_id; }
+        [[nodiscard]] uint32 getId() const { return m_id; }
 
         /// 更新一帧
         void run(const SDL_Event &event);
@@ -37,7 +39,7 @@ namespace dao {
         void render();
 
     private:
-        uint32_t m_id;
+        uint32 m_id;
         bool m_running = true;
         SDL_Window *m_window;
         SDL_Renderer *m_renderer;
@@ -48,9 +50,9 @@ namespace dao {
             }
         };
 
-        std::unordered_map<uint32_t, SDL_Texture *> m_atlasTextures;
+        hash_map<uint32, SDL_Texture *> m_atlasTextures;
         std::string m_nowPageTitle;
-        std::unordered_map<std::string, std::unique_ptr<Page> > m_pages;
+        hash_map<std::string, std::unique_ptr<Page> > m_pages;
     };
 }
 #endif //WINDOW_HPP

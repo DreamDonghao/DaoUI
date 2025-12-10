@@ -2,6 +2,7 @@
 // Created by donghao on 25-12-6.
 //
 #include <app.hpp>
+#include <iostream>
 #include <ranges>
 
 namespace dao {
@@ -22,11 +23,17 @@ namespace dao {
         SDL_Quit();
     }
 
-    Window &App::createWindow(const uint32_t width, const uint32_t height) {
+    Window &App::createWindow(const uint32 width, const uint32 height) {
         auto nowWindow = std::make_unique<Window>(width, height);
-        const uint32_t windowId = nowWindow->getId();
+        const uint32 windowId = nowWindow->getId();
         m_windows[windowId] = std::move(nowWindow);
         return *m_windows[windowId];
+    }
+
+    App::App() {
+        if (!SDL_Init(SDL_INIT_VIDEO)) {
+            std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
+        }
     }
 
     void App::render() {

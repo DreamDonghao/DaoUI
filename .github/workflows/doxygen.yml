@@ -14,18 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Install Graphviz (dependency)
       - name: Install Graphviz
         run: sudo apt-get update && sudo apt-get install -y graphviz
 
-      # Download latest Doxygen release from GitHub
       - name: Download latest Doxygen
         run: |
           DOXYGEN_URL=$(curl -s https://api.github.com/repos/doxygen/doxygen/releases/latest \
             | grep "browser_download_url" \
             | grep "linux.bin.tar.gz" \
             | cut -d '"' -f 4)
-
           echo "Latest Doxygen: $DOXYGEN_URL"
           wget "$DOXYGEN_URL" -O doxygen.tar.gz
           tar -xzf doxygen.tar.gz
@@ -41,18 +38,9 @@ jobs:
       - name: Build English docs
         run: doxygen doxygen/Doxyfiles/Doxyfile.en
 
-      - name: Deploy Chinese docs
+      - name: Deploy all docs
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: doxygen_output/zh/html
-          destination_dir: zh
-          publish_branch: gh-pages
-
-      - name: Deploy English docs
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: doxygen_output/en/html
-          destination_dir: en
+          publish_dir: doxygen_output
           publish_branch: gh-pages

@@ -1,13 +1,14 @@
 //
 // Created by donghao on 25-12-8.
 //
-#include <atlas_vertex_batch_builder.hpp>
+#include <span>
+#include <vertex_batch_builder.hpp>
 #include "atlas_region.hpp"
 
 namespace dao {
-    std::vector<int> dao::AtlasVertexBatchBuilder::s_qudaIndices = {};
+    std::vector<int> VertexBatchBuilder::s_qudaIndices = {};
 
-    void AtlasVertexBatchBuilder::expandQudaIndicesTo(const size_t qudaCount) {
+    void VertexBatchBuilder::expandQudaIndicesTo(const size_t qudaCount) {
         if (qudaCount * 6 > s_qudaIndices.size()) {
             const size_t oldSize = s_qudaIndices.size();
             s_qudaIndices.resize(qudaCount * 6);
@@ -23,7 +24,7 @@ namespace dao {
         }
     }
 
-    void AtlasVertexBatchBuilder::resetQudaIndices(size_t qudaCount) {
+    void VertexBatchBuilder::resetQudaIndices(const size_t qudaCount) {
         if (qudaCount * 6 > s_qudaIndices.size()) {
             const size_t oldSize = s_qudaIndices.size();
             s_qudaIndices.resize(qudaCount * 6);
@@ -42,12 +43,12 @@ namespace dao {
         }
     }
 
-    void AtlasVertexBatchBuilder::addToBatch(const AtlasTexture &texture) {
+    void VertexBatchBuilder::addToBatch(const AtlasTexture &texture) {
         const AtlasRegion atlasRegion = getAtlasRegion(texture.getName());
-        if (const uint32_t atlasId = atlasRegion.atlasId;
-            m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId) {
-            m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>());
-            m_drawBatches.back().indices = s_qudaIndices.data();
+        if (const uint32 atlasId = atlasRegion.atlasId;
+                m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId
+            ) {
+            m_drawBatches.emplace_back(atlasId, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
         }
         appendQuadVertices(
             m_drawBatches.back().vertices,
@@ -55,15 +56,15 @@ namespace dao {
         );
     }
 
-    void AtlasVertexBatchBuilder::addToBatch(const std::vector<SDL_Vertex>& v) {
+    void VertexBatchBuilder::addToBatch(std::span<SDL_Vertex> v) {
         if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {
-            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>());
+            m_drawBatches.emplace_back(0, std::vector<SDL_Vertex>(), makeManage(new std::vector<int32>()));
         }
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
     }
 
-    void AtlasVertexBatchBuilder::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
-        const uint32_t textureId) {
+    void VertexBatchBuilder::appendQuadVertices(std::vector<SDL_Vertex> &vertices, const BoundingBox pos,
+                                                const uint32 textureId) {
         const float winL = pos.getLeft();
         const float winT = pos.getTop();
         const float winR = pos.getRight();

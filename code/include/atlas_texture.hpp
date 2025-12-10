@@ -3,8 +3,8 @@
 //
 #ifndef IMAGE_HPP
 #define IMAGE_HPP
-#include <cstdint>
 
+#include "better_stl.hpp"
 #include "mapped_region.hpp"
 
 namespace dao {
@@ -22,18 +22,18 @@ namespace dao {
         /// @param up 上区边界标
         /// @param right 右边界坐标
         /// @param down 下边界坐标
-        AtlasTexture(std::uint32_t  textureId, float left, float up, float right, float down);
+        AtlasTexture(uint32  textureId, float left, float up, float right, float down);
 
         /// @brief 获取枚举名
         /// @returns 纹理枚举名
-        [[nodiscard]] const uint32_t &getName() const { return m_textureId; }
+        [[nodiscard]] const uint32 &getName() const { return m_textureId; }
 
         /// @brief 获取显示边界框
         /// @returns 边界框
         [[nodiscard]] const BoundingBox &getBoundingBox() const { return m_boundingBox; }
 
     private:
-        uint32_t m_textureId = 0; ///< 纹理枚举名
+        uint32 m_textureId = 0; ///< 纹理枚举名
         BoundingBox m_boundingBox;                             ///< 纹理要显示的位置
     };
 }

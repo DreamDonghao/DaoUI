@@ -3,12 +3,15 @@
 //
 #ifndef DRAWABLE_HPP
 #define DRAWABLE_HPP
+#include "vertex_batch_builder.hpp"
 
 namespace dao {
     /// @brief 可绘制对象接口
     class Drawable {
     public:
-        virtual ~Drawable() = 0;
+        virtual ~Drawable() = default;
+
+        virtual void writeToBatch(VertexBatchBuilder &builder) const = 0;
     };
 }
 #endif //DRAWABLE_HPP

@@ -24,22 +24,22 @@ namespace dao {
         /// @param width 窗口默认宽度
         /// @param height 窗口默认高度
         /// @returns 窗口对象的引用
-        Window &createWindow(uint32_t width, uint32_t height);
+        Window &createWindow(uint32 width, uint32 height);
 
         /// @brief 获取窗口
         /// @param windowId 窗口 id
         /// @returns 窗口对象的引用
-        Window &getWindow(const uint32_t windowId) { return *m_windows[windowId]; }
+        Window &getWindow(const uint32 windowId) { return *m_windows[windowId]; }
 
         /// @brief 启动应用
         void run();
 
     private:
-        uint32_t m_runWindowNum = 1;                                      ///< 当前正在运行的窗口数量
-        std::unordered_map<uint32_t, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
+        uint32 m_runWindowNum = 1;                            ///< 当前正在运行的窗口数量
+        hash_map<uint32, std::unique_ptr<Window> > m_windows; ///< 窗口映射表
 
         /// 设置默认构造函数为私有成员，使 App 成为单例模式
-        App() = default;
+        App();
 
         /// 渲染所有窗口内容
         void render();

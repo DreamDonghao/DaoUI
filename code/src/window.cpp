@@ -8,9 +8,6 @@
 
 namespace dao {
     Window::Window(const int width, const int height) {
-        if (SDL_Init(SDL_INIT_VIDEO) == 0) {
-            std::cerr << "SDL_Init failed: " << SDL_GetError() << std::endl;
-        }
         m_window = SDL_CreateWindow("", width, height,SDL_WINDOW_RESIZABLE);
         m_renderer = SDL_CreateRenderer(m_window, "opengl");
         SDL_SetRenderVSync(m_renderer, 0);
@@ -41,10 +38,10 @@ namespace dao {
         m_pages[page->getTitle()] = std::move(page);
     }
 
-    void Window::registerTexture(const uint32_t &textureId) {
+    void Window::registerTexture(const uint32 &textureId) {
         const AtlasRegion atlasRegion = getAtlasRegion(textureId);
         // 加载新纹理图集
-        if (const uint32_t atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
+        if (const uint32 atlasId = atlasRegion.atlasId; !m_atlasTextures.contains(atlasId)) {
             const char *texturePath = atlasRegion.atlasPath;
             m_atlasTextures[atlasId] = IMG_LoadTexture(m_renderer, texturePath);
             SDL_SetTextureScaleMode(m_atlasTextures[atlasId], SDL_SCALEMODE_NEAREST);
@@ -71,7 +68,7 @@ namespace dao {
                 m_atlasTextures[atlasId],
                 vertices.data(),
                 static_cast<int>(vertices.size()),
-                indices,
+                indices->data(),
                 static_cast<int>(vertices.size() / 4 * 6)
             );
         }

@@ -12,7 +12,9 @@ add_library(dao
         src/window.cpp
         src/mapped_region.cpp
         src/bounding_box.cpp
-        src/atlas_vertex_batch_builder.cpp
+        src/vertex_batch_builder.cpp
+        include/component/rectangle.hpp
+        include/better_stl.hpp
 )
 
 find_package(SDL3 CONFIG REQUIRED)

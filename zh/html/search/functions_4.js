@@ -14,9 +14,10 @@ var searchData=
   ['getmode_11',['getMode',['../classdao_1_1SwitchDeleter.html#a92c2b4839daca8819fa65a828433d049',1,'dao::SwitchDeleter']]],
   ['getname_12',['getName',['../classdao_1_1AtlasTexture.html#a3c0e898b3f46c7143028f455bbde4bf6',1,'dao::AtlasTexture']]],
   ['getright_13',['getRight',['../classdao_1_1BoundingBox.html#ab3f770793d720faef5b2bf5d0a212c65',1,'dao::BoundingBox']]],
-  ['gettitle_14',['getTitle',['../classdao_1_1Page.html#a22d8ff31f8b52df2b69f7c726183ba70',1,'dao::Page']]],
-  ['gettop_15',['getTop',['../classdao_1_1BoundingBox.html#a1e63152e39dc0ae79ea8e4f40de73758',1,'dao::BoundingBox']]],
-  ['getvertices_16',['getVertices',['../classdao_1_1Geometry.html#acb66f283adca1695ee7287b0e7d620b8',1,'dao::Geometry']]],
-  ['getwidth_17',['getWidth',['../classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401',1,'dao::BoundingBox']]],
-  ['getwindow_18',['getWindow',['../classdao_1_1App.html#aff99ee87f1d08a500f7703514c9eadfd',1,'dao::App']]]
+  ['getstatus_14',['getStatus',['../classdao_1_1SimpleButton.html#a5b63c4698f7bb645911c0598e96f574f',1,'dao::SimpleButton::getStatus()'],['../classdao_1_1Button.html#a9a4f38eac038cfb94d792ee4190f6245',1,'dao::Button::getStatus()']]],
+  ['gettitle_15',['getTitle',['../classdao_1_1Page.html#a22d8ff31f8b52df2b69f7c726183ba70',1,'dao::Page']]],
+  ['gettop_16',['getTop',['../classdao_1_1BoundingBox.html#a1e63152e39dc0ae79ea8e4f40de73758',1,'dao::BoundingBox']]],
+  ['getvertices_17',['getVertices',['../classdao_1_1Geometry.html#acb66f283adca1695ee7287b0e7d620b8',1,'dao::Geometry']]],
+  ['getwidth_18',['getWidth',['../classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401',1,'dao::BoundingBox']]],
+  ['getwindow_19',['getWindow',['../classdao_1_1App.html#aff99ee87f1d08a500f7703514c9eadfd',1,'dao::App']]]
 ];

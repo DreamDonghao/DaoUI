@@ -5,8 +5,14 @@ var hierarchy =
     [ "dao::AtlasRegion", "structdao_1_1AtlasRegion.html", null ],
     [ "dao::AtlasTexture", "classdao_1_1AtlasTexture.html", null ],
     [ "dao::BoundingBox", "classdao_1_1BoundingBox.html", null ],
+    [ "dao::Button", "classdao_1_1Button.html", [
+      [ "dao::SimpleButton", "classdao_1_1SimpleButton.html", null ]
+    ] ],
     [ "dao::ColorRGBA", "structdao_1_1ColorRGBA.html", null ],
     [ "dao::Drawable", "classdao_1_1Drawable.html", [
+      [ "dao::ButtonStyle", "classdao_1_1ButtonStyle.html", [
+        [ "dao::SimpleButtonStyle", "classdao_1_1SimpleButtonStyle.html", null ]
+      ] ],
       [ "dao::Rectangle", "classdao_1_1Rectangle.html", null ]
     ] ],
     [ "dao::Geometry&lt; N &gt;", "classdao_1_1Geometry.html", null ],

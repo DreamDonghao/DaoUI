@@ -14,6 +14,10 @@ var annotated_dup =
       [ "GeometryVertex", "structdao_1_1GeometryVertex.html", "structdao_1_1GeometryVertex" ],
       [ "Geometry", "classdao_1_1Geometry.html", "classdao_1_1Geometry" ],
       [ "Rectangle", "classdao_1_1Rectangle.html", "classdao_1_1Rectangle" ],
+      [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
+      [ "SimpleButtonStyle", "classdao_1_1SimpleButtonStyle.html", "classdao_1_1SimpleButtonStyle" ],
+      [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
+      [ "ButtonStyle", "classdao_1_1ButtonStyle.html", "classdao_1_1ButtonStyle" ],
       [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
       [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ]
     ] ]

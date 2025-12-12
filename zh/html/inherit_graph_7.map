@@ -1,3 +1,9 @@
 <map id="类继承关系图" name="类继承关系图">
-<area shape="rect" id="Node000000" href="$classdao_1_1Geometry.html" title="几何图形" alt="" coords="5,5,164,31"/>
+<area shape="rect" id="Node000000" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="5,31,121,56"/>
+<area shape="rect" id="Node000001" href="$classdao_1_1ButtonStyle.html" title=" " alt="" coords="169,5,300,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="135,30,169,25,170,30,136,35"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1Rectangle.html" title="矩形" alt="" coords="175,55,294,80"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="136,51,176,56,175,62,135,56"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1SimpleButtonStyle.html" title=" " alt="" coords="348,5,523,31"/>
+<area shape="poly" id="edge3_Node000001_Node000002" title=" " alt="" coords="314,15,348,15,348,21,314,21"/>
 </map>

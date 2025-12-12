@@ -1,0 +1,5 @@
+<map id="dao::BoundingBox::isInBoundingBox" name="dao::BoundingBox::isInBoundingBox">
+<area shape="rect" id="Node000001" title="判断点 (x,y) 是否在边界框内" alt="" coords="204,13,461,38"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a" title=" " alt="" coords="5,5,156,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,28,156,28,156,23,190,23"/>
+</map>

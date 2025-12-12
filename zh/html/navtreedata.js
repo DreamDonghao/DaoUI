@@ -45,7 +45,8 @@ var NAVTREE =
         [ "全部", "namespacemembers.html", null ],
         [ "函数", "namespacemembers_func.html", null ],
         [ "变量", "namespacemembers_vars.html", null ],
-        [ "类型定义", "namespacemembers_type.html", null ]
+        [ "类型定义", "namespacemembers_type.html", null ],
+        [ "枚举", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "类", "annotated.html", [
@@ -69,7 +70,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"structdao_1_1AtlasDrawBatch.html#a9f789a156087c7bfb62f5216fa183d95"
+"join.html#autotoc_md4"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

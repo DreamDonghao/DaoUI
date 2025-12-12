@@ -122,6 +122,10 @@ $(function(){initNavTree('namespacedao.html','',''); });
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">几何图形  <a href="classdao_1_1Geometry.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:Rectangle" id="r_Rectangle"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1Rectangle.html">Rectangle</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">矩形  <a href="classdao_1_1Rectangle.html#details">更多...</a><br /></td></tr>
+<tr class="memitem:SimpleButton" id="r_SimpleButton"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1SimpleButton.html">SimpleButton</a></td></tr>
+<tr class="memitem:SimpleButtonStyle" id="r_SimpleButtonStyle"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1SimpleButtonStyle.html">SimpleButtonStyle</a></td></tr>
+<tr class="memitem:Button" id="r_Button"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1Button.html">Button</a></td></tr>
+<tr class="memitem:ButtonStyle" id="r_ButtonStyle"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1ButtonStyle.html">ButtonStyle</a></td></tr>
 <tr class="memitem:Drawable" id="r_Drawable"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1Drawable.html">Drawable</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">可绘制对象接口  <a href="classdao_1_1Drawable.html#details">更多...</a><br /></td></tr>
 <tr class="memitem:Page" id="r_Page"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1Page.html">Page</a></td></tr>
@@ -141,6 +145,15 @@ $(function(){initNavTree('namespacedao.html','',''); });
 <tr class="memitem:a0ad639e9f8555dbf881042e9de05d81f" id="r_a0ad639e9f8555dbf881042e9de05d81f"><td class="memTemplParams" colspan="2">template&lt;typename K, typename V&gt; </td></tr>
 <tr class="memitem:a0ad639e9f8555dbf881042e9de05d81f template"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ad639e9f8555dbf881042e9de05d81f">hash_map</a> = std::unordered_map&lt;K, V&gt;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:a3b61a0de5777d228dd0522bc3aec593f" id="r_a3b61a0de5777d228dd0522bc3aec593f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b61a0de5777d228dd0522bc3aec593f">ButtonStatus</a> { <a class="el" href="#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">Disabled</a>
+, <a class="el" href="#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>
+, <a class="el" href="#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc">Hover</a>
+, <a class="el" href="#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040">Pressed</a>
+ }</td></tr>
+<tr class="memdesc:a3b61a0de5777d228dd0522bc3aec593f"><td class="mdescLeft">&#160;</td><td class="mdescRight">按钮状态  <a href="#a3b61a0de5777d228dd0522bc3aec593f">更多...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 函数</h2></td></tr>
 <tr class="memitem:a12373994fd1651320a5895a7299d1dd9" id="r_a12373994fd1651320a5895a7299d1dd9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdao_1_1AtlasRegion.html">AtlasRegion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a12373994fd1651320a5895a7299d1dd9">getAtlasRegion</a> (const <a class="el" href="#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> textureId)</td></tr>
@@ -154,8 +167,8 @@ $(function(){initNavTree('namespacedao.html','',''); });
 <tr class="memitem:ac45f69004e30262d01cf3851e336eef6 template"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac45f69004e30262d01cf3851e336eef6">makeManage</a> (T *ptr)</td></tr>
 <tr class="memdesc:ac45f69004e30262d01cf3851e336eef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">管理者构建器  <br /></td></tr>
 <tr class="memitem:a3decb5fab6d89a778cfca92971d8f8e7" id="r_a3decb5fab6d89a778cfca92971d8f8e7"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a0f690fdeb5ea84b98558fec2f5ac6bc0">uint8</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3decb5fab6d89a778cfca92971d8f8e7">hexByteToU8</a> (const std::string_view sv) noexcept</td></tr>
-<tr class="memitem:a9a5ef9d9569f5c1bb2bc496244b5c74f" id="r_a9a5ef9d9569f5c1bb2bc496244b5c74f"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a5ef9d9569f5c1bb2bc496244b5c74f">hexToRGB</a> (std::string_view hex)</td></tr>
-<tr class="memdesc:a9a5ef9d9569f5c1bb2bc496244b5c74f"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 hex 颜色格式转换为 RGBA 格式  <br /></td></tr>
+<tr class="memitem:a542a4f45ed97f24bacd1eaaea3ff0a01" id="r_a542a4f45ed97f24bacd1eaaea3ff0a01"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a542a4f45ed97f24bacd1eaaea3ff0a01">hexToRGBA</a> (std::string_view hex)</td></tr>
+<tr class="memdesc:a542a4f45ed97f24bacd1eaaea3ff0a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 hex 颜色格式转换为 RGBA 格式  <br /></td></tr>
 <tr class="memitem:a72edcc6fbb3034d72283f64a9df0288b" id="r_a72edcc6fbb3034d72283f64a9df0288b"><td class="memTemplParams" colspan="2">template&lt;size_t N&gt; </td></tr>
 <tr class="memitem:a72edcc6fbb3034d72283f64a9df0288b template"><td class="memItemLeft" align="right" valign="top">static std::array&lt; SDL_Vertex, N &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72edcc6fbb3034d72283f64a9df0288b">makeVertices</a> (const std::array&lt; <a class="el" href="structdao_1_1GeometryVertex.html">GeometryVertex</a>, N &gt; &amp;v)</td></tr>
 <tr class="memdesc:a72edcc6fbb3034d72283f64a9df0288b"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="structdao_1_1GeometryVertex.html" title="几何图形顶点">GeometryVertex</a> 批量转换为 SDL_Vertex  <br /></td></tr>
@@ -329,6 +342,53 @@ template&lt;typename K, typename V&gt; </div>
 
 </div>
 </div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">枚举类型说明</h2>
+<a id="a3b61a0de5777d228dd0522bc3aec593f" name="a3b61a0de5777d228dd0522bc3aec593f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b61a0de5777d228dd0522bc3aec593f">&#9670;&#160;</a></span>ButtonStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a3b61a0de5777d228dd0522bc3aec593f">dao::ButtonStatus</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>按钮状态 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241" name="a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241"></a>Disabled&#160;</td><td class="fielddoc"><p>禁用 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0" name="a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0"></a>Normal&#160;</td><td class="fielddoc"><p>自然 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc" name="a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc"></a>Hover&#160;</td><td class="fielddoc"><p>悬停 </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040" name="a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040"></a>Pressed&#160;</td><td class="fielddoc"><p>按下 </p>
+</td></tr>
+</table>
+
+<p class="definition">在文件 <a class="el" href="button_8hpp_source.html">button.hpp</a> 第 <a class="el" href="button_8hpp_source.html#l00010">10</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>                            {</div>
+<div class="line"><span class="lineno">   11</span>        <a class="code hl_enumvalue" href="#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">Disabled</a>, <span class="comment">///&lt; 禁用</span></div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_enumvalue" href="#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0">Normal</a>,   <span class="comment">///&lt; 自然</span></div>
+<div class="line"><span class="lineno">   13</span>        <a class="code hl_enumvalue" href="#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc">Hover</a>,    <span class="comment">///&lt; 悬停</span></div>
+<div class="line"><span class="lineno">   14</span>        <a class="code hl_enumvalue" href="#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040">Pressed</a>,  <span class="comment">///&lt; 按下</span></div>
+<div class="line"><span class="lineno">   15</span>    };</div>
+<div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0"><div class="ttname"><a href="#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0">dao::ButtonStatus::Normal</a></div><div class="ttdeci">@ Normal</div><div class="ttdoc">自然</div><div class="ttdef"><b>定义</b> <a href="button_8hpp_source.html#l00012">button.hpp:12</a></div></div>
+<div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241"><div class="ttname"><a href="#a3b61a0de5777d228dd0522bc3aec593fab9f5c797ebbf55adccdd8539a65a0241">dao::ButtonStatus::Disabled</a></div><div class="ttdeci">@ Disabled</div><div class="ttdoc">禁用</div><div class="ttdef"><b>定义</b> <a href="button_8hpp_source.html#l00011">button.hpp:11</a></div></div>
+<div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040"><div class="ttname"><a href="#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040">dao::ButtonStatus::Pressed</a></div><div class="ttdeci">@ Pressed</div><div class="ttdoc">按下</div><div class="ttdef"><b>定义</b> <a href="button_8hpp_source.html#l00014">button.hpp:14</a></div></div>
+<div class="ttc" id="anamespacedao_html_a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc"><div class="ttname"><a href="#a3b61a0de5777d228dd0522bc3aec593faeee0168be69b854c20621fc6f01cc3fc">dao::ButtonStatus::Hover</a></div><div class="ttdeci">@ Hover</div><div class="ttdoc">悬停</div><div class="ttdef"><b>定义</b> <a href="button_8hpp_source.html#l00013">button.hpp:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">函数说明</h2>
 <a id="a12373994fd1651320a5895a7299d1dd9" name="a12373994fd1651320a5895a7299d1dd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12373994fd1651320a5895a7299d1dd9">&#9670;&#160;</a></span>getAtlasRegion()</h2>
@@ -365,11 +425,13 @@ template&lt;typename K, typename V&gt; </div>
 <div class="dyncontent">
 <div class="center"><img src="namespacedao_a12373994fd1651320a5895a7299d1dd9_icgraph.png" border="0" usemap="#anamespacedao_a12373994fd1651320a5895a7299d1dd9_icgraph" loading="lazy" alt=""/></div>
 <map name="anamespacedao_a12373994fd1651320a5895a7299d1dd9_icgraph" id="anamespacedao_a12373994fd1651320a5895a7299d1dd9_icgraph">
-<area shape="rect" title="通过纹理名称枚举获取图集区域数据" alt="" coords="264,42,417,67"/>
-<area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加绘制元素到批处理" alt="" coords="21,5,200,45"/>
-<area shape="poly" title=" " alt="" coords="250,46,200,39,201,34,250,41"/>
-<area shape="rect" href="classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a" title="加载纹理图集" alt="" coords="5,70,216,95"/>
-<area shape="poly" title=" " alt="" coords="251,68,215,73,215,67,250,63"/>
+<area shape="rect" title="通过纹理名称枚举获取图集区域数据" alt="" coords="487,42,640,67"/>
+<area shape="rect" href="classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加绘制元素到批处理" alt="" coords="244,5,423,45"/>
+<area shape="poly" title=" " alt="" coords="472,46,423,39,423,34,473,41"/>
+<area shape="rect" href="classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a" title="加载纹理图集" alt="" coords="228,70,439,95"/>
+<area shape="poly" title=" " alt="" coords="473,68,438,73,437,67,473,63"/>
+<area shape="rect" href="classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="写入批处理" alt="" coords="5,5,180,45"/>
+<area shape="poly" title=" " alt="" coords="230,28,180,28,180,23,230,23"/>
 </map>
 </div>
 
@@ -414,8 +476,8 @@ template&lt;typename K, typename V&gt; </div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9a5ef9d9569f5c1bb2bc496244b5c74f" name="a9a5ef9d9569f5c1bb2bc496244b5c74f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a5ef9d9569f5c1bb2bc496244b5c74f">&#9670;&#160;</a></span>hexToRGB()</h2>
+<a id="a542a4f45ed97f24bacd1eaaea3ff0a01" name="a542a4f45ed97f24bacd1eaaea3ff0a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542a4f45ed97f24bacd1eaaea3ff0a01">&#9670;&#160;</a></span>hexToRGBA()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,7 +486,7 @@ template&lt;typename K, typename V&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a> dao::hexToRGB </td>
+          <td class="memname"><a class="el" href="structdao_1_1ColorRGBA.html">ColorRGBA</a> dao::hexToRGBA </td>
           <td>(</td>
           <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>hex</em></span></td><td>)</td>
           <td></td>
@@ -440,7 +502,7 @@ template&lt;typename K, typename V&gt; </div>
 <p>将 hex 颜色格式转换为 RGBA 格式 </p>
 
 <p class="definition">在文件 <a class="el" href="color__rgb_8hpp_source.html">color_rgb.hpp</a> 第 <a class="el" href="color__rgb_8hpp_source.html#l00039">39</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                     {</div>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                      {</div>
 <div class="line"><span class="lineno">   40</span>        <span class="keywordflow">if</span> (!hex.empty() &amp;&amp; hex[0] == <span class="charliteral">&#39;#&#39;</span>)</div>
 <div class="line"><span class="lineno">   41</span>            hex.remove_prefix(1);</div>
 <div class="line"><span class="lineno">   42</span>        <span class="keyword">const</span> <span class="keyword">auto</span> len = hex.size();</div>

@@ -8,9 +8,10 @@ var searchData=
   ['render_5',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
   ['repository_6',['Repository',['../join.html#autotoc_md2',1,'1. Fork the Repository'],['../join.html#autotoc_md4',1,'2. Clone the Repository']]],
   ['request_7',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['resetqudaindices_8',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
-  ['review_20and_20revision_9',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
-  ['revision_10',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
-  ['rgbnorm_11',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
-  ['run_12',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App::run()'],['../classdao_1_1Window.html#a9c7a655497da8cb98f664adce88a8149',1,'dao::Window::run()']]]
+  ['requestclose_8',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
+  ['resetqudaindices_9',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
+  ['review_20and_20revision_10',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
+  ['revision_11',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
+  ['rgbnorm_12',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
+  ['run_13',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
 ];

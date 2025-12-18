@@ -103,23 +103,27 @@ dao::VertexBatchBuilder 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1VertexBatchBuilder__coll__graph.png" border="0" usemap="#adao_1_1VertexBatchBuilder_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1VertexBatchBuilder_coll__map" id="adao_1_1VertexBatchBuilder_coll__map">
-<area shape="rect" title="顶点批处理构建器" alt="" coords="5,5,187,211"/>
+<area shape="rect" title="顶点批处理构建器" alt="" coords="5,5,187,271"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:a37256aa3682923e58462fb4c61efd730" id="r_a37256aa3682923e58462fb4c61efd730"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37256aa3682923e58462fb4c61efd730">VertexBatchBuilder</a> (const size_t qudaCount=1024)</td></tr>
+<tr class="memitem:ad32800a6b8c3cbca137dc9170f782bfe" id="r_ad32800a6b8c3cbca137dc9170f782bfe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad32800a6b8c3cbca137dc9170f782bfe">VertexBatchBuilder</a> (std::string_view fontPath, <a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a> glyphSize, <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> atlasSize, size_t qudaCount=1024)</td></tr>
 <tr class="memitem:ac1e68804164326316f2c09ce447e090d" id="r_ac1e68804164326316f2c09ce447e090d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1e68804164326316f2c09ce447e090d">VertexBatchBuilder</a> (const VertexBatchBuilder &amp;)=delete</td></tr>
 <tr class="memdesc:ac1e68804164326316f2c09ce447e090d"><td class="mdescLeft">&#160;</td><td class="mdescRight">禁用复制构造函数  <br /></td></tr>
 <tr class="memitem:a99adaeef22bb76ac12c2f8914aea32cd" id="r_a99adaeef22bb76ac12c2f8914aea32cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99adaeef22bb76ac12c2f8914aea32cd">addToBatch</a> (const <a class="el" href="classdao_1_1AtlasTexture.html">AtlasTexture</a> &amp;texture)</td></tr>
 <tr class="memdesc:a99adaeef22bb76ac12c2f8914aea32cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
-<tr class="memitem:ac647e256413b0394ecc2944ca4e87df3" id="r_ac647e256413b0394ecc2944ca4e87df3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac647e256413b0394ecc2944ca4e87df3">addToBatch</a> (const std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt; indices)</td></tr>
-<tr class="memdesc:ac647e256413b0394ecc2944ca4e87df3"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
+<tr class="memitem:a8b487cf79e3e93f7f1833712c1e7fff2" id="r_a8b487cf79e3e93f7f1833712c1e7fff2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b487cf79e3e93f7f1833712c1e7fff2">addToBatch</a> (std::span&lt; const SDL_Vertex &gt; v, std::span&lt; const <a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> &gt; indices)</td></tr>
+<tr class="memdesc:a8b487cf79e3e93f7f1833712c1e7fff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
+<tr class="memitem:a8db1118f0cb492233da42fc3a3c5761f" id="r_a8db1118f0cb492233da42fc3a3c5761f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8db1118f0cb492233da42fc3a3c5761f">addToBatch</a> (const <a class="el" href="classdao_1_1Text.html">Text</a> &amp;text)</td></tr>
+<tr class="memdesc:a8db1118f0cb492233da42fc3a3c5761f"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加绘制元素到批处理  <br /></td></tr>
 <tr class="memitem:a4cdf7b1d496d486033ead6ac2f418f54" id="r_a4cdf7b1d496d486033ead6ac2f418f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cdf7b1d496d486033ead6ac2f418f54">clearDrawBatches</a> ()</td></tr>
 <tr class="memdesc:a4cdf7b1d496d486033ead6ac2f418f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">清理要绘制的纹理图集  <br /></td></tr>
 <tr class="memitem:a492ba0fab47dcd02c67fbdcf0803a63f" id="r_a492ba0fab47dcd02c67fbdcf0803a63f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a492ba0fab47dcd02c67fbdcf0803a63f">getDrawBatches</a> () const</td></tr>
 <tr class="memdesc:a492ba0fab47dcd02c67fbdcf0803a63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取将要绘制的所有内容的数据  <br /></td></tr>
+<tr class="memitem:af2e5e1df7d9ff8e0a044831646af7066" id="r_af2e5e1df7d9ff8e0a044831646af7066"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2e5e1df7d9ff8e0a044831646af7066">getGlyphAtlas</a> ()</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 静态 Public 成员函数</h2></td></tr>
@@ -132,10 +136,10 @@ Public 成员函数</h2></td></tr>
 <div class="textblock"><p>顶点批处理构建器 </p>
 <p>用于构建纹理与几何顶点的批处理数组 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00029">29</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00032">32</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a37256aa3682923e58462fb4c61efd730" name="a37256aa3682923e58462fb4c61efd730"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37256aa3682923e58462fb4c61efd730">&#9670;&#160;</a></span>VertexBatchBuilder() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a37256aa3682923e58462fb4c61efd730">&#9670;&#160;</a></span>VertexBatchBuilder() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,14 +161,76 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00031">31</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>{ <a class="code hl_function" href="#a2f3f500c75ea90299bb0189b6220d0f2">expandQudaIndicesTo</a>(qudaCount); }</div>
-<div class="ttc" id="aclassdao_1_1VertexBatchBuilder_html_a2f3f500c75ea90299bb0189b6220d0f2"><div class="ttname"><a href="#a2f3f500c75ea90299bb0189b6220d0f2">dao::VertexBatchBuilder::expandQudaIndicesTo</a></div><div class="ttdeci">static void expandQudaIndicesTo(size_t qudaCount)</div><div class="ttdoc">扩容共用矩形索引缓冲</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8cpp_source.html#l00011">vertex_batch_builder.cpp:11</a></div></div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00034">34</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>{ <a class="code hl_function" href="#a2f3f500c75ea90299bb0189b6220d0f2">expandQudaIndicesTo</a>(qudaCount); }</div>
+<div class="ttc" id="aclassdao_1_1VertexBatchBuilder_html_a2f3f500c75ea90299bb0189b6220d0f2"><div class="ttname"><a href="#a2f3f500c75ea90299bb0189b6220d0f2">dao::VertexBatchBuilder::expandQudaIndicesTo</a></div><div class="ttdeci">static void expandQudaIndicesTo(size_t qudaCount)</div><div class="ttdoc">扩容共用矩形索引缓冲</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8cpp_source.html#l00019">vertex_batch_builder.cpp:19</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ad32800a6b8c3cbca137dc9170f782bfe" name="ad32800a6b8c3cbca137dc9170f782bfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad32800a6b8c3cbca137dc9170f782bfe">&#9670;&#160;</a></span>VertexBatchBuilder() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">dao::VertexBatchBuilder::VertexBatchBuilder </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>fontPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#a53bfa14bead57e705fd16fda854521bb">float32</a></td>          <td class="paramname"><span class="paramname"><em>glyphSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a></td>          <td class="paramname"><span class="paramname"><em>atlasSize</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>qudaCount</em></span><span class="paramdefsep"> = </span><span class="paramdefval">1024</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel explicit">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00012">12</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>        : m_glyphAtlas(fontPath, glyphSize, atlasSize) {</div>
+<div class="line"><span class="lineno">   16</span>        <a class="code hl_function" href="#a2f3f500c75ea90299bb0189b6220d0f2">expandQudaIndicesTo</a>(qudaCount);</div>
+<div class="line"><span class="lineno">   17</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_cgraph.png" border="0" usemap="#aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_cgraph" id="aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,184,69"/>
+<area shape="poly" title=" " alt="" coords="61,30,59,20,64,11,76,5,95,3,116,6,127,13,124,17,114,11,95,8,78,10,68,15,64,21,66,28"/>
+</map>
+</div>
+<div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_icgraph.png" border="0" usemap="#aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_icgraph" id="aclassdao_1_1VertexBatchBuilder_ad32800a6b8c3cbca137dc9170f782bfe_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,184,69"/>
+<area shape="poly" title=" " alt="" coords="124,17,114,11,95,8,78,10,68,15,64,21,66,28,61,30,59,20,64,11,76,5,95,3,116,6,127,13"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ac1e68804164326316f2c09ce447e090d" name="ac1e68804164326316f2c09ce447e090d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1e68804164326316f2c09ce447e090d">&#9670;&#160;</a></span>VertexBatchBuilder() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1e68804164326316f2c09ce447e090d">&#9670;&#160;</a></span>VertexBatchBuilder() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +258,7 @@ Public 成员函数</h2></td></tr>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
 <a id="a99adaeef22bb76ac12c2f8914aea32cd" name="a99adaeef22bb76ac12c2f8914aea32cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99adaeef22bb76ac12c2f8914aea32cd">&#9670;&#160;</a></span>addToBatch() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a99adaeef22bb76ac12c2f8914aea32cd">&#9670;&#160;</a></span>addToBatch() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,22 +274,22 @@ Public 成员函数</h2></td></tr>
 
 <p>添加绘制元素到批处理 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00046">46</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                   {</div>
-<div class="line"><span class="lineno">   47</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">getAtlasRegion</a>(texture.getName());</div>
-<div class="line"><span class="lineno">   48</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> atlasId = atlasRegion.atlasId;</div>
-<div class="line"><span class="lineno">   49</span>                m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId</div>
-<div class="line"><span class="lineno">   50</span>            ) {</div>
-<div class="line"><span class="lineno">   51</span>            m_drawBatches.emplace_back(atlasId, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">makeObserver</a>(&amp;s_qudaIndices));</div>
-<div class="line"><span class="lineno">   52</span>        }</div>
-<div class="line"><span class="lineno">   53</span>        appendQuadVertices(</div>
-<div class="line"><span class="lineno">   54</span>            m_drawBatches.back().vertices,</div>
-<div class="line"><span class="lineno">   55</span>            texture.getBoundingBox(), texture.getName()</div>
-<div class="line"><span class="lineno">   56</span>        );</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00054">54</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                   {</div>
+<div class="line"><span class="lineno">   55</span>        <span class="keyword">const</span> AtlasRegion atlasRegion = <a class="code hl_function" href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">getAtlasRegion</a>(texture.getName());</div>
+<div class="line"><span class="lineno">   56</span>        <span class="keywordflow">if</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> atlasId = atlasRegion.atlasId;</div>
+<div class="line"><span class="lineno">   57</span>                m_drawBatches.empty() || atlasId != m_drawBatches.back().atlasId</div>
+<div class="line"><span class="lineno">   58</span>            ) {</div>
+<div class="line"><span class="lineno">   59</span>            m_drawBatches.emplace_back(atlasId, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">makeObserver</a>(&amp;s_qudaIndices));</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span>        appendQuadVertices(</div>
+<div class="line"><span class="lineno">   62</span>            m_drawBatches.back().vertices,</div>
+<div class="line"><span class="lineno">   63</span>            texture.getBoundingBox(), texture.getName()</div>
+<div class="line"><span class="lineno">   64</span>        );</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
 <div class="ttc" id="anamespacedao_html_a12373994fd1651320a5895a7299d1dd9"><div class="ttname"><a href="namespacedao.html#a12373994fd1651320a5895a7299d1dd9">dao::getAtlasRegion</a></div><div class="ttdeci">const AtlasRegion &amp; getAtlasRegion(const uint32 textureId)</div><div class="ttdoc">通过纹理名称枚举获取图集区域数据</div><div class="ttdef"><b>定义</b> <a href="atlas__region_8hpp_source.html#l00018">atlas_region.hpp:18</a></div></div>
-<div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00018">better_stl.hpp:18</a></div></div>
-<div class="ttc" id="anamespacedao_html_afeed7b027b4850f4e688ae60c50e7807"><div class="ttname"><a href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">dao::makeObserver</a></div><div class="ttdeci">auto makeObserver(T *ptr)</div><div class="ttdoc">观察者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00055">better_stl.hpp:55</a></div></div>
+<div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00019">better_stl.hpp:19</a></div></div>
+<div class="ttc" id="anamespacedao_html_afeed7b027b4850f4e688ae60c50e7807"><div class="ttname"><a href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">dao::makeObserver</a></div><div class="ttdeci">auto makeObserver(T *ptr)</div><div class="ttdoc">观察者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00062">better_stl.hpp:62</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -242,15 +308,15 @@ Public 成员函数</h2></td></tr>
 <div class="center"><img src="classdao_1_1VertexBatchBuilder_a99adaeef22bb76ac12c2f8914aea32cd_icgraph.png" border="0" usemap="#aclassdao_1_1VertexBatchBuilder_a99adaeef22bb76ac12c2f8914aea32cd_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1VertexBatchBuilder_a99adaeef22bb76ac12c2f8914aea32cd_icgraph" id="aclassdao_1_1VertexBatchBuilder_a99adaeef22bb76ac12c2f8914aea32cd_icgraph">
 <area shape="rect" title="添加绘制元素到批处理" alt="" coords="228,5,407,45"/>
-<area shape="rect" href="classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="写入批处理" alt="" coords="5,5,180,45"/>
+<area shape="rect" href="classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="加入绘制批处理" alt="" coords="5,5,180,45"/>
 <area shape="poly" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac647e256413b0394ecc2944ca4e87df3" name="ac647e256413b0394ecc2944ca4e87df3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac647e256413b0394ecc2944ca4e87df3">&#9670;&#160;</a></span>addToBatch() <span class="overload">[2/2]</span></h2>
+<a id="a8db1118f0cb492233da42fc3a3c5761f" name="a8db1118f0cb492233da42fc3a3c5761f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8db1118f0cb492233da42fc3a3c5761f">&#9670;&#160;</a></span>addToBatch() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +324,74 @@ Public 成员函数</h2></td></tr>
         <tr>
           <td class="memname">void dao::VertexBatchBuilder::addToBatch </td>
           <td>(</td>
-          <td class="paramtype">const std::span&lt; const SDL_Vertex &gt;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
+          <td class="paramtype">const <a class="el" href="classdao_1_1Text.html">Text</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>text</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>添加绘制元素到批处理 </p>
+
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00079">79</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                                                        {</div>
+<div class="line"><span class="lineno">   80</span>        <span class="keywordflow">if</span> (m_drawBatches.empty() || m_drawBatches.back().atlasId != 1) {</div>
+<div class="line"><span class="lineno">   81</span>            m_drawBatches.emplace_back(1, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#afeed7b027b4850f4e688ae60c50e7807">makeObserver</a>(&amp;s_qudaIndices));</div>
+<div class="line"><span class="lineno">   82</span>        }</div>
+<div class="line"><span class="lineno">   83</span>        <span class="keyword">auto</span> &amp;vertices = m_drawBatches.back().vertices;</div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordtype">float</span> x = text.getX();</div>
+<div class="line"><span class="lineno">   85</span>        <span class="keyword">const</span> <span class="keywordtype">float</span> y = text.getY();</div>
+<div class="line"><span class="lineno">   86</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;ch: text.getContent()) {</div>
+<div class="line"><span class="lineno">   87</span>            m_glyphAtlas.registerGlyph(ch);</div>
+<div class="line"><span class="lineno">   88</span>            <span class="keyword">auto</span> b = m_glyphAtlas.getGlyphAtlasRegion(ch);</div>
+<div class="line"><span class="lineno">   89</span>            vertices.push_back({</div>
+<div class="line"><span class="lineno">   90</span>                {x, y},</div>
+<div class="line"><span class="lineno">   91</span>                text.getColor(),</div>
+<div class="line"><span class="lineno">   92</span>                {b.getLeft(), b.getTop()}</div>
+<div class="line"><span class="lineno">   93</span>            });</div>
+<div class="line"><span class="lineno">   94</span>            vertices.push_back(</div>
+<div class="line"><span class="lineno">   95</span>                {</div>
+<div class="line"><span class="lineno">   96</span>                    {x + 50, y},</div>
+<div class="line"><span class="lineno">   97</span>                    text.getColor(),</div>
+<div class="line"><span class="lineno">   98</span>                    {b.getRight(), b.getTop()}</div>
+<div class="line"><span class="lineno">   99</span>                });</div>
+<div class="line"><span class="lineno">  100</span>            vertices.push_back({</div>
+<div class="line"><span class="lineno">  101</span>                {x + 50, y + 50},</div>
+<div class="line"><span class="lineno">  102</span>                text.getColor(),</div>
+<div class="line"><span class="lineno">  103</span>                {b.getRight(), b.getBottom()}</div>
+<div class="line"><span class="lineno">  104</span>            });</div>
+<div class="line"><span class="lineno">  105</span>            vertices.push_back({</div>
+<div class="line"><span class="lineno">  106</span>                {x, y + 50},</div>
+<div class="line"><span class="lineno">  107</span>                text.getColor(),</div>
+<div class="line"><span class="lineno">  108</span>                {b.getLeft(), b.getBottom()}</div>
+<div class="line"><span class="lineno">  109</span>            });</div>
+<div class="line"><span class="lineno">  110</span>            x += 50;</div>
+<div class="line"><span class="lineno">  111</span>        }</div>
+<div class="line"><span class="lineno">  112</span>    }</div>
+</div><!-- fragment --><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1VertexBatchBuilder_a8db1118f0cb492233da42fc3a3c5761f_cgraph.png" border="0" usemap="#aclassdao_1_1VertexBatchBuilder_a8db1118f0cb492233da42fc3a3c5761f_cgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1VertexBatchBuilder_a8db1118f0cb492233da42fc3a3c5761f_cgraph" id="aclassdao_1_1VertexBatchBuilder_a8db1118f0cb492233da42fc3a3c5761f_cgraph">
+<area shape="rect" title="添加绘制元素到批处理" alt="" coords="5,23,184,63"/>
+<area shape="rect" href="classdao_1_1Text.html#a9c6dd3e1b50eee5eef993aadb60d8a91" title=" " alt="" coords="232,5,351,31"/>
+<area shape="poly" title=" " alt="" coords="184,29,218,25,218,30,185,34"/>
+<area shape="rect" href="classdao_1_1Text.html#a42417ca45897d863bd845f6b0bc24fdc" title=" " alt="" coords="232,55,351,80"/>
+<area shape="poly" title=" " alt="" coords="185,52,218,56,218,61,184,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8b487cf79e3e93f7f1833712c1e7fff2" name="a8b487cf79e3e93f7f1833712c1e7fff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b487cf79e3e93f7f1833712c1e7fff2">&#9670;&#160;</a></span>addToBatch() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dao::VertexBatchBuilder::addToBatch </td>
+          <td>(</td>
+          <td class="paramtype">std::span&lt; const SDL_Vertex &gt;</td>          <td class="paramname"><span class="paramname"><em>v</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -270,20 +403,20 @@ Public 成员函数</h2></td></tr>
 
 <p>添加绘制元素到批处理 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00059">59</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                                                                                                             {</div>
-<div class="line"><span class="lineno">   60</span>        <span class="keywordflow">if</span> (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {</div>
-<div class="line"><span class="lineno">   61</span>            m_drawBatches.emplace_back(0, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">makeManage</a>(<span class="keyword">new</span> std::vector&lt;int32&gt;()));</div>
-<div class="line"><span class="lineno">   62</span>        }</div>
-<div class="line"><span class="lineno">   63</span>        <span class="keyword">const</span> <span class="keyword">auto</span> offset = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a><span class="keyword">&gt;</span>(m_drawBatches.back().vertices.size());</div>
-<div class="line"><span class="lineno">   64</span>        m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keyword">auto</span>&amp; current_indices = *m_drawBatches.back().indices;</div>
-<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> index : indices) {</div>
-<div class="line"><span class="lineno">   67</span>            current_indices.push_back(index + offset);</div>
-<div class="line"><span class="lineno">   68</span>        }</div>
-<div class="line"><span class="lineno">   69</span>    }</div>
-<div class="ttc" id="anamespacedao_html_a31fa607e3f3e8f5b16c91804ed2a8069"><div class="ttname"><a href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">dao::int32</a></div><div class="ttdeci">int32_t int32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00014">better_stl.hpp:14</a></div></div>
-<div class="ttc" id="anamespacedao_html_ac45f69004e30262d01cf3851e336eef6"><div class="ttname"><a href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">dao::makeManage</a></div><div class="ttdeci">auto makeManage(T *ptr)</div><div class="ttdoc">管理者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00063">better_stl.hpp:63</a></div></div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00067">67</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>                                                                                                             {</div>
+<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (m_drawBatches.empty() || m_drawBatches.back().atlasId != 0) {</div>
+<div class="line"><span class="lineno">   69</span>            m_drawBatches.emplace_back(0, std::vector&lt;SDL_Vertex&gt;(), <a class="code hl_function" href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">makeManage</a>(<span class="keyword">new</span> std::vector&lt;int32&gt;()));</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span>        <span class="keyword">const</span> <span class="keyword">auto</span> offset = <span class="keyword">static_cast&lt;</span><a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a><span class="keyword">&gt;</span>(m_drawBatches.back().vertices.size());</div>
+<div class="line"><span class="lineno">   72</span>        m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());</div>
+<div class="line"><span class="lineno">   73</span>        <span class="keyword">auto</span> &amp;current_indices = *m_drawBatches.back().indices;</div>
+<div class="line"><span class="lineno">   74</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">int32</a> index: indices) {</div>
+<div class="line"><span class="lineno">   75</span>            current_indices.push_back(index + offset);</div>
+<div class="line"><span class="lineno">   76</span>        }</div>
+<div class="line"><span class="lineno">   77</span>    }</div>
+<div class="ttc" id="anamespacedao_html_a31fa607e3f3e8f5b16c91804ed2a8069"><div class="ttname"><a href="namespacedao.html#a31fa607e3f3e8f5b16c91804ed2a8069">dao::int32</a></div><div class="ttdeci">int32_t int32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00015">better_stl.hpp:15</a></div></div>
+<div class="ttc" id="anamespacedao_html_ac45f69004e30262d01cf3851e336eef6"><div class="ttname"><a href="namespacedao.html#ac45f69004e30262d01cf3851e336eef6">dao::makeManage</a></div><div class="ttdeci">auto makeManage(T *ptr)</div><div class="ttdoc">管理者构建器</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00070">better_stl.hpp:70</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -313,8 +446,8 @@ Public 成员函数</h2></td></tr>
 <p>清理要绘制的纹理图集 </p>
 <p>一般要每帧调用，否则会堆积上一帧的内容 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00057">57</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>{ m_drawBatches.clear(); }</div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00065">65</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>{ m_drawBatches.clear(); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -349,22 +482,22 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00011">11</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                                       {</div>
-<div class="line"><span class="lineno">   12</span>        <span class="keywordflow">if</span> (qudaCount * 6 &gt; s_qudaIndices.size()) {</div>
-<div class="line"><span class="lineno">   13</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> oldSize = s_qudaIndices.size();</div>
-<div class="line"><span class="lineno">   14</span>            s_qudaIndices.resize(qudaCount * 6);</div>
-<div class="line"><span class="lineno">   15</span>            <span class="keywordflow">for</span> (std::size_t i = oldSize; i &lt; qudaCount; ++i) {</div>
-<div class="line"><span class="lineno">   16</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> base = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i) * 4;</div>
-<div class="line"><span class="lineno">   17</span>                s_qudaIndices[i * 6 + 0] = base + 0;</div>
-<div class="line"><span class="lineno">   18</span>                s_qudaIndices[i * 6 + 1] = base + 1;</div>
-<div class="line"><span class="lineno">   19</span>                s_qudaIndices[i * 6 + 2] = base + 2;</div>
-<div class="line"><span class="lineno">   20</span>                s_qudaIndices[i * 6 + 3] = base + 2;</div>
-<div class="line"><span class="lineno">   21</span>                s_qudaIndices[i * 6 + 4] = base + 3;</div>
-<div class="line"><span class="lineno">   22</span>                s_qudaIndices[i * 6 + 5] = base + 0;</div>
-<div class="line"><span class="lineno">   23</span>            }</div>
-<div class="line"><span class="lineno">   24</span>        }</div>
-<div class="line"><span class="lineno">   25</span>    }</div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00019">19</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                                       {</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">if</span> (qudaCount * 6 &gt; s_qudaIndices.size()) {</div>
+<div class="line"><span class="lineno">   21</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> oldSize = s_qudaIndices.size();</div>
+<div class="line"><span class="lineno">   22</span>            s_qudaIndices.resize(qudaCount * 6);</div>
+<div class="line"><span class="lineno">   23</span>            <span class="keywordflow">for</span> (std::size_t i = oldSize; i &lt; qudaCount; ++i) {</div>
+<div class="line"><span class="lineno">   24</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> base = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i) * 4;</div>
+<div class="line"><span class="lineno">   25</span>                s_qudaIndices[i * 6 + 0] = base + 0;</div>
+<div class="line"><span class="lineno">   26</span>                s_qudaIndices[i * 6 + 1] = base + 1;</div>
+<div class="line"><span class="lineno">   27</span>                s_qudaIndices[i * 6 + 2] = base + 2;</div>
+<div class="line"><span class="lineno">   28</span>                s_qudaIndices[i * 6 + 3] = base + 2;</div>
+<div class="line"><span class="lineno">   29</span>                s_qudaIndices[i * 6 + 4] = base + 3;</div>
+<div class="line"><span class="lineno">   30</span>                s_qudaIndices[i * 6 + 5] = base + 0;</div>
+<div class="line"><span class="lineno">   31</span>            }</div>
+<div class="line"><span class="lineno">   32</span>        }</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -393,8 +526,36 @@ Public 成员函数</h2></td></tr>
 
 <p>获取将要绘制的所有内容的数据 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00060">60</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>{ <span class="keywordflow">return</span> m_drawBatches; }</div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00068">68</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>{ <span class="keywordflow">return</span> m_drawBatches; }</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af2e5e1df7d9ff8e0a044831646af7066" name="af2e5e1df7d9ff8e0a044831646af7066"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2e5e1df7d9ff8e0a044831646af7066">&#9670;&#160;</a></span>getGlyphAtlas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a> &amp; dao::VertexBatchBuilder::getGlyphAtlas </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00070">70</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   70</span>{ <span class="keywordflow">return</span> m_glyphAtlas; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -429,25 +590,25 @@ Public 成员函数</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00027">27</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                                    {</div>
-<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">if</span> (qudaCount * 6 &gt; s_qudaIndices.size()) {</div>
-<div class="line"><span class="lineno">   29</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> oldSize = s_qudaIndices.size();</div>
-<div class="line"><span class="lineno">   30</span>            s_qudaIndices.resize(qudaCount * 6);</div>
-<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">for</span> (std::size_t i = oldSize; i &lt; qudaCount; ++i) {</div>
-<div class="line"><span class="lineno">   32</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> base = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i) * 4;</div>
-<div class="line"><span class="lineno">   33</span>                s_qudaIndices[i * 6 + 0] = base + 0;</div>
-<div class="line"><span class="lineno">   34</span>                s_qudaIndices[i * 6 + 1] = base + 1;</div>
-<div class="line"><span class="lineno">   35</span>                s_qudaIndices[i * 6 + 2] = base + 2;</div>
-<div class="line"><span class="lineno">   36</span>                s_qudaIndices[i * 6 + 3] = base + 2;</div>
-<div class="line"><span class="lineno">   37</span>                s_qudaIndices[i * 6 + 4] = base + 3;</div>
-<div class="line"><span class="lineno">   38</span>                s_qudaIndices[i * 6 + 5] = base + 0;</div>
-<div class="line"><span class="lineno">   39</span>            }</div>
-<div class="line"><span class="lineno">   40</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   41</span>            s_qudaIndices.resize(qudaCount * 6);</div>
-<div class="line"><span class="lineno">   42</span>            s_qudaIndices.shrink_to_fit();</div>
-<div class="line"><span class="lineno">   43</span>        }</div>
-<div class="line"><span class="lineno">   44</span>    }</div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8cpp_source.html">vertex_batch_builder.cpp</a> 第 <a class="el" href="vertex__batch__builder_8cpp_source.html#l00035">35</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                                    {</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">if</span> (qudaCount * 6 &gt; s_qudaIndices.size()) {</div>
+<div class="line"><span class="lineno">   37</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> oldSize = s_qudaIndices.size();</div>
+<div class="line"><span class="lineno">   38</span>            s_qudaIndices.resize(qudaCount * 6);</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">for</span> (std::size_t i = oldSize; i &lt; qudaCount; ++i) {</div>
+<div class="line"><span class="lineno">   40</span>                <span class="keyword">const</span> <span class="keywordtype">int</span> base = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(i) * 4;</div>
+<div class="line"><span class="lineno">   41</span>                s_qudaIndices[i * 6 + 0] = base + 0;</div>
+<div class="line"><span class="lineno">   42</span>                s_qudaIndices[i * 6 + 1] = base + 1;</div>
+<div class="line"><span class="lineno">   43</span>                s_qudaIndices[i * 6 + 2] = base + 2;</div>
+<div class="line"><span class="lineno">   44</span>                s_qudaIndices[i * 6 + 3] = base + 2;</div>
+<div class="line"><span class="lineno">   45</span>                s_qudaIndices[i * 6 + 4] = base + 3;</div>
+<div class="line"><span class="lineno">   46</span>                s_qudaIndices[i * 6 + 5] = base + 0;</div>
+<div class="line"><span class="lineno">   47</span>            }</div>
+<div class="line"><span class="lineno">   48</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   49</span>            s_qudaIndices.resize(qudaCount * 6);</div>
+<div class="line"><span class="lineno">   50</span>            s_qudaIndices.shrink_to_fit();</div>
+<div class="line"><span class="lineno">   51</span>        }</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>

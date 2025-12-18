@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['window_0',['Window',['../classdao_1_1Window.html',1,'dao::Window'],['../classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6',1,'dao::Window::Window()']]],
-  ['window_2ecpp_1',['window.cpp',['../window_8cpp.html',1,'']]],
-  ['window_2ehpp_2',['window.hpp',['../window_8hpp.html',1,'']]],
-  ['writetobatch_3',['writeToBatch',['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c',1,'dao::SimpleButtonStyle::writeToBatch()'],['../classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98',1,'dao::ButtonStyle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
+  ['vertex_5fbatch_5fbuilder_2ecpp_0',['vertex_batch_builder.cpp',['../vertex__batch__builder_8cpp.html',1,'']]],
+  ['vertex_5fbatch_5fbuilder_2ehpp_1',['vertex_batch_builder.hpp',['../vertex__batch__builder_8hpp.html',1,'']]],
+  ['vertexbatchbuilder_2',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html',1,'dao::VertexBatchBuilder'],['../classdao_1_1VertexBatchBuilder.html#a37256aa3682923e58462fb4c61efd730',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ad32800a6b8c3cbca137dc9170f782bfe',1,'dao::VertexBatchBuilder::VertexBatchBuilder(std::string_view fontPath, float32 glyphSize, int32 atlasSize, size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ac1e68804164326316f2c09ce447e090d',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const VertexBatchBuilder &amp;)=delete']]],
+  ['vertices_3',['vertices',['../structdao_1_1AtlasDrawBatch.html#a1156d0f6a50c1dc7f3125008acac0007',1,'dao::AtlasDrawBatch']]]
 ];

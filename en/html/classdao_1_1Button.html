@@ -94,13 +94,16 @@ $(function(){initNavTree('classdao_1_1Button.html','','classdao_1_1Button-member
 </div><!--header-->
 <div class="contents">
 
+<p>按钮接口  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="button_8hpp_source.html">button.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for dao::Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button__inherit__graph.png" border="0" usemap="#adao_1_1Button_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1Button_inherit__map" id="adao_1_1Button_inherit__map">
-<area shape="rect" title=" " alt="" coords="23,5,125,111"/>
+<area shape="rect" title="按钮接口" alt="" coords="23,5,125,111"/>
 <area shape="rect" href="classdao_1_1SimpleButton.html" title=" " alt="" coords="5,159,143,284"/>
 <area shape="poly" title=" " alt="" coords="77,124,77,158,71,158,71,124"/>
 </map>
@@ -110,7 +113,7 @@ Collaboration diagram for dao::Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button__coll__graph.png" border="0" usemap="#adao_1_1Button_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Button_coll__map" id="adao_1_1Button_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,107,111"/>
+<area shape="rect" title="按钮接口" alt="" coords="5,5,107,111"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -118,11 +121,14 @@ Collaboration diagram for dao::Button:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66472af440e09cbd79f27b8218d9a3dd" id="r_a66472af440e09cbd79f27b8218d9a3dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66472af440e09cbd79f27b8218d9a3dd">~Button</a> ()=default</td></tr>
 <tr class="memitem:a7d49a6eb4b17ebf77f12beea02978034" id="r_a7d49a6eb4b17ebf77f12beea02978034"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d49a6eb4b17ebf77f12beea02978034">update</a> (const SDL_Event &amp;event)=0</td></tr>
+<tr class="memdesc:a7d49a6eb4b17ebf77f12beea02978034"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息，更新状态  <br /></td></tr>
 <tr class="memitem:a9a4f38eac038cfb94d792ee4190f6245" id="r_a9a4f38eac038cfb94d792ee4190f6245"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f">ButtonStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4f38eac038cfb94d792ee4190f6245">getStatus</a> () const =0</td></tr>
+<tr class="memdesc:a9a4f38eac038cfb94d792ee4190f6245"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前状态  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="button_8hpp_source.html#l00017">17</a> of file <a class="el" href="button_8hpp_source.html">button.hpp</a>.</p>
+<div class="textblock"><p>按钮接口 </p>
+
+<p class="definition">Definition at line <a class="el" href="button_8hpp_source.html#l00018">18</a> of file <a class="el" href="button_8hpp_source.html">button.hpp</a>.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a66472af440e09cbd79f27b8218d9a3dd" name="a66472af440e09cbd79f27b8218d9a3dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66472af440e09cbd79f27b8218d9a3dd">&#9670;&#160;</a></span>~Button()</h2>
@@ -173,14 +179,16 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>获取当前状态 </p>
+
 <p>Implemented in <a class="el" href="classdao_1_1SimpleButton.html#a5b63c4698f7bb645911c0598e96f574f">dao::SimpleButton</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph.png" border="0" usemap="#aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph" id="aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph">
-<area shape="rect" title=" " alt="" coords="228,13,395,38"/>
-<area shape="rect" href="classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="写入批处理" alt="" coords="5,5,180,45"/>
+<area shape="rect" title="获取当前状态" alt="" coords="228,13,395,38"/>
+<area shape="rect" href="classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="加入绘制批处理" alt="" coords="5,5,180,45"/>
 <area shape="poly" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
 </map>
 </div>
@@ -209,6 +217,8 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>处理消息，更新状态 </p>
 
 <p>Implemented in <a class="el" href="classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a">dao::SimpleButton</a>.</p>
 

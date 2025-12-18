@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="Node000000" href="$classdao_1_1Drawable.html" title="可绘制对象接口" alt="" coords="5,31,121,56"/>
-<area shape="rect" id="Node000001" href="$classdao_1_1ButtonStyle.html" title=" " alt="" coords="169,5,300,31"/>
+<area shape="rect" id="Node000001" href="$classdao_1_1ButtonStyle.html" title="按钮样式接口" alt="" coords="169,5,300,31"/>
 <area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="135,30,169,25,170,30,136,35"/>
 <area shape="rect" id="Node000003" href="$classdao_1_1Rectangle.html" title="矩形" alt="" coords="175,55,294,80"/>
 <area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="136,51,176,56,175,62,135,56"/>

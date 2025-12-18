@@ -7,5 +7,6 @@ var searchData=
   ['update_4',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a',1,'dao::SimpleButton::update()'],['../classdao_1_1Button.html#a7d49a6eb4b17ebf77f12beea02978034',1,'dao::Button::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()']]],
   ['use_20develop_20your_20own_20application_20using_20daoui_5',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
   ['use_2emd_6',['use.md',['../use_8md.html',1,'']]],
-  ['using_20daoui_7',['using DaoUI',['../index.html#autotoc_md20',1,'&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;'],['../use.html',1,'developed using DaoUI']]]
+  ['using_20daoui_7',['using DaoUI',['../index.html#autotoc_md20',1,'&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;'],['../use.html',1,'developed using DaoUI']]],
+  ['uv_8',['uv',['../structdao_1_1Glyph.html#adda5e8aeb9982ce1e5d531d6789dbbe0',1,'dao::Glyph']]]
 ];

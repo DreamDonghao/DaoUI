@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['geometry_0',['Geometry',['../classdao_1_1Geometry.html#a7874ba9e0189656231b3547a662649bf',1,'dao::Geometry']]],
-  ['getapp_1',['getApp',['../classdao_1_1App.html#a224f1ba54f77ca543626ee47fe52d050',1,'dao::App']]],
-  ['getatlasregion_2',['getAtlasRegion',['../namespacedao.html#a12373994fd1651320a5895a7299d1dd9',1,'dao']]],
-  ['getbottom_3',['getBottom',['../classdao_1_1BoundingBox.html#afb51de089652634ea4fa653c0aa86b61',1,'dao::BoundingBox']]],
-  ['getboundingbox_4',['getBoundingBox',['../classdao_1_1AtlasTexture.html#ad30f8153128927abbc605d3a399e26aa',1,'dao::AtlasTexture']]],
-  ['getboundingboxs_5',['getBoundingBoxs',['../classdao_1_1MappedRegion.html#a912fef3190777da9e2ba0b619de6ec7a',1,'dao::MappedRegion']]],
-  ['getdrawbatches_6',['getDrawBatches',['../classdao_1_1VertexBatchBuilder.html#a492ba0fab47dcd02c67fbdcf0803a63f',1,'dao::VertexBatchBuilder::getDrawBatches()'],['../classdao_1_1Page.html#afa41322cc43ea42f95ac06237bdfa622',1,'dao::Page::getDrawBatches()']]],
-  ['getheight_7',['getHeight',['../classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc',1,'dao::BoundingBox']]],
-  ['getid_8',['getId',['../classdao_1_1Window.html#a073ba8cbf4be105904f1b6bd1c79033a',1,'dao::Window']]],
-  ['getindices_9',['getIndices',['../classdao_1_1Geometry.html#a24345b2726a5e64e368a661162c63fab',1,'dao::Geometry']]],
-  ['getleft_10',['getLeft',['../classdao_1_1BoundingBox.html#a8f6f24982522d31856add6116050a235',1,'dao::BoundingBox']]],
-  ['getmode_11',['getMode',['../classdao_1_1SwitchDeleter.html#a92c2b4839daca8819fa65a828433d049',1,'dao::SwitchDeleter']]],
-  ['getname_12',['getName',['../classdao_1_1AtlasTexture.html#a3c0e898b3f46c7143028f455bbde4bf6',1,'dao::AtlasTexture']]],
-  ['getright_13',['getRight',['../classdao_1_1BoundingBox.html#ab3f770793d720faef5b2bf5d0a212c65',1,'dao::BoundingBox']]],
-  ['getstatus_14',['getStatus',['../classdao_1_1SimpleButton.html#a5b63c4698f7bb645911c0598e96f574f',1,'dao::SimpleButton::getStatus()'],['../classdao_1_1Button.html#a9a4f38eac038cfb94d792ee4190f6245',1,'dao::Button::getStatus()']]],
-  ['gettitle_15',['getTitle',['../classdao_1_1Page.html#a22d8ff31f8b52df2b69f7c726183ba70',1,'dao::Page']]],
-  ['gettop_16',['getTop',['../classdao_1_1BoundingBox.html#a1e63152e39dc0ae79ea8e4f40de73758',1,'dao::BoundingBox']]],
-  ['getvertices_17',['getVertices',['../classdao_1_1Geometry.html#acb66f283adca1695ee7287b0e7d620b8',1,'dao::Geometry']]],
-  ['getwidth_18',['getWidth',['../classdao_1_1BoundingBox.html#a16f176a1257d31004c3b89d32f78b401',1,'dao::BoundingBox']]],
-  ['getwindow_19',['getWindow',['../classdao_1_1App.html#aff99ee87f1d08a500f7703514c9eadfd',1,'dao::App']]]
+  ['expandqudaindicesto_0',['expandQudaIndicesTo',['../classdao_1_1VertexBatchBuilder.html#a2f3f500c75ea90299bb0189b6220d0f2',1,'dao::VertexBatchBuilder']]]
 ];

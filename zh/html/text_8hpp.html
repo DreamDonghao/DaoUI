@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.15.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DaoUI: code/include/text.hpp 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">DaoUI<span id="projectnumber">&#160;0.1.0</span>
+   </div>
+   <div id="projectbrief">C++跨平台通用 GUI 框架</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.15.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','搜索',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('text_8hpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">text.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;SDL3/SDL_pixels.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="better__stl_8hpp_source.html">better_stl.hpp</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+text.hpp 的引用(Include)关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="text_8hpp__incl.png" border="0" usemap="#acode_2include_2text_8hpp" loading="lazy" alt=""/></div>
+<map name="acode_2include_2text_8hpp" id="acode_2include_2text_8hpp">
+<area shape="rect" title=" " alt="" coords="61,5,224,31"/>
+<area shape="rect" title=" " alt="" coords="5,152,64,177"/>
+<area shape="poly" title=" " alt="" coords="120,33,90,53,62,80,48,109,40,139,35,138,43,108,58,77,87,48,118,28"/>
+<area shape="rect" title=" " alt="" coords="72,79,213,104"/>
+<area shape="poly" title=" " alt="" coords="145,31,145,65,140,65,140,31"/>
+<area shape="rect" href="better__stl_8hpp.html" title=" " alt="" coords="237,79,349,104"/>
+<area shape="poly" title=" " alt="" coords="168,28,257,70,255,75,166,33"/>
+<area shape="poly" title=" " alt="" coords="252,107,78,154,77,149,251,101"/>
+<area shape="rect" title=" " alt="" coords="88,152,155,177"/>
+<area shape="poly" title=" " alt="" coords="267,106,163,149,161,144,265,102"/>
+<area shape="rect" title=" " alt="" coords="179,152,264,177"/>
+<area shape="poly" title=" " alt="" coords="283,106,245,144,241,140,280,102"/>
+<area shape="rect" title=" " alt="" coords="288,152,368,177"/>
+<area shape="poly" title=" " alt="" coords="301,103,319,138,314,141,297,106"/>
+<area shape="rect" title=" " alt="" coords="392,152,469,177"/>
+<area shape="poly" title=" " alt="" coords="317,102,397,143,395,148,314,106"/>
+<area shape="rect" title=" " alt="" coords="494,152,618,177"/>
+<area shape="poly" title=" " alt="" coords="336,101,501,146,499,151,335,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+此图展示该文件被哪些文件直接或间接地引用了:</div>
+<div class="dyncontent">
+<div class="center"><img src="text_8hpp__dep__incl.png" border="0" usemap="#acode_2include_2text_8hppdep" loading="lazy" alt=""/></div>
+<map name="acode_2include_2text_8hppdep" id="acode_2include_2text_8hppdep">
+<area shape="rect" title=" " alt="" coords="416,5,579,31"/>
+<area shape="rect" href="vertex__batch__builder_8hpp.html" title=" " alt="" coords="422,79,573,119"/>
+<area shape="poly" title=" " alt="" coords="500,44,500,79,495,79,495,44"/>
+<area shape="rect" href="drawable_8hpp.html" title=" " alt="" coords="219,167,386,207"/>
+<area shape="poly" title=" " alt="" coords="443,127,346,169,344,164,441,122"/>
+<area shape="rect" href="page_8hpp.html" title=" " alt="" coords="414,167,581,207"/>
+<area shape="poly" title=" " alt="" coords="500,133,500,166,495,166,495,133"/>
+<area shape="rect" href="vertex__batch__builder_8cpp.html" title=" " alt="" coords="605,167,771,207"/>
+<area shape="poly" title=" " alt="" coords="553,122,647,164,645,169,551,127"/>
+<area shape="rect" href="rectangle_8hpp.html" title=" " alt="" coords="11,255,192,295"/>
+<area shape="poly" title=" " alt="" coords="247,215,146,257,144,252,245,210"/>
+<area shape="rect" href="button__style_8hpp.html" title=" " alt="" coords="219,255,386,295"/>
+<area shape="poly" title=" " alt="" coords="305,221,305,254,300,254,300,221"/>
+<area shape="rect" href="simple__button_8hpp.html" title=" " alt="" coords="5,343,187,383"/>
+<area shape="poly" title=" " alt="" coords="102,309,100,343,95,342,97,308"/>
+<area shape="rect" href="simple__button__style_8hpp.html" title=" " alt="" coords="211,343,397,383"/>
+<area shape="poly" title=" " alt="" coords="306,309,306,342,301,342,301,309"/>
+<area shape="rect" href="window_8hpp.html" title=" " alt="" coords="410,262,595,287"/>
+<area shape="poly" title=" " alt="" coords="502,220,505,261,499,262,497,221"/>
+<area shape="rect" href="app_8hpp.html" title=" " alt="" coords="423,350,583,375"/>
+<area shape="poly" title=" " alt="" coords="505,301,505,349,500,349,500,301"/>
+<area shape="rect" href="window_8cpp.html" title=" " alt="" coords="607,350,763,375"/>
+<area shape="poly" title=" " alt="" coords="541,291,662,347,659,352,539,296"/>
+<area shape="rect" href="app_8cpp.html" title=" " alt="" coords="437,431,568,456"/>
+<area shape="poly" title=" " alt="" coords="505,389,505,430,500,430,500,389"/>
+</map>
+</div>
+</div>
+<p><a href="text_8hpp_source.html">浏览该文件的源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:dao_3A_3AText" id="r_dao_3A_3AText"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdao_1_1Text.html">dao::Text</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-namespaces" class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:dao" id="r_dao"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedao.html">dao</a></td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<script src="style.js"></script>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertexbatchbuilder_0',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html#a37256aa3682923e58462fb4c61efd730',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ac1e68804164326316f2c09ce447e090d',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const VertexBatchBuilder &amp;)=delete']]]
+  ['text_0',['Text',['../classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d',1,'dao::Text::Text()=default'],['../classdao_1_1Text.html#a2ea7b46aa1c40e456405917d80d8f528',1,'dao::Text::Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const SDL_FColor color)']]]
 ];

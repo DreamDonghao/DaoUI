@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['makemanage_0',['makeManage',['../namespacedao.html#ac45f69004e30262d01cf3851e336eef6',1,'dao']]],
-  ['makeobserver_1',['makeObserver',['../namespacedao.html#afeed7b027b4850f4e688ae60c50e7807',1,'dao']]],
-  ['makevertices_2',['makeVertices',['../namespacedao.html#a72edcc6fbb3034d72283f64a9df0288b',1,'dao']]],
-  ['mappedregion_3',['MappedRegion',['../classdao_1_1MappedRegion.html#ad968352ccc7119cd7e6a9a1843e31b19',1,'dao::MappedRegion::MappedRegion()=default'],['../classdao_1_1MappedRegion.html#ae16f6b3866fb595a6566730599bcd1ef',1,'dao::MappedRegion::MappedRegion(const BoundingBox &amp;boundingBoxA, const BoundingBox &amp;boundingBoxB)'],['../classdao_1_1MappedRegion.html#a79a6c612ba70e3c5932a9622284f7324',1,'dao::MappedRegion::MappedRegion(float leftA, float upA, float rightA, float downA, float leftB, float upB, float rightB, float downB)']]],
-  ['movehorizontal_4',['moveHorizontal',['../classdao_1_1BoundingBox.html#a107bd14e4cd668e76f6504b2a95bf2ca',1,'dao::BoundingBox']]],
-  ['movevertical_5',['moveVertical',['../classdao_1_1BoundingBox.html#a98872e7e5383212333f9ba31b6bb3de5',1,'dao::BoundingBox']]]
+  ['isinboundingbox_0',['isInBoundingBox',['../classdao_1_1BoundingBox.html#a471a206bb57544106eef5458dd234962',1,'dao::BoundingBox']]],
+  ['isintersects_1',['isIntersects',['../classdao_1_1BoundingBox.html#aab6cb445bcbf8004bb4990599b31383b',1,'dao::BoundingBox']]],
+  ['isrunning_2',['isRunning',['../classdao_1_1Window.html#a226bb29d986f758ece72de4cac972ffb',1,'dao::Window']]],
+  ['isupdated_3',['isUpdated',['../classdao_1_1GlyphAtlas.html#aa1c24bd3734f2f8bdc7d1f1c24eedaa8',1,'dao::GlyphAtlas']]],
+  ['isvalid_4',['isValid',['../classdao_1_1BoundingBox.html#a8ef8d8b5d59b6bc1c6403aff0d83bf1d',1,'dao::BoundingBox']]]
 ];

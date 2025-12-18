@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vertexbatchbuilder_0',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html',1,'dao']]]
+  ['text_0',['Text',['../classdao_1_1Text.html',1,'dao']]]
 ];

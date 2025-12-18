@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6',1,'dao::Window']]],
-  ['writetobatch_1',['writeToBatch',['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c',1,'dao::SimpleButtonStyle::writeToBatch()'],['../classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98',1,'dao::ButtonStyle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
+  ['update_0',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a',1,'dao::SimpleButton::update()'],['../classdao_1_1Button.html#a7d49a6eb4b17ebf77f12beea02978034',1,'dao::Button::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()']]]
 ];

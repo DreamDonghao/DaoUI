@@ -16,9 +16,12 @@ var annotated_dup =
       [ "Rectangle", "classdao_1_1Rectangle.html", "classdao_1_1Rectangle" ],
       [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
       [ "SimpleButtonStyle", "classdao_1_1SimpleButtonStyle.html", "classdao_1_1SimpleButtonStyle" ],
+      [ "Glyph", "structdao_1_1Glyph.html", "structdao_1_1Glyph" ],
+      [ "GlyphAtlas", "classdao_1_1GlyphAtlas.html", "classdao_1_1GlyphAtlas" ],
       [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
       [ "ButtonStyle", "classdao_1_1ButtonStyle.html", "classdao_1_1ButtonStyle" ],
       [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
-      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ]
+      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
+      [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ]
     ] ]
 ];

@@ -1,7 +1,7 @@
 var classdao_1_1BoundingBox =
 [
     [ "BoundingBox", "classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54", null ],
-    [ "BoundingBox", "classdao_1_1BoundingBox.html#add26e560fede3408b86520843a97c0b3", null ],
+    [ "BoundingBox", "classdao_1_1BoundingBox.html#ab7c0a5bdec77c69149249cd4413d4047", null ],
     [ "~BoundingBox", "classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa", null ],
     [ "getBottom", "classdao_1_1BoundingBox.html#afb51de089652634ea4fa653c0aa86b61", null ],
     [ "getHeight", "classdao_1_1BoundingBox.html#a393e0f4d0a69bbdde4ff42b96c73c4bc", null ],

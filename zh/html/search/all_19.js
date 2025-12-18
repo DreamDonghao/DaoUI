@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['vertex_5fbatch_5fbuilder_2ecpp_0',['vertex_batch_builder.cpp',['../vertex__batch__builder_8cpp.html',1,'']]],
-  ['vertex_5fbatch_5fbuilder_2ehpp_1',['vertex_batch_builder.hpp',['../vertex__batch__builder_8hpp.html',1,'']]],
-  ['vertexbatchbuilder_2',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html',1,'dao::VertexBatchBuilder'],['../classdao_1_1VertexBatchBuilder.html#a37256aa3682923e58462fb4c61efd730',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ac1e68804164326316f2c09ce447e090d',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const VertexBatchBuilder &amp;)=delete']]],
-  ['vertices_3',['vertices',['../structdao_1_1AtlasDrawBatch.html#a1156d0f6a50c1dc7f3125008acac0007',1,'dao::AtlasDrawBatch']]]
+  ['uint16_0',['uint16',['../namespacedao.html#a4fb07c9dd4d228206acf860f75cc4880',1,'dao']]],
+  ['uint32_1',['uint32',['../namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd',1,'dao']]],
+  ['uint64_2',['uint64',['../namespacedao.html#a2a8f1a95f540566ae8b57f8313f932d1',1,'dao']]],
+  ['uint8_3',['uint8',['../namespacedao.html#a0f690fdeb5ea84b98558fec2f5ac6bc0',1,'dao']]],
+  ['update_4',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a',1,'dao::SimpleButton::update()'],['../classdao_1_1Button.html#a7d49a6eb4b17ebf77f12beea02978034',1,'dao::Button::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()']]],
+  ['use_20使用_20daoui_20开发自己的应用_5',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;使用 DaoUI 开发自己的应用&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
+  ['use_2emd_6',['use.md',['../use_8md.html',1,'']]],
+  ['uv_7',['uv',['../structdao_1_1Glyph.html#adda5e8aeb9982ce1e5d531d6789dbbe0',1,'dao::Glyph']]]
 ];

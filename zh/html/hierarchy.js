@@ -17,9 +17,12 @@ var hierarchy =
     ] ],
     [ "dao::Geometry&lt; N &gt;", "classdao_1_1Geometry.html", null ],
     [ "dao::GeometryVertex", "structdao_1_1GeometryVertex.html", null ],
+    [ "dao::Glyph", "structdao_1_1Glyph.html", null ],
+    [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
     [ "dao::MappedRegion", "classdao_1_1MappedRegion.html", null ],
     [ "dao::Page", "classdao_1_1Page.html", null ],
     [ "dao::SwitchDeleter&lt; T &gt;", "classdao_1_1SwitchDeleter.html", null ],
+    [ "dao::Text", "classdao_1_1Text.html", null ],
     [ "dao::VertexBatchBuilder", "classdao_1_1VertexBatchBuilder.html", null ],
     [ "dao::Window", "classdao_1_1Window.html", null ]
 ];

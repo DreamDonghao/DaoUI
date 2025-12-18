@@ -2,8 +2,8 @@
 // Created by donghao on 25-12-8.
 //
 #include <span>
-#include <vertex_batch_builder.hpp>
-#include "atlas_region.hpp"
+#include <../include/core/frame/vertex_batch_builder.hpp>
+#include "../include/core/basic_drawing_elements/atlas_region.hpp"
 #include <print>
 
 namespace dao {
@@ -81,33 +81,34 @@ namespace dao {
             m_drawBatches.emplace_back(1, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
         }
         auto &vertices = m_drawBatches.back().vertices;
-        float x = text.getX();
-        const float y = text.getY();
+
+        float32 x = text.getX();
+        float32 y = text.getY();
+        const float32 size = text.getFontSize();
         for (const auto &ch: text.getContent()) {
+            if (ch == U'\n') {
+                y += size;
+                x = text.getX();
+                continue;
+            }
             m_glyphAtlas.registerGlyph(ch);
             auto b = m_glyphAtlas.getGlyphAtlasRegion(ch);
+            const float32 w = size / b.getHeight() * b.getWidth();
             vertices.push_back({
                 {x, y},
                 text.getColor(),
                 {b.getLeft(), b.getTop()}
             });
-            vertices.push_back(
-                {
-                    {x + 50, y},
-                    text.getColor(),
-                    {b.getRight(), b.getTop()}
-                });
             vertices.push_back({
-                {x + 50, y + 50},
-                text.getColor(),
-                {b.getRight(), b.getBottom()}
+                {x + w, y}, text.getColor(), {b.getRight(), b.getTop()}
             });
             vertices.push_back({
-                {x, y + 50},
-                text.getColor(),
-                {b.getLeft(), b.getBottom()}
+                {x + w, y + size}, text.getColor(), {b.getRight(), b.getBottom()}
             });
-            x += 50;
+            vertices.push_back({
+                {x, y + size}, text.getColor(), {b.getLeft(), b.getBottom()}
+            });
+            x += w;
         }
     }
 

@@ -6,7 +6,7 @@
 #include <array>
 #include <SDL3/SDL_render.h>
 #include <ranges>
-#include <Color_rgb.hpp>
+#include <core/basic_drawing_elements/color_rgb.hpp>
 
 namespace dao {
     /// @brief 几何图形顶点

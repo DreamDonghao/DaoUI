@@ -1,16 +1,16 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <window.hpp>
+#include <chrono>
+#include <../include/core/frame/window.hpp>
 #include <SDL3_image/SDL_image.h>
-#include <iostream>
-#include "atlas_region.hpp"
+#include "../include/core/basic_drawing_elements/atlas_region.hpp"
 #include <print>
 
 namespace dao {
     Window::Window(const int width, const int height) {
         m_window = SDL_CreateWindow("", width, height,SDL_WINDOW_RESIZABLE);
-        m_renderer = SDL_CreateRenderer(m_window, "");
+        m_renderer = SDL_CreateRenderer(m_window, "direct3d11");
         SDL_SetRenderVSync(m_renderer, 0);
         m_id = SDL_GetWindowID(m_window);
         /// 构建纯白纹理

@@ -5,8 +5,8 @@
 #include <functional>
 #include <SDL3/SDL_events.h>
 #include <component/rectangle.hpp>
-#include "better_stl.hpp"
-#include "bounding_box.hpp"
+#include "../core/tool/better_stl.hpp"
+#include "../core/tool/bounding_box.hpp"
 #include <interface/button.hpp>
 
 namespace dao {

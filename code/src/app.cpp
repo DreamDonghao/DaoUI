@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <app.hpp>
+#include <../include/core/frame/app.hpp>
 #include <iostream>
 #include <ranges>
 #include <SDL3_ttf/SDL_ttf.h>
@@ -48,8 +48,9 @@ namespace dao {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
         }
-
-
+        if (!TTF_Init()) {
+            SDL_Log("1TTF_Init failed: %s", SDL_GetError());
+        }
     }
 
     void App::render() {

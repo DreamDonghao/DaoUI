@@ -3,12 +3,13 @@
 //
 #ifndef TEST_PAGE_HPP
 #define TEST_PAGE_HPP
-#include <vertex_batch_builder.hpp>
+#include <../../code/include/core/frame/vertex_batch_builder.hpp>
 #include <string>
 #include <texture_id.hpp>
-#include <component/simple_button_style.hpp>
+#include <component/simple_texture_button_style.hpp>
 #include "component/simple_button.hpp"
 #include "component/rectangle.hpp"
+#include "component/simple_text_button_style.hpp"
 #include "interface/page.hpp"
 
 class TestPage final : public dao::Page {
@@ -24,8 +25,8 @@ class TestPage final : public dao::Page {
             std::cout << "button pressed   " << i++ << std::endl;
         }
     };
-    dao::SimpleButtonStyle buttonStyle{
-        200, 200, 100, 100, texture::food_apple, texture::food_apple, texture::food_banana, &button
+    dao::SimpleTextButtonStyle buttonStyle{
+        200, 200, 100, 100, U"按钮", 30, dao::hexToRGBA("#0C81CF"), &button
     };
 
 public:
@@ -41,14 +42,14 @@ public:
     [[nodiscard]] const std::vector<dao::AtlasDrawBatch> &getDrawBatches() const override;
 
     dao::GlyphAtlas &getGlyphAtlas() override {
-        return m_atlasVertexBatchBuilder.getGlyphAtlas();
+        return m_vertexBatch.getGlyphAtlas();
     }
 
     [[nodiscard]] const std::string &getTitle() const override { return m_title; }
 
 private:
     std::string m_title;
-    dao::VertexBatchBuilder m_atlasVertexBatchBuilder{"zh-cn.ttf", 64, 1024};
+    dao::VertexBatchBuilder m_vertexBatch{"zh-cn.ttf", 64, 1024};
 };
 
 

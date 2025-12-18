@@ -6,9 +6,9 @@
 #include "interface/button_style.hpp"
 
 namespace dao {
-    class SimpleButtonStyle : public ButtonStyle {
+    class SimpleTextureButtonStyle : public ButtonStyle {
     public:
-        SimpleButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h,
+        SimpleTextureButtonStyle(const float32 x, const float32 y, const float32 w, const float32 h,
                           const uint32 atnId, const uint32 athId, const uint32 atpId,
                           Button *button)
             : m_normalStyle(atnId, x, y, x + w, y + h),
@@ -32,6 +32,7 @@ namespace dao {
         }
 
     private:
+        Text m_text;
         AtlasTexture m_normalStyle;
         AtlasTexture m_hoverStyle;
         AtlasTexture m_pressedStyle;

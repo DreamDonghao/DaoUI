@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-8.
 //
-#include "atlas_region.hpp"
+#include "../../code/include/core/basic_drawing_elements/atlas_region.hpp"
 
 namespace dao {
     const AtlasRegion regions[] = {

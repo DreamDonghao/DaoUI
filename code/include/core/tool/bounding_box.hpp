@@ -3,8 +3,6 @@
 //
 #ifndef BOUNDING_BOX_HPP
 #define BOUNDING_BOX_HPP
-#include <algorithm>
-
 #include "better_stl.hpp"
 
 namespace dao {

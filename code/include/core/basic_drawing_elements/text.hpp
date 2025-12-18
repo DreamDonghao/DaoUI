@@ -3,17 +3,17 @@
 //
 #ifndef TEXT_HPP
 #define TEXT_HPP
-#include <string>
 #include <SDL3/SDL_pixels.h>
-
-#include "better_stl.hpp"
+#include "../tool/better_stl.hpp"
+#include "color_rgb.hpp"
 
 namespace dao {
+    /// @brief 文本
     class Text {
     public:
         Text() = default;
 
-        Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const SDL_FColor color)
+        Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const ColorRGBA color)
             : m_x(x), m_y(y), m_content(std::move(content)), m_fontSize(fontSize), m_color(color) {
         }
 
@@ -25,7 +25,7 @@ namespace dao {
 
         void setFontSize(const float32 fontSize) { m_fontSize = fontSize; }
 
-        void setColor(const SDL_FColor &color) { m_color = color; }
+        void setColor(const ColorRGBA &color) { m_color = color; }
 
         [[nodiscard]] float32 getX() const { return m_x; }
 
@@ -35,13 +35,15 @@ namespace dao {
 
         [[nodiscard]] float32 getFontSize() const { return m_fontSize; }
 
-        [[nodiscard]] SDL_FColor getColor() const { return m_color; }
+        [[nodiscard]] SDL_FColor getColor() const {
+            return {rgbNorm[m_color.r], rgbNorm[m_color.g], rgbNorm[m_color.b], m_color.a};
+        }
 
     private:
         float m_x{0.0f}, m_y{0.0f};
         std::u32string m_content;
         float32 m_fontSize{32.0f};
-        SDL_FColor m_color{1.0f, 1.0f, 1.0f, 1.0f};
+        ColorRGBA m_color{255, 255, 255, 1.0f};
     };
 }
 #endif //TEXT_HPP

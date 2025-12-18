@@ -3,8 +3,7 @@
 //
 #ifndef COLOR_HPP
 #define COLOR_HPP
-#include <better_stl.hpp>
-#include <iostream>
+#include <core/tool/better_stl.hpp>
 #include <array>
 #include <string_view>
 namespace dao {

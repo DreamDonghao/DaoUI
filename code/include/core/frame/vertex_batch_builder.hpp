@@ -4,14 +4,13 @@
 #ifndef TEXTURE_BATCH_BUILDER_HPP
 #define TEXTURE_BATCH_BUILDER_HPP
 #include <SDL3/SDL_render.h>
-#include "atlas_texture.hpp"
-#include <better_stl.hpp>
-#include <memory>
+#include <core/basic_drawing_elements/atlas_texture.hpp>
+#include <core/tool/better_stl.hpp>
 #include <utility>
 #include <vector>
 #include <span>
-#include <glyph_atlas.hpp>
-#include <text.hpp>
+#include <core/basic_drawing_elements/glyph_atlas.hpp>
+#include <core/basic_drawing_elements/text.hpp>
 
 namespace dao {
     /// @brief 纹理图集绘制批
@@ -33,7 +32,8 @@ namespace dao {
     public:
         explicit VertexBatchBuilder(const size_t qudaCount = 1024) { expandQudaIndicesTo(qudaCount); }
 
-        explicit VertexBatchBuilder(std::string_view fontPath,float32 glyphSize, int32 atlasSize,size_t qudaCount = 1024);
+        explicit VertexBatchBuilder(std::string_view fontPath, float32 glyphSize, int32 atlasSize,
+                                    size_t qudaCount = 1024);
 
         /// @brief 禁用复制构造函数
         VertexBatchBuilder(const VertexBatchBuilder &) = delete;

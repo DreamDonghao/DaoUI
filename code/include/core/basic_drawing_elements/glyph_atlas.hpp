@@ -3,22 +3,23 @@
 //
 #ifndef GLYPH_ATLAS_HPP
 #define GLYPH_ATLAS_HPP
-#include <better_stl.hpp>
-#include <iostream>
-#include <string>
+#include <core/tool/better_stl.hpp>
 #include <SDL3/SDL_surface.h>
 #include <SDL3_ttf/SDL_ttf.h>
-#include "bounding_box.hpp"
+#include <core/tool/bounding_box.hpp>
 
 namespace dao {
-    struct Glyph {
-        SDL_FRect uv;       // 在 atlas 中的位置（0~1）
-        SDL_FPoint size;    // 位图大小（像素）
-        SDL_FPoint bearing; // 相对基线的偏移
-        float advance;      // 光标前进量
-    };
-
+    /// @brief 字形图集
+    /// @details 存储用到文字的图集
     class GlyphAtlas {
+        /// @brief 一个字形的数据
+        struct Glyph {
+            SDL_FRect pos;      ///< 在 atlas 中的位置（0~1）
+            SDL_FPoint size;    ///< 位图大小（像素）
+            SDL_FPoint bearing; ///< 相对基线的偏移
+            float advance;      ///< 光标前进量
+        };
+
     public:
         GlyphAtlas() = default;
 
@@ -31,10 +32,11 @@ namespace dao {
             );
         }
 
+        /// @brief 加载字形
+        /// @details 将一个文字的字形编码添加到字形图集中
+        /// @param charCode 文字的utf-32编码
         void registerGlyph(const char32_t charCode) {
-            if (m_glyphs.contains(charCode)) {
-                return;
-            }
+            if (m_glyphs.contains(charCode)) { return; }
             m_isUpdated = true;
             SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});
             m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
@@ -43,51 +45,41 @@ namespace dao {
                 m_cursor.y += m_cursor.rowHeight;
                 m_cursor.rowHeight = 0;
             }
-            const SDL_Rect dst{
-                m_cursor.x,
-                m_cursor.y,
-                glyphSurface->w,
-                glyphSurface->h
-            };
+            const SDL_Rect dst{m_cursor.x, m_cursor.y, glyphSurface->w, glyphSurface->h};
             SDL_BlitSurface(glyphSurface, nullptr, m_atlasSurface, &dst);
             int minx, maxx, miny, maxy, advance;
-            TTF_GetGlyphMetrics(
-                m_font, charCode,
-                &minx, &maxx, &miny, &maxy, &advance
-            );
+            TTF_GetGlyphMetrics(m_font, charCode, &minx, &maxx, &miny, &maxy, &advance);
 
             Glyph glyph{};
-            glyph.size = {
-                static_cast<float>(glyphSurface->w),
-                static_cast<float>(glyphSurface->h)
-            };
-            glyph.bearing = {
-                static_cast<float>(minx),
-                static_cast<float>(maxy)
-            };
+            glyph.size = {static_cast<float>(glyphSurface->w), static_cast<float>(glyphSurface->h)};
+            glyph.bearing = {static_cast<float>(minx), static_cast<float>(maxy)};
             glyph.advance = static_cast<float>(advance);
 
-            glyph.uv = {
-                static_cast<float32>(dst.x) / static_cast<float32>(m_atlasSize),
-                static_cast<float32>(dst.y) / static_cast<float32>(m_atlasSize),
-                static_cast<float32>(dst.w) / static_cast<float32>(m_atlasSize),
-                static_cast<float32>(dst.h) / static_cast<float32>(m_atlasSize)
+            glyph.pos = {
+                ratio(dst.x, m_atlasSize), ratio(dst.y, m_atlasSize),
+                ratio(dst.w, m_atlasSize), ratio(dst.h, m_atlasSize)
             };
 
             m_glyphs.emplace(charCode, glyph);
-
             m_cursor.x += glyphSurface->w;
-            m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
 
             SDL_DestroySurface(glyphSurface);
         }
 
+        /// @brief 批量加载字形
+        /// @details 将一批文字的字形编码添加到字形图集中
+        void batchRegisterGlyph(std::string_view chars) {
+            for (auto &ch: chars) {
+                registerGlyph(ch);
+            }
+        }
+
+        /// @brief 获取文字在图集中的位置
         BoundingBox getGlyphAtlasRegion(const char32_t charCode) {
             return {
-                m_glyphs[charCode].uv.x,
-                m_glyphs[charCode].uv.y,
-                m_glyphs[charCode].uv.x + m_glyphs[charCode].uv.w,
-                m_glyphs[charCode].uv.y + m_glyphs[charCode].uv.h,
+                m_glyphs[charCode].pos.x, m_glyphs[charCode].pos.y,
+                m_glyphs[charCode].pos.x + m_glyphs[charCode].pos.w,
+                m_glyphs[charCode].pos.y + m_glyphs[charCode].pos.h,
             };
         }
 

@@ -3,7 +3,7 @@
 //
 #ifndef MAPPED_REGION_HPP
 #define MAPPED_REGION_HPP
-#include <bounding_box.hpp>
+#include <core/tool/bounding_box.hpp>
 #include <tuple>
 
 namespace dao {

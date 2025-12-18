@@ -12,20 +12,19 @@ std::vector<uint32_t> TestPage::registerTexture() const {
     return registerTexture;
 }
 
-dao::Text text(300, 200, U"ab你好bc", 100, {0.5,0.3,0,1});
-
 void TestPage::update() {
-    m_atlasVertexBatchBuilder.clearDrawBatches();
-
-    m_atlasVertexBatchBuilder.addToBatch(appleImg);
-
-    m_atlasVertexBatchBuilder.addToBatch(bananaImg);
-
-    rectangle2.writeToBatch(m_atlasVertexBatchBuilder);
-
-    rectangle3.writeToBatch(m_atlasVertexBatchBuilder);
-    buttonStyle.writeToBatch(m_atlasVertexBatchBuilder);
-     m_atlasVertexBatchBuilder.addToBatch(text);
+    m_vertexBatch.clearDrawBatches();
+    for (int i = 100; i; --i) {
+        m_vertexBatch.addToBatch(appleImg);
+        m_vertexBatch.addToBatch(bananaImg);
+        rectangle2.writeToBatch(m_vertexBatch);
+        rectangle3.writeToBatch(m_vertexBatch);
+        buttonStyle.writeToBatch(m_vertexBatch);
+    }
+    for (int i = 10000; i; --i) {
+        m_vertexBatch.addToBatch(appleImg);
+        m_vertexBatch.addToBatch(bananaImg);
+    }
 }
 
 void TestPage::handleMessage(const SDL_Event &event) {
@@ -33,6 +32,5 @@ void TestPage::handleMessage(const SDL_Event &event) {
 }
 
 const std::vector<dao::AtlasDrawBatch> &TestPage::getDrawBatches() const {
-    return m_atlasVertexBatchBuilder.getDrawBatches();
+    return m_vertexBatch.getDrawBatches();
 }
-

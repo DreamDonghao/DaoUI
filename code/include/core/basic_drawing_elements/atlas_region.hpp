@@ -1,12 +1,12 @@
 #ifndef ATLAS_REGION_DATA_HPP
 #define ATLAS_REGION_DATA_HPP
-#include <better_stl.hpp>
+#include <core/tool/better_stl.hpp>
 
 namespace dao {
     /// @brief 图集区域数据
     struct AtlasRegion {
         const char *const atlasPath; ///< 图集区域对应的纹理图集文件路径
-        const uint32 atlasId;      ///< 图集区域对应的纹理图集编号
+        const uint32 atlasId;        ///< 图集区域对应的纹理图集编号
         const float normalizedLeft, normalizedTop,
                 normalizedRight, normalizedBottom; ///< 归一化的图集区域的左上右下坐标
     };

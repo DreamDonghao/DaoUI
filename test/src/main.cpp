@@ -1,15 +1,10 @@
-#include <app.hpp>
+#include <../../code/include/core/frame/app.hpp>
 //
 // Created by donghao on 25-11-28.
 //
 #include <test_page.hpp>
 
 int main(int argc, char *argv[]) {
-    if (!TTF_Init()) {
-        SDL_Log("1TTF_Init failed: %s", SDL_GetError());
-        return -1;
-    }
-
     /// 创建一个应用
     auto &app = dao::App::getApp();
     /// 创建一个窗口并添加一个页面

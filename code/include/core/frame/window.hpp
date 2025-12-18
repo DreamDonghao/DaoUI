@@ -11,6 +11,12 @@
 namespace dao {
     /// @brief 窗口
     class Window {
+        struct TextureDeleter {
+            void operator()(SDL_Texture *texture) const {
+                if (texture) SDL_DestroyTexture(texture);
+            }
+        };
+
     public:
         Window(int width, int height);
 
@@ -42,17 +48,10 @@ namespace dao {
         void render();
 
     private:
-        uint32 m_id;
-        bool m_running = true;
+        uint32 m_id;           ///< ID
+        bool m_running = true; ///< 是否正在运行
         SDL_Window *m_window;
         SDL_Renderer *m_renderer;
-
-        struct TextureDeleter {
-            void operator()(SDL_Texture *texture) const {
-                if (texture) SDL_DestroyTexture(texture);
-            }
-        };
-
         hash_map<uint32, SDL_Texture *> m_atlasTextures;
         std::string m_nowPageTitle;
         hash_map<std::string, std::unique_ptr<Page> > m_pages;

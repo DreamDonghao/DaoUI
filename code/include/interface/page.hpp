@@ -3,7 +3,7 @@
 //
 #ifndef PAGE_HPP
 #define PAGE_HPP
-#include <vertex_batch_builder.hpp>
+#include <core/frame/vertex_batch_builder.hpp>
 
 namespace dao {
     /// @brief 页面接口

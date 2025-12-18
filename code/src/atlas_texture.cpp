@@ -1,7 +1,7 @@
 //
 // Created by donghao on 25-12-6.
 //
-#include <atlas_texture.hpp>
+#include <../include/core/basic_drawing_elements/atlas_texture.hpp>
 
 namespace dao {
     AtlasTexture::AtlasTexture(const uint32 textureId,

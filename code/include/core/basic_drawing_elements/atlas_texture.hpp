@@ -4,8 +4,8 @@
 #ifndef IMAGE_HPP
 #define IMAGE_HPP
 
-#include "better_stl.hpp"
-#include "mapped_region.hpp"
+#include "../tool/better_stl.hpp"
+#include "../tool/mapped_region.hpp"
 
 namespace dao {
     /// @brief 图集纹理
@@ -22,7 +22,7 @@ namespace dao {
         /// @param up 上区边界标
         /// @param right 右边界坐标
         /// @param down 下边界坐标
-        AtlasTexture(uint32  textureId, float left, float up, float right, float down);
+        AtlasTexture(uint32 textureId, float left, float up, float right, float down);
 
         /// @brief 获取枚举名
         /// @returns 纹理枚举名

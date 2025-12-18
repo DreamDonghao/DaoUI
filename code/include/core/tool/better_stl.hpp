@@ -7,8 +7,8 @@
 #include <algorithm>
 #include <iostream>
 #include <memory>
-#include <string>
 #include <unordered_map>
+
 namespace dao {
     using int8 = int8_t;
     using int16 = int16_t;
@@ -28,15 +28,24 @@ namespace dao {
         std::sort(container.begin(), container.end());
     }
 
-    inline void detectionError(const bool pass, const std::string_view& message ) {
+    inline void detectionError(const bool pass, const std::string_view &message) {
         if (!pass) {
-            std::cerr<<message<<std::endl;
+            std::cerr << message << std::endl;
         }
     }
 
+
+
+    /// @brief 结果为浮点数的除法
     template<typename T>
+        requires std::is_arithmetic_v<T> // 约束为整数或浮点类型
+    float32 ratio(T a, T b) {
+        return static_cast<float32>(a) / static_cast<float32>(b);
+    }
+
     /// @brief 可控删除器
     /// @details 可以为std::unique_ptr 提供一个删除器，使其可以有观察者与管理者两种状态
+    template<typename T>
     class SwitchDeleter {
     public:
         enum Mode { Observe, Manage };

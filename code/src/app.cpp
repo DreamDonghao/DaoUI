@@ -4,6 +4,7 @@
 #include <app.hpp>
 #include <iostream>
 #include <ranges>
+#include <SDL3_ttf/SDL_ttf.h>
 
 namespace dao {
     void App::run() {
@@ -47,6 +48,8 @@ namespace dao {
         if (!SDL_Init(SDL_INIT_VIDEO)) {
             std::cerr << "SDL_Init failed" << SDL_GetError() << std::endl;
         }
+
+
     }
 
     void App::render() {

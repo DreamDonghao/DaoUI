@@ -1,0 +1,116 @@
+//
+// Created by donghao on 25-12-17.
+//
+#ifndef GLYPH_ATLAS_HPP
+#define GLYPH_ATLAS_HPP
+#include <better_stl.hpp>
+#include <iostream>
+#include <string>
+#include <SDL3/SDL_surface.h>
+#include <SDL3_ttf/SDL_ttf.h>
+#include "bounding_box.hpp"
+
+namespace dao {
+    struct Glyph {
+        SDL_FRect uv;       // 在 atlas 中的位置（0~1）
+        SDL_FPoint size;    // 位图大小（像素）
+        SDL_FPoint bearing; // 相对基线的偏移
+        float advance;      // 光标前进量
+    };
+
+    class GlyphAtlas {
+    public:
+        GlyphAtlas() = default;
+
+        GlyphAtlas(const std::string_view &ttfPath, const float32 glyphSize, const int32 atlasSize)
+            : m_atlasSize(atlasSize), m_font(TTF_OpenFont(ttfPath.data(), glyphSize)),
+              m_atlasSurface(SDL_CreateSurface(atlasSize, atlasSize, SDL_PIXELFORMAT_RGBA32)) {
+            SDL_FillSurfaceRect(
+                m_atlasSurface, nullptr,
+                SDL_MapRGBA(SDL_GetPixelFormatDetails(m_atlasSurface->format), nullptr, 0, 0, 0, 0)
+            );
+        }
+
+        void registerGlyph(const char32_t charCode) {
+            if (m_glyphs.contains(charCode)) {
+                return;
+            }
+            m_isUpdated = true;
+            SDL_Surface *glyphSurface = TTF_RenderGlyph_Blended(m_font, charCode, SDL_Color{255, 255, 255, 255});
+            m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
+            if (m_cursor.x + glyphSurface->w > m_atlasSize) {
+                m_cursor.x = 0;
+                m_cursor.y += m_cursor.rowHeight;
+                m_cursor.rowHeight = 0;
+            }
+            const SDL_Rect dst{
+                m_cursor.x,
+                m_cursor.y,
+                glyphSurface->w,
+                glyphSurface->h
+            };
+            SDL_BlitSurface(glyphSurface, nullptr, m_atlasSurface, &dst);
+            int minx, maxx, miny, maxy, advance;
+            TTF_GetGlyphMetrics(
+                m_font, charCode,
+                &minx, &maxx, &miny, &maxy, &advance
+            );
+
+            Glyph glyph{};
+            glyph.size = {
+                static_cast<float>(glyphSurface->w),
+                static_cast<float>(glyphSurface->h)
+            };
+            glyph.bearing = {
+                static_cast<float>(minx),
+                static_cast<float>(maxy)
+            };
+            glyph.advance = static_cast<float>(advance);
+
+            glyph.uv = {
+                static_cast<float32>(dst.x) / static_cast<float32>(m_atlasSize),
+                static_cast<float32>(dst.y) / static_cast<float32>(m_atlasSize),
+                static_cast<float32>(dst.w) / static_cast<float32>(m_atlasSize),
+                static_cast<float32>(dst.h) / static_cast<float32>(m_atlasSize)
+            };
+
+            m_glyphs.emplace(charCode, glyph);
+
+            m_cursor.x += glyphSurface->w;
+            m_cursor.rowHeight = std::max(m_cursor.rowHeight, glyphSurface->h);
+
+            SDL_DestroySurface(glyphSurface);
+        }
+
+        BoundingBox getGlyphAtlasRegion(const char32_t charCode) {
+            return {
+                m_glyphs[charCode].uv.x,
+                m_glyphs[charCode].uv.y,
+                m_glyphs[charCode].uv.x + m_glyphs[charCode].uv.w,
+                m_glyphs[charCode].uv.y + m_glyphs[charCode].uv.h,
+            };
+        }
+
+        [[nodiscard]] SDL_Surface &getAtlasSurface() const {
+            return *m_atlasSurface;
+        }
+
+        void clearUpdateFlag() { m_isUpdated = false; }
+
+        [[nodiscard]] bool isUpdated() const { return m_isUpdated; }
+
+    private:
+        struct Cursor {
+            int32 x, y, rowHeight;
+        };
+
+        hash_map<char32_t, Glyph> m_glyphs{};
+        int32 m_atlasSize{0};
+        TTF_Font *m_font{nullptr};
+        SDL_Surface *m_atlasSurface{nullptr};
+        Cursor m_cursor{0, 0, 0};
+
+        bool m_isUpdated{false};
+    };
+}
+#endif //GLYPH_ATLAS_HPP

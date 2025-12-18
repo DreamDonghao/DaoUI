@@ -10,6 +10,9 @@
 #include <utility>
 #include <vector>
 #include <span>
+#include <glyph_atlas.hpp>
+#include <text.hpp>
+
 namespace dao {
     /// @brief 纹理图集绘制批
     /// @details 一次纹理图集绘制用到的数据
@@ -20,7 +23,7 @@ namespace dao {
         }
 
         uint32 atlasId;                   ///< 绘制的纹理图集 ID
-        std::vector<SDL_Vertex>     vertices; ///< 绘制纹理图集的顶点数组
+        std::vector<SDL_Vertex> vertices; ///< 绘制纹理图集的顶点数组
         std::unique_ptr<std::vector<int32>, SwitchDeleter<std::vector<int32> > > indices;
     };
 
@@ -29,6 +32,8 @@ namespace dao {
     class VertexBatchBuilder {
     public:
         explicit VertexBatchBuilder(const size_t qudaCount = 1024) { expandQudaIndicesTo(qudaCount); }
+
+        explicit VertexBatchBuilder(std::string_view fontPath,float32 glyphSize, int32 atlasSize,size_t qudaCount = 1024);
 
         /// @brief 禁用复制构造函数
         VertexBatchBuilder(const VertexBatchBuilder &) = delete;
@@ -50,7 +55,10 @@ namespace dao {
         void addToBatch(const AtlasTexture &texture);
 
         /// @brief 添加绘制元素到批处理
-        void addToBatch(const std::span<const SDL_Vertex> v,std::span<const int32> indices);
+        void addToBatch(std::span<const SDL_Vertex> v, std::span<const int32> indices);
+
+        /// @brief 添加绘制元素到批处理
+        void addToBatch(const Text &text);
 
         /// @brief 清理要绘制的纹理图集
         /// @details 一般要每帧调用，否则会堆积上一帧的内容
@@ -59,9 +67,12 @@ namespace dao {
         /// @brief 获取将要绘制的所有内容的数据
         [[nodiscard]] const std::vector<AtlasDrawBatch> &getDrawBatches() const { return m_drawBatches; }
 
+        GlyphAtlas &getGlyphAtlas() { return m_glyphAtlas; }
+
     private:
         std::vector<AtlasDrawBatch> m_drawBatches; ///< 一组绘制的数据
         static std::vector<int32> s_qudaIndices;   ///< 共用矩形顶点数组索引
+        GlyphAtlas m_glyphAtlas;
 
         /// @brief  添加纹理的数据到顶点数组
         static void appendQuadVertices(std::vector<SDL_Vertex> &vertices, BoundingBox pos, uint32 textureId);

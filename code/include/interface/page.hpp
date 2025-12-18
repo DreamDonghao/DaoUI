@@ -22,6 +22,8 @@ namespace dao {
 
         [[nodiscard]] virtual const std::vector<AtlasDrawBatch> &getDrawBatches() const = 0;
 
+        virtual GlyphAtlas &getGlyphAtlas() = 0;
+
         [[nodiscard]] virtual const std::string &getTitle() const = 0;
     };
 }

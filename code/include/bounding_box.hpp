@@ -5,6 +5,8 @@
 #define BOUNDING_BOX_HPP
 #include <algorithm>
 
+#include "better_stl.hpp"
+
 namespace dao {
     ///@brief 边界框
     ///@details 用来表示一个矩形范围区域左上右下边界的坐标
@@ -17,7 +19,7 @@ namespace dao {
         /// @param up 上边界坐标
         /// @param right 右边界坐标
         /// @param down 下边界坐标
-        BoundingBox(float left, float up, float right, float down);
+        BoundingBox(float32 left, float32 up, float32 right, float32 down);
 
         ~BoundingBox() = default;
 

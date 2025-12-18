@@ -13,6 +13,9 @@
   }, {
     "name" : "sdl3-ttf",
     "version>=" : "3.2.2"
+  }, {
+    "name" : "stb",
+    "version>=" : "2024-07-29#1"
   } ],
   "overrides" : [ ]
 }

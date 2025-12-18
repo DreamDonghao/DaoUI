@@ -40,11 +40,15 @@ public:
 
     [[nodiscard]] const std::vector<dao::AtlasDrawBatch> &getDrawBatches() const override;
 
+    dao::GlyphAtlas &getGlyphAtlas() override {
+        return m_atlasVertexBatchBuilder.getGlyphAtlas();
+    }
+
     [[nodiscard]] const std::string &getTitle() const override { return m_title; }
 
 private:
     std::string m_title;
-    dao::VertexBatchBuilder m_atlasVertexBatchBuilder;
+    dao::VertexBatchBuilder m_atlasVertexBatchBuilder{"zh-cn.ttf", 64, 1024};
 };
 
 

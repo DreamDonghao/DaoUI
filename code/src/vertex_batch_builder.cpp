@@ -4,9 +4,17 @@
 #include <span>
 #include <vertex_batch_builder.hpp>
 #include "atlas_region.hpp"
+#include <print>
 
 namespace dao {
     std::vector<int> VertexBatchBuilder::s_qudaIndices = {};
+
+    VertexBatchBuilder::VertexBatchBuilder(
+        const std::string_view fontPath, const float32 glyphSize,
+        const int32 atlasSize, const size_t qudaCount)
+        : m_glyphAtlas(fontPath, glyphSize, atlasSize) {
+        expandQudaIndicesTo(qudaCount);
+    }
 
     void VertexBatchBuilder::expandQudaIndicesTo(const size_t qudaCount) {
         if (qudaCount * 6 > s_qudaIndices.size()) {
@@ -62,9 +70,44 @@ namespace dao {
         }
         const auto offset = static_cast<int32>(m_drawBatches.back().vertices.size());
         m_drawBatches.back().vertices.insert(m_drawBatches.back().vertices.end(), v.begin(), v.end());
-        auto& current_indices = *m_drawBatches.back().indices;
-        for (const int32 index : indices) {
+        auto &current_indices = *m_drawBatches.back().indices;
+        for (const int32 index: indices) {
             current_indices.push_back(index + offset);
+        }
+    }
+
+    void VertexBatchBuilder::addToBatch(const Text &text) {
+        if (m_drawBatches.empty() || m_drawBatches.back().atlasId != 1) {
+            m_drawBatches.emplace_back(1, std::vector<SDL_Vertex>(), makeObserver(&s_qudaIndices));
+        }
+        auto &vertices = m_drawBatches.back().vertices;
+        float x = text.getX();
+        const float y = text.getY();
+        for (const auto &ch: text.getContent()) {
+            m_glyphAtlas.registerGlyph(ch);
+            auto b = m_glyphAtlas.getGlyphAtlasRegion(ch);
+            vertices.push_back({
+                {x, y},
+                text.getColor(),
+                {b.getLeft(), b.getTop()}
+            });
+            vertices.push_back(
+                {
+                    {x + 50, y},
+                    text.getColor(),
+                    {b.getRight(), b.getTop()}
+                });
+            vertices.push_back({
+                {x + 50, y + 50},
+                text.getColor(),
+                {b.getRight(), b.getBottom()}
+            });
+            vertices.push_back({
+                {x, y + 50},
+                text.getColor(),
+                {b.getLeft(), b.getBottom()}
+            });
+            x += 50;
         }
     }
 

@@ -14,12 +14,15 @@ namespace dao {
         Pressed,  ///< 按下
     };
 
+    /// @brief  按钮接口
     class Button {
     public:
         virtual ~Button() = default ;
 
+        /// @brief 处理消息，更新状态
         virtual void update(const SDL_Event &event) = 0;
 
+        /// @brief 获取当前状态
         [[nodiscard]] virtual ButtonStatus getStatus() const = 0;
     };
 }

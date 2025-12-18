@@ -5,9 +5,10 @@
 #define BETTER_STL_HPP
 #include <cstdint>
 #include <algorithm>
+#include <iostream>
 #include <memory>
+#include <string>
 #include <unordered_map>
-#include <vector>
 namespace dao {
     using int8 = int8_t;
     using int16 = int16_t;
@@ -25,6 +26,12 @@ namespace dao {
     template<typename Container>
     void sort(Container &container) {
         std::sort(container.begin(), container.end());
+    }
+
+    inline void detectionError(const bool pass, const std::string_view& message ) {
+        if (!pass) {
+            std::cerr<<message<<std::endl;
+        }
     }
 
     template<typename T>

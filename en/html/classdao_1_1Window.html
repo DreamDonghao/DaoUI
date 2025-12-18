@@ -156,7 +156,7 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="window_8cpp_source.html#l00011">11</a> of file <a class="el" href="window_8cpp_source.html">window.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   11</span>                                                    {</div>
 <div class="line"><span class="lineno">   12</span>        m_window = SDL_CreateWindow(<span class="stringliteral">&quot;&quot;</span>, width, height,SDL_WINDOW_RESIZABLE);</div>
-<div class="line"><span class="lineno">   13</span>        m_renderer = SDL_CreateRenderer(m_window, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>        m_renderer = SDL_CreateRenderer(m_window, <span class="stringliteral">&quot;direct3d11&quot;</span>);</div>
 <div class="line"><span class="lineno">   14</span>        SDL_SetRenderVSync(m_renderer, 0);</div>
 <div class="line"><span class="lineno">   15</span>        m_id = SDL_GetWindowID(m_window);<span class="comment"></span></div>
 <div class="line"><span class="lineno">   16</span><span class="comment">        /// 构建纯白纹理</span></div>
@@ -257,8 +257,8 @@ Public Member Functions</h2></td></tr>
 
 <p>获取 id </p>
 
-<p class="definition">Definition at line <a class="el" href="window_8hpp_source.html#l00027">27</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> m_id; }</div>
+<p class="definition">Definition at line <a class="el" href="window_8hpp_source.html#l00033">33</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> m_id; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,8 +311,8 @@ Public Member Functions</h2></td></tr>
 
 <p>判断是否在运行 </p>
 
-<p class="definition">Definition at line <a class="el" href="window_8hpp_source.html#l00039">39</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   39</span>{ <span class="keywordflow">return</span> m_running; }</div>
+<p class="definition">Definition at line <a class="el" href="window_8hpp_source.html#l00045">45</a> of file <a class="el" href="window_8hpp_source.html">window.hpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>{ <span class="keywordflow">return</span> m_running; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,7 +452,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>code/include/<a class="el" href="window_8hpp_source.html">window.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="window_8hpp_source.html">window.hpp</a></li>
 <li>code/src/<a class="el" href="window_8cpp_source.html">window.cpp</a></li>
 </ul>
 </div><!-- contents -->

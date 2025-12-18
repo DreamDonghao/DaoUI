@@ -1,11 +1,11 @@
 <map id="code/include/interface/page.hpp" name="code/include/interface/page.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="93,5,259,45"/>
-<area shape="rect" id="Node000002" href="$window_8hpp.html" title=" " alt="" coords="83,93,269,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,59,179,93,173,93,173,59"/>
-<area shape="rect" id="Node000003" href="$app_8hpp.html" title=" " alt="" coords="5,167,165,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="152,129,102,169,99,164,149,125"/>
-<area shape="rect" id="Node000005" href="$window_8cpp.html" title=" " alt="" coords="190,167,346,192"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="203,125,255,164,251,169,200,129"/>
-<area shape="rect" id="Node000004" href="$app_8cpp.html" title=" " alt="" coords="20,240,151,265"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="88,206,88,240,83,240,83,206"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="107,5,274,45"/>
+<area shape="rect" id="Node000002" href="$window_8hpp.html" title=" " alt="" coords="101,93,280,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,59,193,93,188,93,188,59"/>
+<area shape="rect" id="Node000003" href="$app_8hpp.html" title=" " alt="" coords="5,181,184,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="161,145,118,183,114,179,157,141"/>
+<area shape="rect" id="Node000005" href="$window_8cpp.html" title=" " alt="" coords="209,189,365,214"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="224,141,275,186,272,190,220,145"/>
+<area shape="rect" id="Node000004" href="$app_8cpp.html" title=" " alt="" coords="29,269,160,295"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="97,235,97,269,92,269,92,235"/>
 </map>

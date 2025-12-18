@@ -1,7 +1,7 @@
-<map id="code/include/atlas_region.hpp" name="code/include/atlas_region.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="110,5,250,45"/>
-<area shape="rect" id="Node000002" href="$vertex__batch__builder_8cpp.html" title=" " alt="" coords="5,93,171,133"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,57,110,95,107,91,148,53"/>
-<area shape="rect" id="Node000003" href="$window_8cpp.html" title=" " alt="" coords="195,101,351,126"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,53,262,98,259,102,209,57"/>
+<map id="code/include/core/basic_drawing_elements/atlas_region.hpp" name="code/include/core/basic_drawing_elements/atlas_region.hpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="87,5,273,60"/>
+<area shape="rect" id="Node000002" href="$vertex__batch__builder_8cpp.html" title=" " alt="" coords="5,108,171,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,72,108,110,105,106,142,68"/>
+<area shape="rect" id="Node000003" href="$window_8cpp.html" title=" " alt="" coords="195,115,351,141"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,68,263,113,260,117,214,72"/>
 </map>

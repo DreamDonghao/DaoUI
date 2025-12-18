@@ -32,7 +32,6 @@ var searchData=
   ['getwindow_29',['getWindow',['../classdao_1_1App.html#aff99ee87f1d08a500f7703514c9eadfd',1,'dao::App']]],
   ['getx_30',['getX',['../classdao_1_1Text.html#a9c6dd3e1b50eee5eef993aadb60d8a91',1,'dao::Text']]],
   ['gety_31',['getY',['../classdao_1_1Text.html#a42417ca45897d863bd845f6b0bc24fdc',1,'dao::Text']]],
-  ['glyph_32',['Glyph',['../structdao_1_1Glyph.html',1,'dao']]],
-  ['glyph_5fatlas_2ehpp_33',['glyph_atlas.hpp',['../glyph__atlas_8hpp.html',1,'']]],
-  ['glyphatlas_34',['GlyphAtlas',['../classdao_1_1GlyphAtlas.html',1,'dao::GlyphAtlas'],['../classdao_1_1GlyphAtlas.html#ab6324dcd18363531c22815b9de836f30',1,'dao::GlyphAtlas::GlyphAtlas()=default'],['../classdao_1_1GlyphAtlas.html#a266b69b51eba38d12ffe8043a2b0ca38',1,'dao::GlyphAtlas::GlyphAtlas(const std::string_view &amp;ttfPath, const float32 glyphSize, const int32 atlasSize)']]]
+  ['glyph_5fatlas_2ehpp_32',['glyph_atlas.hpp',['../glyph__atlas_8hpp.html',1,'']]],
+  ['glyphatlas_33',['GlyphAtlas',['../classdao_1_1GlyphAtlas.html',1,'dao::GlyphAtlas'],['../classdao_1_1GlyphAtlas.html#ab6324dcd18363531c22815b9de836f30',1,'dao::GlyphAtlas::GlyphAtlas()=default'],['../classdao_1_1GlyphAtlas.html#a266b69b51eba38d12ffe8043a2b0ca38',1,'dao::GlyphAtlas::GlyphAtlas(const std::string_view &amp;ttfPath, const float32 glyphSize, const int32 atlasSize)']]]
 ];

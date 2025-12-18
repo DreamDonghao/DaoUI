@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uv_0',['uv',['../structdao_1_1Glyph.html#adda5e8aeb9982ce1e5d531d6789dbbe0',1,'dao::Glyph']]]
+  ['x_0',['x',['../structdao_1_1GeometryVertex.html#ac0a1e3c3bbb5b13789db1f78fbec510c',1,'dao::GeometryVertex']]]
 ];

@@ -1,7 +1,7 @@
 <map id="dao::AtlasTexture::getName" name="dao::AtlasTexture::getName">
-<area shape="rect" id="Node000001" title="获取枚举名" alt="" coords="455,5,597,45"/>
-<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加绘制元素到批处理" alt="" coords="228,5,407,45"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="441,28,407,28,407,23,441,23"/>
-<area shape="rect" id="Node000003" href="$classdao_1_1SimpleButtonStyle.html#a6937181e19b86c47c71b1c661a98d11c" title="加入绘制批处理" alt="" coords="5,5,180,45"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="214,28,180,28,180,23,214,23"/>
+<area shape="rect" id="Node000001" title="获取枚举名" alt="" coords="471,5,613,45"/>
+<area shape="rect" id="Node000002" href="$classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd" title="添加绘制元素到批处理" alt="" coords="244,5,423,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="457,28,423,28,423,23,457,23"/>
+<area shape="rect" id="Node000003" href="$classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="5,5,196,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
 </map>

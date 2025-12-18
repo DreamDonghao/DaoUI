@@ -10,18 +10,18 @@ var annotated_dup =
       [ "AtlasRegion", "structdao_1_1AtlasRegion.html", "structdao_1_1AtlasRegion" ],
       [ "Window", "classdao_1_1Window.html", "classdao_1_1Window" ],
       [ "SwitchDeleter", "classdao_1_1SwitchDeleter.html", "classdao_1_1SwitchDeleter" ],
-      [ "ColorRGBA", "structdao_1_1ColorRGBA.html", "structdao_1_1ColorRGBA" ],
       [ "GeometryVertex", "structdao_1_1GeometryVertex.html", "structdao_1_1GeometryVertex" ],
       [ "Geometry", "classdao_1_1Geometry.html", "classdao_1_1Geometry" ],
       [ "Rectangle", "classdao_1_1Rectangle.html", "classdao_1_1Rectangle" ],
       [ "SimpleButton", "classdao_1_1SimpleButton.html", "classdao_1_1SimpleButton" ],
-      [ "SimpleButtonStyle", "classdao_1_1SimpleButtonStyle.html", "classdao_1_1SimpleButtonStyle" ],
-      [ "Glyph", "structdao_1_1Glyph.html", "structdao_1_1Glyph" ],
+      [ "SimpleTextButtonStyle", "classdao_1_1SimpleTextButtonStyle.html", "classdao_1_1SimpleTextButtonStyle" ],
+      [ "SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", "classdao_1_1SimpleTextureButtonStyle" ],
+      [ "ColorRGBA", "structdao_1_1ColorRGBA.html", "structdao_1_1ColorRGBA" ],
       [ "GlyphAtlas", "classdao_1_1GlyphAtlas.html", "classdao_1_1GlyphAtlas" ],
+      [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ],
       [ "Button", "classdao_1_1Button.html", "classdao_1_1Button" ],
       [ "ButtonStyle", "classdao_1_1ButtonStyle.html", "classdao_1_1ButtonStyle" ],
       [ "Drawable", "classdao_1_1Drawable.html", "classdao_1_1Drawable" ],
-      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ],
-      [ "Text", "classdao_1_1Text.html", "classdao_1_1Text" ]
+      [ "Page", "classdao_1_1Page.html", "classdao_1_1Page" ]
     ] ]
 ];

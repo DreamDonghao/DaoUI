@@ -1,9 +1,9 @@
 var searchData=
 [
   ['b_0',['b',['../structdao_1_1ColorRGBA.html#a794d11a2a43e39a9d650071d50377c47',1,'dao::ColorRGBA']]],
-  ['bearing_1',['bearing',['../structdao_1_1Glyph.html#aa140cd478b5b87fe2e3864691cb26862',1,'dao::Glyph']]],
+  ['batchregisterglyph_1',['batchRegisterGlyph',['../classdao_1_1GlyphAtlas.html#abdbf3abfc793ce25bcfc6e42f03a81f0',1,'dao::GlyphAtlas']]],
   ['better_5fstl_2ehpp_2',['better_stl.hpp',['../better__stl_8hpp.html',1,'']]],
-  ['bindbutton_3',['bindButton',['../classdao_1_1SimpleButtonStyle.html#ad97792fe2fbdd61eb029a3d4b2b94acd',1,'dao::SimpleButtonStyle::bindButton()'],['../classdao_1_1ButtonStyle.html#a3266455b01179fc21b9f39119d8afadc',1,'dao::ButtonStyle::bindButton()']]],
+  ['bindbutton_3',['bindButton',['../classdao_1_1SimpleTextButtonStyle.html#a9cced42b3569cac35c2ec9fbcc12e498',1,'dao::SimpleTextButtonStyle::bindButton()'],['../classdao_1_1SimpleTextureButtonStyle.html#a7655f2794d0f071d12b7f13698a4a4b5',1,'dao::SimpleTextureButtonStyle::bindButton()'],['../classdao_1_1ButtonStyle.html#a3266455b01179fc21b9f39119d8afadc',1,'dao::ButtonStyle::bindButton()']]],
   ['bounding_5fbox_2ecpp_4',['bounding_box.cpp',['../bounding__box_8cpp.html',1,'']]],
   ['bounding_5fbox_2ehpp_5',['bounding_box.hpp',['../bounding__box_8hpp.html',1,'']]],
   ['boundingbox_6',['BoundingBox',['../classdao_1_1BoundingBox.html',1,'dao::BoundingBox'],['../classdao_1_1BoundingBox.html#a93a90662a60c5440bff020c1b68acf54',1,'dao::BoundingBox::BoundingBox()=default'],['../classdao_1_1BoundingBox.html#ab7c0a5bdec77c69149249cd4413d4047',1,'dao::BoundingBox::BoundingBox(float32 left, float32 up, float32 right, float32 down)']]],

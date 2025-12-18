@@ -123,7 +123,7 @@ Public 属性</h2></td></tr>
 <div class="textblock"><p>纹理图集绘制批 </p>
 <p>一次纹理图集绘制用到的数据 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00019">19</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00018">18</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="a430514b197669c072e40ac2d3c9a0185" name="a430514b197669c072e40ac2d3c9a0185"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a430514b197669c072e40ac2d3c9a0185">&#9670;&#160;</a></span>AtlasDrawBatch()</h2>
@@ -157,12 +157,12 @@ Public 属性</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00020">20</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>            : <a class="code hl_variable" href="#a9f789a156087c7bfb62f5216fa183d95">atlasId</a>(a), <a class="code hl_variable" href="#a1156d0f6a50c1dc7f3125008acac0007">vertices</a>(std::move(v)), <a class="code hl_variable" href="#ac3efeab6996d695fe441c338ad6ae3f8">indices</a>(std::move(i)) {</div>
-<div class="line"><span class="lineno">   23</span>        }</div>
-<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_a1156d0f6a50c1dc7f3125008acac0007"><div class="ttname"><a href="#a1156d0f6a50c1dc7f3125008acac0007">dao::AtlasDrawBatch::vertices</a></div><div class="ttdeci">std::vector&lt; SDL_Vertex &gt; vertices</div><div class="ttdoc">绘制纹理图集的顶点数组</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00026">vertex_batch_builder.hpp:26</a></div></div>
-<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_a9f789a156087c7bfb62f5216fa183d95"><div class="ttname"><a href="#a9f789a156087c7bfb62f5216fa183d95">dao::AtlasDrawBatch::atlasId</a></div><div class="ttdeci">uint32 atlasId</div><div class="ttdoc">绘制的纹理图集 ID</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00025">vertex_batch_builder.hpp:25</a></div></div>
-<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_ac3efeab6996d695fe441c338ad6ae3f8"><div class="ttname"><a href="#ac3efeab6996d695fe441c338ad6ae3f8">dao::AtlasDrawBatch::indices</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; int32 &gt;, SwitchDeleter&lt; std::vector&lt; int32 &gt; &gt; &gt; indices</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00027">vertex_batch_builder.hpp:27</a></div></div>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00019">19</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>            : <a class="code hl_variable" href="#a9f789a156087c7bfb62f5216fa183d95">atlasId</a>(a), <a class="code hl_variable" href="#a1156d0f6a50c1dc7f3125008acac0007">vertices</a>(std::move(v)), <a class="code hl_variable" href="#ac3efeab6996d695fe441c338ad6ae3f8">indices</a>(std::move(i)) {</div>
+<div class="line"><span class="lineno">   22</span>        }</div>
+<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_a1156d0f6a50c1dc7f3125008acac0007"><div class="ttname"><a href="#a1156d0f6a50c1dc7f3125008acac0007">dao::AtlasDrawBatch::vertices</a></div><div class="ttdeci">std::vector&lt; SDL_Vertex &gt; vertices</div><div class="ttdoc">绘制纹理图集的顶点数组</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00025">vertex_batch_builder.hpp:25</a></div></div>
+<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_a9f789a156087c7bfb62f5216fa183d95"><div class="ttname"><a href="#a9f789a156087c7bfb62f5216fa183d95">dao::AtlasDrawBatch::atlasId</a></div><div class="ttdeci">uint32 atlasId</div><div class="ttdoc">绘制的纹理图集 ID</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00024">vertex_batch_builder.hpp:24</a></div></div>
+<div class="ttc" id="astructdao_1_1AtlasDrawBatch_html_ac3efeab6996d695fe441c338ad6ae3f8"><div class="ttname"><a href="#ac3efeab6996d695fe441c338ad6ae3f8">dao::AtlasDrawBatch::indices</a></div><div class="ttdeci">std::unique_ptr&lt; std::vector&lt; int32 &gt;, SwitchDeleter&lt; std::vector&lt; int32 &gt; &gt; &gt; indices</div><div class="ttdef"><b>定义</b> <a href="vertex__batch__builder_8hpp_source.html#l00026">vertex_batch_builder.hpp:26</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 函数调用图:</div>
 <div class="dyncontent">
@@ -199,7 +199,7 @@ Public 属性</h2></td></tr>
 
 <p>绘制的纹理图集 ID </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00025">25</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00024">24</a> 行定义.</p>
 
 </div>
 </div>
@@ -215,7 +215,7 @@ Public 属性</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00027">27</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00026">26</a> 行定义.</p>
 
 </div>
 </div>
@@ -233,12 +233,12 @@ Public 属性</h2></td></tr>
 
 <p>绘制纹理图集的顶点数组 </p>
 
-<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00026">26</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a> 第 <a class="el" href="vertex__batch__builder_8hpp_source.html#l00025">25</a> 行定义.</p>
 
 </div>
 </div>
 <hr/>该结构体的文档由以下文件生成:<ul>
-<li>code/include/<a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a></li>
+<li>code/include/core/frame/<a class="el" href="vertex__batch__builder_8hpp_source.html">vertex_batch_builder.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -14,5 +14,6 @@ var better__stl_8hpp =
     [ "dao::detectionError", "namespacedao.html#a24e91b1ba23935657b9b4fefae8f56e8", null ],
     [ "dao::makeManage", "namespacedao.html#ac45f69004e30262d01cf3851e336eef6", null ],
     [ "dao::makeObserver", "namespacedao.html#afeed7b027b4850f4e688ae60c50e7807", null ],
+    [ "dao::ratio", "namespacedao.html#a222caaab97ef07015c9238be7d24285c", null ],
     [ "dao::sort", "namespacedao.html#a02af220658c49a0b7ac198977f450e7f", null ]
 ];

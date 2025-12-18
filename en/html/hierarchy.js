@@ -11,13 +11,13 @@ var hierarchy =
     [ "dao::ColorRGBA", "structdao_1_1ColorRGBA.html", null ],
     [ "dao::Drawable", "classdao_1_1Drawable.html", [
       [ "dao::ButtonStyle", "classdao_1_1ButtonStyle.html", [
-        [ "dao::SimpleButtonStyle", "classdao_1_1SimpleButtonStyle.html", null ]
+        [ "dao::SimpleTextButtonStyle", "classdao_1_1SimpleTextButtonStyle.html", null ],
+        [ "dao::SimpleTextureButtonStyle", "classdao_1_1SimpleTextureButtonStyle.html", null ]
       ] ],
       [ "dao::Rectangle", "classdao_1_1Rectangle.html", null ]
     ] ],
     [ "dao::Geometry&lt; N &gt;", "classdao_1_1Geometry.html", null ],
     [ "dao::GeometryVertex", "structdao_1_1GeometryVertex.html", null ],
-    [ "dao::Glyph", "structdao_1_1Glyph.html", null ],
     [ "dao::GlyphAtlas", "classdao_1_1GlyphAtlas.html", null ],
     [ "dao::MappedRegion", "classdao_1_1MappedRegion.html", null ],
     [ "dao::Page", "classdao_1_1Page.html", null ],

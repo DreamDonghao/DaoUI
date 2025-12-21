@@ -39,6 +39,7 @@ var NAVTREE =
       [ "Project Dependencies", "join.html#autotoc_md18", null ]
     ] ],
     [ "developed using DaoUI", "use.html", null ],
+    [ "Bug List", "bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -70,7 +71,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd"
+"classdao_1_1SimpleButton.html#aefd4a618b8982823212c59352cd7aedf",
+"structdao_1_1AtlasRegion.html#ab8e8894575fbe552ec695dc9c107b404"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

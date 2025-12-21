@@ -39,6 +39,7 @@ var NAVTREE =
       [ "项目依赖", "join.html#autotoc_md18", null ]
     ] ],
     [ "使用 DaoUI 开发", "use.html", null ],
+    [ "Bug 列表", "bug.html", null ],
     [ "命名空间", "namespaces.html", [
       [ "命名空间列表", "namespaces.html", "namespaces_dup" ],
       [ "命名空间成员", "namespacemembers.html", [
@@ -70,7 +71,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"classdao_1_1VertexBatchBuilder.html#a99adaeef22bb76ac12c2f8914aea32cd"
+"classdao_1_1SimpleButton.html#aefd4a618b8982823212c59352cd7aedf",
+"structdao_1_1AtlasRegion.html#ab8e8894575fbe552ec695dc9c107b404"
 ];
 
 var SYNCONMSG = '点击 关闭 面板同步';

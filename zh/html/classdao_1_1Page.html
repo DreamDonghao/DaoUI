@@ -99,31 +99,45 @@ $(function(){initNavTree('classdao_1_1Page.html','','classdao_1_1Page-members');
 
 <p><code>#include &lt;<a class="el" href="page_8hpp_source.html">page.hpp</a>&gt;</code></p>
 <div class="dynheader">
+类 dao::Page 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Page__inherit__graph.png" border="0" usemap="#adao_1_1Page_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
+<map name="adao_1_1Page_inherit__map" id="adao_1_1Page_inherit__map">
+<area shape="rect" title="页面接口" alt="" coords="5,5,167,251"/>
+<area shape="rect" href="classdao_1_1GeneralPage.html" title=" " alt="" coords="13,299,159,484"/>
+<area shape="poly" title=" " alt="" coords="89,264,89,299,83,299,83,264"/>
+</map>
+</div>
+<div class="dynheader">
 dao::Page 的协作图:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Page__coll__graph.png" border="0" usemap="#adao_1_1Page_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Page_coll__map" id="adao_1_1Page_coll__map">
-<area shape="rect" title="页面接口" alt="" coords="5,5,151,191"/>
+<area shape="rect" title="页面接口" alt="" coords="5,5,167,251"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
 <tr class="memitem:aa593d76b639520c4ea0287951c0cba92" id="r_aa593d76b639520c4ea0287951c0cba92"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa593d76b639520c4ea0287951c0cba92">~Page</a> ()=default</td></tr>
-<tr class="memitem:aeabfcd11d5355c6cc285216ec1bc01a5" id="r_aeabfcd11d5355c6cc285216ec1bc01a5"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeabfcd11d5355c6cc285216ec1bc01a5">registerTexture</a> () const =0</td></tr>
+<tr class="memitem:a9f42866fb33b05271618e0be64e5cfac" id="r_a9f42866fb33b05271618e0be64e5cfac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f42866fb33b05271618e0be64e5cfac">init</a> ()=0</td></tr>
+<tr class="memitem:aca509ded5e077e2100b1b830d07777d8" id="r_aca509ded5e077e2100b1b830d07777d8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca509ded5e077e2100b1b830d07777d8">close</a> ()=0</td></tr>
+<tr class="memitem:aaec3b13b96ce664ccc388648a6f6b6d6" id="r_aaec3b13b96ce664ccc388648a6f6b6d6"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaec3b13b96ce664ccc388648a6f6b6d6">getRegisterTexture</a> () const =0</td></tr>
+<tr class="memdesc:aaec3b13b96ce664ccc388648a6f6b6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取加载图集  <br /></td></tr>
 <tr class="memitem:a64a8523dc6b0bfd23ea824f981f4b7d0" id="r_a64a8523dc6b0bfd23ea824f981f4b7d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64a8523dc6b0bfd23ea824f981f4b7d0">update</a> ()=0</td></tr>
 <tr class="memdesc:a64a8523dc6b0bfd23ea824f981f4b7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新  <br /></td></tr>
 <tr class="memitem:a86d1618491f0a50aff550680f957ae99" id="r_a86d1618491f0a50aff550680f957ae99"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86d1618491f0a50aff550680f957ae99">handleMessage</a> (const SDL_Event &amp;event)=0</td></tr>
 <tr class="memdesc:a86d1618491f0a50aff550680f957ae99"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息  <br /></td></tr>
 <tr class="memitem:afa41322cc43ea42f95ac06237bdfa622" id="r_afa41322cc43ea42f95ac06237bdfa622"><td class="memItemLeft" align="right" valign="top">virtual const std::vector&lt; <a class="el" href="structdao_1_1AtlasDrawBatch.html">AtlasDrawBatch</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa41322cc43ea42f95ac06237bdfa622">getDrawBatches</a> () const =0</td></tr>
 <tr class="memitem:a2e2ba0bcd05ef75790b48406656e755d" id="r_a2e2ba0bcd05ef75790b48406656e755d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classdao_1_1GlyphAtlas.html">GlyphAtlas</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e2ba0bcd05ef75790b48406656e755d">getGlyphAtlas</a> ()=0</td></tr>
+<tr class="memitem:a81f2dfa527b97df1d3f7b4d5538aeda3" id="r_a81f2dfa527b97df1d3f7b4d5538aeda3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classdao_1_1PageCmdQueue.html">PageCmdQueue</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81f2dfa527b97df1d3f7b4d5538aeda3">getEvent</a> ()=0</td></tr>
 <tr class="memitem:a22d8ff31f8b52df2b69f7c726183ba70" id="r_a22d8ff31f8b52df2b69f7c726183ba70"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d8ff31f8b52df2b69f7c726183ba70">getTitle</a> () const =0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">详细描述</h2>
 <div class="textblock"><p>页面接口 </p>
 <p>提供了所有页面的接口，所有页面都应继承这个类 </p>
 
-<p class="definition">在文件 <a class="el" href="page_8hpp_source.html">page.hpp</a> 第 <a class="el" href="page_8hpp_source.html#l00011">11</a> 行定义.</p>
+<p class="definition">在文件 <a class="el" href="page_8hpp_source.html">page.hpp</a> 第 <a class="el" href="page_8hpp_source.html#l00012">12</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
 <a id="aa593d76b639520c4ea0287951c0cba92" name="aa593d76b639520c4ea0287951c0cba92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa593d76b639520c4ea0287951c0cba92">&#9670;&#160;</a></span>~Page()</h2>
@@ -151,6 +165,31 @@ Public 成员函数</h2></td></tr>
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
+<a id="aca509ded5e077e2100b1b830d07777d8" name="aca509ded5e077e2100b1b830d07777d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca509ded5e077e2100b1b830d07777d8">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void dao::Page::close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="afa41322cc43ea42f95ac06237bdfa622" name="afa41322cc43ea42f95ac06237bdfa622"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa41322cc43ea42f95ac06237bdfa622">&#9670;&#160;</a></span>getDrawBatches()</h2>
 
@@ -173,6 +212,35 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a7dfe974731c1674dc3654313e947b032">dao::GeneralPage</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="a81f2dfa527b97df1d3f7b4d5538aeda3" name="a81f2dfa527b97df1d3f7b4d5538aeda3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81f2dfa527b97df1d3f7b4d5538aeda3">&#9670;&#160;</a></span>getEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classdao_1_1PageCmdQueue.html">PageCmdQueue</a> &amp; dao::Page::getEvent </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a33480618acb858d6208851b188178234">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>
@@ -199,6 +267,35 @@ Public 成员函数</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a6a2d7f917c08fff9bca2e678bd83efa7">dao::GeneralPage</a> 内被实现.</p>
+
+</div>
+</div>
+<a id="aaec3b13b96ce664ccc388648a6f6b6d6" name="aaec3b13b96ce664ccc388648a6f6b6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaec3b13b96ce664ccc388648a6f6b6d6">&#9670;&#160;</a></span>getRegisterTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> &gt; dao::Page::getRegisterTexture </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>获取加载图集 </p>
+
 </div>
 </div>
 <a id="a22d8ff31f8b52df2b69f7c726183ba70" name="a22d8ff31f8b52df2b69f7c726183ba70"></a>
@@ -223,6 +320,8 @@ Public 成员函数</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>在 <a class="el" href="classdao_1_1GeneralPage.html#a08d10956d4f4a2c1479bc7a622920924">dao::GeneralPage</a> 内被实现.</p>
 
 </div>
 </div>
@@ -253,8 +352,8 @@ Public 成员函数</h2></td></tr>
 
 </div>
 </div>
-<a id="aeabfcd11d5355c6cc285216ec1bc01a5" name="aeabfcd11d5355c6cc285216ec1bc01a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeabfcd11d5355c6cc285216ec1bc01a5">&#9670;&#160;</a></span>registerTexture()</h2>
+<a id="a9f42866fb33b05271618e0be64e5cfac" name="a9f42866fb33b05271618e0be64e5cfac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f42866fb33b05271618e0be64e5cfac">&#9670;&#160;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,15 +362,15 @@ Public 成员函数</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::vector&lt; <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> &gt; dao::Page::registerTexture </td>
+          <td class="memname">virtual void dao::Page::init </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

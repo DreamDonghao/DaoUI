@@ -1,7 +1,7 @@
 <map id="code/include/interface/button_style.hpp" name="code/include/interface/button_style.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="143,5,310,45"/>
-<area shape="rect" id="Node000002" href="$simple__text__button__style_8hpp.html" title=" " alt="" coords="5,101,224,141"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,56,139,103,136,99,192,52"/>
-<area shape="rect" id="Node000003" href="$simple__texture__button__style_8hpp.html" title=" " alt="" coords="248,93,429,148"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="261,52,309,91,305,95,258,56"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="128,5,295,45"/>
+<area shape="rect" id="Node000002" href="$simple__text__button__style_8hpp.html" title=" " alt="" coords="5,93,204,148"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,56,136,95,133,91,178,52"/>
+<area shape="rect" id="Node000003" href="$simple__texture__button__style_8hpp.html" title=" " alt="" coords="229,93,410,148"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,52,291,91,287,95,242,56"/>
 </map>

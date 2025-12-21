@@ -1,19 +1,16 @@
 var searchData=
 [
-  ['r_0',['r',['../structdao_1_1ColorRGBA.html#af00a453541e710652e6fdc6ddd64881c',1,'dao::ColorRGBA']]],
-  ['ratio_1',['ratio',['../namespacedao.html#a222caaab97ef07015c9238be7d24285c',1,'dao']]],
-  ['rectangle_2',['Rectangle',['../classdao_1_1Rectangle.html',1,'dao::Rectangle'],['../classdao_1_1Rectangle.html#afdb783feff29bb4cb2b6e4e223871888',1,'dao::Rectangle::Rectangle()']]],
-  ['rectangle_2ehpp_3',['rectangle.hpp',['../rectangle_8hpp.html',1,'']]],
-  ['regions_4',['regions',['../namespacedao.html#a2677ebbcecac58d76c5aec8c29a0a65e',1,'dao']]],
-  ['registerglyph_5',['registerGlyph',['../classdao_1_1GlyphAtlas.html#ad2278fe1fea3d93f5d9318182e10f238',1,'dao::GlyphAtlas']]],
-  ['registertexture_6',['registerTexture',['../classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a',1,'dao::Window::registerTexture()'],['../classdao_1_1Page.html#aeabfcd11d5355c6cc285216ec1bc01a5',1,'dao::Page::registerTexture()']]],
-  ['render_7',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
-  ['repository_8',['Repository',['../join.html#autotoc_md2',1,'1. Fork the Repository'],['../join.html#autotoc_md4',1,'2. Clone the Repository']]],
-  ['request_9',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]],
-  ['requestclose_10',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
-  ['resetqudaindices_11',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
-  ['review_20and_20revision_12',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
-  ['revision_13',['6. Review and Revision',['../join.html#autotoc_md12',1,'']]],
-  ['rgbnorm_14',['rgbNorm',['../namespacedao.html#abbcb9b45a99d4cd58ecf129cab6f60a0',1,'dao']]],
-  ['run_15',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
+  ['page_0',['Page',['../classdao_1_1Page.html',1,'dao']]],
+  ['page_2ehpp_1',['page.hpp',['../page_8hpp.html',1,'']]],
+  ['pagecmd_2',['PageCmd',['../structdao_1_1PageCmd.html',1,'dao']]],
+  ['pagecmdqueue_3',['PageCmdQueue',['../classdao_1_1PageCmdQueue.html',1,'dao::PageCmdQueue'],['../classdao_1_1PageCmdQueue.html#ae7276236536f34c59929d2fe4e71325c',1,'dao::PageCmdQueue::PageCmdQueue()=default'],['../classdao_1_1PageCmdQueue.html#a23a135a2951fbd316f5b980e3e06b237',1,'dao::PageCmdQueue::PageCmdQueue(const PageCmdQueue &amp;)=delete']]],
+  ['pagecmdtype_4',['PageCmdType',['../namespacedao.html#ae58c462a7b87e9c66a85fc8dd97bf48d',1,'dao']]],
+  ['participate_20in_20daoui_20development_5',['Participate in DaoUI Development',['../join.html',1,'']]],
+  ['participate_20in_20the_20opening_20of_20daoui_6',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
+  ['pop_5futf8_7',['pop_utf8',['../namespacedao.html#a5b2e8328a9c7561d0aa8b676b2243dee',1,'dao']]],
+  ['popevent_8',['popEvent',['../classdao_1_1PageCmdQueue.html#a0876b8aa42143f17308b6e564990b758',1,'dao::PageCmdQueue']]],
+  ['pressed_9',['Pressed',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fad78a68f6a85421ae121c2cb5b73a1040',1,'dao']]],
+  ['process_10',['Development Process',['../join.html#autotoc_md0',1,'']]],
+  ['project_20dependencies_11',['Project Dependencies',['../join.html#autotoc_md18',1,'']]],
+  ['pull_20request_12',['5. Submit a Pull Request',['../join.html#autotoc_md10',1,'']]]
 ];

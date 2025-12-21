@@ -109,7 +109,7 @@ dao::App 的协作图:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public 成员函数</h2></td></tr>
-<tr class="memitem:a9a9532e7781ab70dbf56825c21a42477" id="r_a9a9532e7781ab70dbf56825c21a42477"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a9532e7781ab70dbf56825c21a42477">~App</a> ()=default</td></tr>
+<tr class="memitem:a0a6f1b302cded708edfbb51cf7dce8d8" id="r_a0a6f1b302cded708edfbb51cf7dce8d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a6f1b302cded708edfbb51cf7dce8d8">~App</a> ()</td></tr>
 <tr class="memitem:a85b6c0e6a1d300b169a2bab4727d911c" id="r_a85b6c0e6a1d300b169a2bab4727d911c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdao_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a85b6c0e6a1d300b169a2bab4727d911c">createWindow</a> (<a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> width, <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> height)</td></tr>
 <tr class="memdesc:a85b6c0e6a1d300b169a2bab4727d911c"><td class="mdescLeft">&#160;</td><td class="mdescRight">创建窗口  <br /></td></tr>
 <tr class="memitem:aff99ee87f1d08a500f7703514c9eadfd" id="r_aff99ee87f1d08a500f7703514c9eadfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdao_1_1Window.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff99ee87f1d08a500f7703514c9eadfd">getWindow</a> (const <a class="el" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> windowId)</td></tr>
@@ -128,8 +128,8 @@ Public 成员函数</h2></td></tr>
 
 <p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00011">11</a> 行定义.</p>
 </div><a name="doc-constructors" id="doc-constructors"></a><h2 id="header-doc-constructors" class="groupheader">构造及析构函数说明</h2>
-<a id="a9a9532e7781ab70dbf56825c21a42477" name="a9a9532e7781ab70dbf56825c21a42477"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a9532e7781ab70dbf56825c21a42477">&#9670;&#160;</a></span>~App()</h2>
+<a id="a0a6f1b302cded708edfbb51cf7dce8d8" name="a0a6f1b302cded708edfbb51cf7dce8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6f1b302cded708edfbb51cf7dce8d8">&#9670;&#160;</a></span>~App()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,11 +146,17 @@ Public 成员函数</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel default">default</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00013">13</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>               {</div>
+<div class="line"><span class="lineno">   14</span>            TTF_Quit();</div>
+<div class="line"><span class="lineno">   15</span>            SDL_Quit();</div>
+<div class="line"><span class="lineno">   16</span>        }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">成员函数说明</h2>
@@ -183,14 +189,14 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="app_8cpp_source.html">app.cpp</a> 第 <a class="el" href="app_8cpp_source.html#l00040">40</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                     {</div>
-<div class="line"><span class="lineno">   41</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height);</div>
-<div class="line"><span class="lineno">   42</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> windowId = nowWindow-&gt;getId();</div>
-<div class="line"><span class="lineno">   43</span>        m_windows[windowId] = std::move(nowWindow);</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00019">better_stl.hpp:19</a></div></div>
+<p class="definition">在文件 <a class="el" href="app_8cpp_source.html">app.cpp</a> 第 <a class="el" href="app_8cpp_source.html#l00039">39</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                                     {</div>
+<div class="line"><span class="lineno">   40</span>        <span class="keyword">auto</span> nowWindow = std::make_unique&lt;Window&gt;(width, height);</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keyword">const</span> <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> windowId = nowWindow-&gt;getId();</div>
+<div class="line"><span class="lineno">   42</span>        m_windows[windowId] = std::move(nowWindow);</div>
+<div class="line"><span class="lineno">   43</span>        <span class="keywordflow">return</span> *m_windows[windowId];</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="ttc" id="anamespacedao_html_aac1fa5be1e638eccd2f2ea6d6101f5dd"><div class="ttname"><a href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">dao::uint32</a></div><div class="ttdeci">uint32_t uint32</div><div class="ttdef"><b>定义</b> <a href="better__stl_8hpp_source.html#l00020">better_stl.hpp:20</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -220,11 +226,11 @@ Public 成员函数</h2></td></tr>
 <p>创建应用 @en </p>
 <dl class="section return"><dt>返回</dt><dd>一个应用实例 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00018">18</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                                           {</div>
-<div class="line"><span class="lineno">   19</span>            <span class="keyword">static</span> App app{};</div>
-<div class="line"><span class="lineno">   20</span>            <span class="keywordflow">return</span> app;</div>
-<div class="line"><span class="lineno">   21</span>        }</div>
+<p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00021">21</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                           {</div>
+<div class="line"><span class="lineno">   22</span>            <span class="keyword">static</span> App app{};</div>
+<div class="line"><span class="lineno">   23</span>            <span class="keywordflow">return</span> app;</div>
+<div class="line"><span class="lineno">   24</span>        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -260,8 +266,8 @@ Public 成员函数</h2></td></tr>
 </dl>
 <dl class="section return"><dt>返回</dt><dd>窗口对象的引用 </dd></dl>
 
-<p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00032">32</a> 行定义.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>{ <span class="keywordflow">return</span> *m_windows[windowId]; }</div>
+<p class="definition">在文件 <a class="el" href="app_8hpp_source.html">app.hpp</a> 第 <a class="el" href="app_8hpp_source.html#l00035">35</a> 行定义.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>{ <span class="keywordflow">return</span> *m_windows[windowId]; }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -290,34 +296,33 @@ Public 成员函数</h2></td></tr>
 <div class="line"><span class="lineno">   14</span>                render();</div>
 <div class="line"><span class="lineno">   15</span>                window-&gt;update();</div>
 <div class="line"><span class="lineno">   16</span>                m_runWindowNum += window-&gt;isRunning();</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>            }</div>
-<div class="line"><span class="lineno">   19</span>            SDL_Event event;</div>
-<div class="line"><span class="lineno">   20</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
-<div class="line"><span class="lineno">   21</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
-<div class="line"><span class="lineno">   22</span>                    <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> wid = <span class="keyword">event</span>.window.windowID;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
-<div class="line"><span class="lineno">   25</span>                        it-&gt;second-&gt;requestClose();  <span class="comment">// 让窗口自己决定怎么关</span></div>
-<div class="line"><span class="lineno">   26</span>                    }</div>
-<div class="line"><span class="lineno">   27</span>                }</div>
-<div class="line"><span class="lineno">   28</span>                SDL_Window *focus = SDL_GetMouseFocus(); <span class="comment">// 更常用</span></div>
-<div class="line"><span class="lineno">   29</span>                <span class="keywordflow">if</span> (!focus) {</div>
-<div class="line"><span class="lineno">   30</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><span class="lineno">   31</span>                }</div>
-<div class="line"><span class="lineno">   32</span> </div>
-<div class="line"><span class="lineno">   33</span>                <span class="keyword">auto</span> wid = SDL_GetWindowID(focus);</div>
-<div class="line"><span class="lineno">   34</span>                m_windows[wid]-&gt;handleMessage(event);</div>
-<div class="line"><span class="lineno">   35</span>            }</div>
-<div class="line"><span class="lineno">   36</span>        }</div>
-<div class="line"><span class="lineno">   37</span>        SDL_Quit();</div>
-<div class="line"><span class="lineno">   38</span>    }</div>
+<div class="line"><span class="lineno">   17</span>            }</div>
+<div class="line"><span class="lineno">   18</span>            SDL_Event event;</div>
+<div class="line"><span class="lineno">   19</span>            <span class="keywordflow">while</span> (SDL_PollEvent(&amp;event)) {</div>
+<div class="line"><span class="lineno">   20</span>                <span class="keywordflow">if</span> (event.type == SDL_EVENT_WINDOW_CLOSE_REQUESTED) {</div>
+<div class="line"><span class="lineno">   21</span>                    <a class="code hl_typedef" href="namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd">uint32</a> wid = <span class="keyword">event</span>.window.windowID;</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>                    <span class="keywordflow">if</span> (<span class="keyword">auto</span> it = m_windows.find(wid); it != m_windows.end()) {</div>
+<div class="line"><span class="lineno">   24</span>                        it-&gt;second-&gt;requestClose();</div>
+<div class="line"><span class="lineno">   25</span>                    }</div>
+<div class="line"><span class="lineno">   26</span>                }</div>
+<div class="line"><span class="lineno">   27</span>                SDL_Window *focus = SDL_GetMouseFocus();</div>
+<div class="line"><span class="lineno">   28</span>                <span class="keywordflow">if</span> (!focus) {</div>
+<div class="line"><span class="lineno">   29</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><span class="lineno">   30</span>                }</div>
+<div class="line"><span class="lineno">   31</span> </div>
+<div class="line"><span class="lineno">   32</span>                <span class="keyword">auto</span> wid = SDL_GetWindowID(focus);</div>
+<div class="line"><span class="lineno">   33</span>                m_windows[wid]-&gt;handleMessage(event);</div>
+<div class="line"><span class="lineno">   34</span>            }</div>
+<div class="line"><span class="lineno">   35</span>        }</div>
+<div class="line"><span class="lineno">   36</span>        SDL_Quit();</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>该类的文档由以下文件生成:<ul>
 <li>code/include/core/frame/<a class="el" href="app_8hpp_source.html">app.hpp</a></li>
-<li>code/src/<a class="el" href="app_8cpp_source.html">app.cpp</a></li>
+<li>code/src/core/frame/<a class="el" href="app_8cpp_source.html">app.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

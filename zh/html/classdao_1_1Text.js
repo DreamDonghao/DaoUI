@@ -7,8 +7,9 @@ var classdao_1_1Text =
     [ "getFontSize", "classdao_1_1Text.html#a856a3c14f39c17ec546e9ee0c8d66ae5", null ],
     [ "getX", "classdao_1_1Text.html#a9c6dd3e1b50eee5eef993aadb60d8a91", null ],
     [ "getY", "classdao_1_1Text.html#a42417ca45897d863bd845f6b0bc24fdc", null ],
+    [ "insert", "classdao_1_1Text.html#a0fcfffa1dfb51320de864c2d58dce6b7", null ],
     [ "setColor", "classdao_1_1Text.html#abb108bc32247bbc2f372e0e6e410624e", null ],
-    [ "setContent", "classdao_1_1Text.html#a996bb80c25ab23a2ec367f1e04a8c6b1", null ],
+    [ "setContent", "classdao_1_1Text.html#a4c26c88b3f58a5bcbf95272a52fc0ba9", null ],
     [ "setFontSize", "classdao_1_1Text.html#aa0e0726f3981908a981546bf78e0ca26", null ],
     [ "setX", "classdao_1_1Text.html#ad3449df93fc2d437fc86e2aa5da130ba", null ],
     [ "setY", "classdao_1_1Text.html#a1fbdf40c58d9f3af3ef6aca577cccd61", null ]

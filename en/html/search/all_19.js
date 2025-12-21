@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['uint16_0',['uint16',['../namespacedao.html#a4fb07c9dd4d228206acf860f75cc4880',1,'dao']]],
-  ['uint32_1',['uint32',['../namespacedao.html#aac1fa5be1e638eccd2f2ea6d6101f5dd',1,'dao']]],
-  ['uint64_2',['uint64',['../namespacedao.html#a2a8f1a95f540566ae8b57f8313f932d1',1,'dao']]],
-  ['uint8_3',['uint8',['../namespacedao.html#a0f690fdeb5ea84b98558fec2f5ac6bc0',1,'dao']]],
-  ['update_4',['update',['../classdao_1_1Window.html#a5948603a9220bfecebe7f68924478ff2',1,'dao::Window::update()'],['../classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a',1,'dao::SimpleButton::update()'],['../classdao_1_1Button.html#a7d49a6eb4b17ebf77f12beea02978034',1,'dao::Button::update()'],['../classdao_1_1Page.html#a64a8523dc6b0bfd23ea824f981f4b7d0',1,'dao::Page::update()']]],
-  ['use_20develop_20your_20own_20application_20using_20daoui_5',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]],
-  ['use_2emd_6',['use.md',['../use_8md.html',1,'']]],
-  ['using_20daoui_7',['using DaoUI',['../index.html#autotoc_md20',1,'&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;'],['../use.html',1,'developed using DaoUI']]]
+  ['text_0',['Text',['../classdao_1_1Text.html',1,'dao::Text'],['../classdao_1_1Text.html#abf007195b5ded893b8c6f4d27e196c5d',1,'dao::Text::Text()=default'],['../classdao_1_1Text.html#a1ef33c1e3ca367358e26a2d9f66d80b1',1,'dao::Text::Text(const float32 x, const float32 y, std::u32string content, const float32 fontSize, const ColorRGBA color)']]],
+  ['text_2ehpp_1',['text.hpp',['../text_8hpp.html',1,'']]],
+  ['the_20opening_20of_20daoui_2',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;Participate in the opening of DaoUI&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]],
+  ['the_20repository_3',['the Repository',['../join.html#autotoc_md2',1,'1. Fork the Repository'],['../join.html#autotoc_md4',1,'2. Clone the Repository']]],
+  ['type_4',['type',['../structdao_1_1PageCmd.html#a8827f7d8e6fe28ad3d820803fb9f07b7',1,'dao::PageCmd']]]
 ];

@@ -103,9 +103,9 @@ Inheritance diagram for dao::Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button__inherit__graph.png" border="0" usemap="#adao_1_1Button_inherit__map" loading="lazy" alt="Inheritance graph"/></div>
 <map name="adao_1_1Button_inherit__map" id="adao_1_1Button_inherit__map">
-<area shape="rect" title="按钮接口" alt="" coords="23,5,125,111"/>
-<area shape="rect" href="classdao_1_1SimpleButton.html" title=" " alt="" coords="5,159,143,284"/>
-<area shape="poly" title=" " alt="" coords="77,124,77,158,71,158,71,124"/>
+<area shape="rect" title="按钮接口" alt="" coords="18,5,138,131"/>
+<area shape="rect" href="classdao_1_1SimpleButton.html" title=" " alt="" coords="5,179,151,464"/>
+<area shape="poly" title=" " alt="" coords="81,145,81,178,75,178,75,145"/>
 </map>
 </div>
 <div class="dynheader">
@@ -113,17 +113,18 @@ Collaboration diagram for dao::Button:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button__coll__graph.png" border="0" usemap="#adao_1_1Button_coll__map" loading="lazy" alt="Collaboration graph"/></div>
 <map name="adao_1_1Button_coll__map" id="adao_1_1Button_coll__map">
-<area shape="rect" title="按钮接口" alt="" coords="5,5,107,111"/>
+<area shape="rect" title="按钮接口" alt="" coords="5,5,125,131"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a66472af440e09cbd79f27b8218d9a3dd" id="r_a66472af440e09cbd79f27b8218d9a3dd"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66472af440e09cbd79f27b8218d9a3dd">~Button</a> ()=default</td></tr>
-<tr class="memitem:a7d49a6eb4b17ebf77f12beea02978034" id="r_a7d49a6eb4b17ebf77f12beea02978034"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d49a6eb4b17ebf77f12beea02978034">update</a> (const SDL_Event &amp;event)=0</td></tr>
-<tr class="memdesc:a7d49a6eb4b17ebf77f12beea02978034"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息，更新状态  <br /></td></tr>
+<tr class="memitem:a9ed21a4ebedc88ccf741fabb763153e9" id="r_a9ed21a4ebedc88ccf741fabb763153e9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ed21a4ebedc88ccf741fabb763153e9">handleEvent</a> (const SDL_Event &amp;event)=0</td></tr>
+<tr class="memdesc:a9ed21a4ebedc88ccf741fabb763153e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">处理消息，更新状态  <br /></td></tr>
 <tr class="memitem:a9a4f38eac038cfb94d792ee4190f6245" id="r_a9a4f38eac038cfb94d792ee4190f6245"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespacedao.html#a3b61a0de5777d228dd0522bc3aec593f">ButtonStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4f38eac038cfb94d792ee4190f6245">getStatus</a> () const =0</td></tr>
 <tr class="memdesc:a9a4f38eac038cfb94d792ee4190f6245"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取当前状态  <br /></td></tr>
+<tr class="memitem:a60046bc3238ec9169c98197241bbf354" id="r_a60046bc3238ec9169c98197241bbf354"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60046bc3238ec9169c98197241bbf354">isEnable</a> () const =0</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>按钮接口 </p>
@@ -187,18 +188,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph.png" border="0" usemap="#aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph" loading="lazy" alt=""/></div>
 <map name="aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph" id="aclassdao_1_1Button_a9a4f38eac038cfb94d792ee4190f6245_icgraph">
-<area shape="rect" title="获取当前状态" alt="" coords="256,45,423,70"/>
-<area shape="rect" href="classdao_1_1SimpleTextButtonStyle.html#aebb191eeab6f4abcdc68ac2154b14c08" title="加入绘制批处理" alt="" coords="5,5,208,45"/>
-<area shape="poly" title=" " alt="" coords="242,47,208,42,209,37,242,41"/>
-<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="11,69,202,109"/>
-<area shape="poly" title=" " alt="" coords="242,73,203,79,202,74,242,68"/>
+<area shape="rect" title="获取当前状态" alt="" coords="244,13,411,38"/>
+<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="5,5,196,45"/>
+<area shape="poly" title=" " alt="" coords="230,28,196,28,196,23,230,23"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a7d49a6eb4b17ebf77f12beea02978034" name="a7d49a6eb4b17ebf77f12beea02978034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d49a6eb4b17ebf77f12beea02978034">&#9670;&#160;</a></span>update()</h2>
+<a id="a9ed21a4ebedc88ccf741fabb763153e9" name="a9ed21a4ebedc88ccf741fabb763153e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed21a4ebedc88ccf741fabb763153e9">&#9670;&#160;</a></span>handleEvent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,7 +206,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void dao::Button::update </td>
+          <td class="memname">virtual void dao::Button::handleEvent </td>
           <td>(</td>
           <td class="paramtype">const SDL_Event &amp;</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
           <td></td>
@@ -222,7 +221,46 @@ Here is the caller graph for this function:</div>
 
 <p>处理消息，更新状态 </p>
 
-<p>Implemented in <a class="el" href="classdao_1_1SimpleButton.html#ab8f1820625090e24881b471aba706e5a">dao::SimpleButton</a>.</p>
+<p>Implemented in <a class="el" href="classdao_1_1SimpleButton.html#adad10a14c27691758bd8754e688e25d3">dao::SimpleButton</a>.</p>
+
+</div>
+</div>
+<a id="a60046bc3238ec9169c98197241bbf354" name="a60046bc3238ec9169c98197241bbf354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60046bc3238ec9169c98197241bbf354">&#9670;&#160;</a></span>isEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool dao::Button::isEnable </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classdao_1_1SimpleButton.html#a60694f0c52906c8efda2aae008cd875b">dao::SimpleButton</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classdao_1_1Button_a60046bc3238ec9169c98197241bbf354_icgraph.png" border="0" usemap="#aclassdao_1_1Button_a60046bc3238ec9169c98197241bbf354_icgraph" loading="lazy" alt=""/></div>
+<map name="aclassdao_1_1Button_a60046bc3238ec9169c98197241bbf354_icgraph" id="aclassdao_1_1Button_a60046bc3238ec9169c98197241bbf354_icgraph">
+<area shape="rect" title=" " alt="" coords="256,45,416,70"/>
+<area shape="rect" href="classdao_1_1SimpleTextButtonStyle.html#aebb191eeab6f4abcdc68ac2154b14c08" title="加入绘制批处理" alt="" coords="5,5,208,45"/>
+<area shape="poly" title=" " alt="" coords="242,47,208,42,209,37,242,42"/>
+<area shape="rect" href="classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b" title="加入绘制批处理" alt="" coords="11,69,202,109"/>
+<area shape="poly" title=" " alt="" coords="242,73,202,79,202,73,241,68"/>
+</map>
+</div>
 
 </div>
 </div>

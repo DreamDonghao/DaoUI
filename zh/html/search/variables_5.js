@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['normalizedbottom_0',['normalizedBottom',['../structdao_1_1AtlasRegion.html#ab8e8894575fbe552ec695dc9c107b404',1,'dao::AtlasRegion']]],
-  ['normalizedleft_1',['normalizedLeft',['../structdao_1_1AtlasRegion.html#a17edff3f4a4d876fdd37b3043bf4c94f',1,'dao::AtlasRegion']]],
-  ['normalizedright_2',['normalizedRight',['../structdao_1_1AtlasRegion.html#a1e90ac03506da0fb1ade02ab73529217',1,'dao::AtlasRegion']]],
-  ['normalizedtop_3',['normalizedTop',['../structdao_1_1AtlasRegion.html#a9a99d96ccd38a763af27a68faae6fbcb',1,'dao::AtlasRegion']]]
+  ['indices_0',['indices',['../structdao_1_1AtlasDrawBatch.html#ac3efeab6996d695fe441c338ad6ae3f8',1,'dao::AtlasDrawBatch']]],
+  ['indicescount_1',['indicesCount',['../structdao_1_1AtlasDrawBatch.html#a0aeb26a8aa991891fd20d42094484780',1,'dao::AtlasDrawBatch']]]
 ];

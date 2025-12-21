@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join_20参与_20daoui_20的开发_0',['&lt;a class=&quot;el&quot; href=&quot;join.html&quot;&gt;参与 DaoUI 的开发&lt;/a&gt;',['../index.html#autotoc_md21',1,'']]]
+  ['fork_20仓库_0',['1. Fork 仓库',['../join.html#autotoc_md2',1,'']]]
 ];

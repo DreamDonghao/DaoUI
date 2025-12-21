@@ -1,17 +1,5 @@
-<map id="code/src/bounding_box.cpp" name="code/src/bounding_box.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="146,5,345,31"/>
-<area shape="rect" id="Node000002" href="$bounding__box_8hpp.html" title=" " alt="" coords="173,79,318,119"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="248,31,248,65,243,65,243,31"/>
-<area shape="rect" id="Node000003" href="$better__stl_8hpp.html" title=" " alt="" coords="189,167,301,192"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="248,119,248,153,243,153,243,119"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,240,72,265"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="213,195,86,238,84,233,211,189"/>
-<area shape="rect" id="Node000005" title=" " alt="" coords="96,240,181,265"/>
-<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="230,194,169,235,166,230,227,190"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="205,240,285,265"/>
-<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="248,192,248,226,243,226,243,192"/>
-<area shape="rect" id="Node000007" title=" " alt="" coords="309,240,387,265"/>
-<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="263,190,321,230,318,234,260,194"/>
-<area shape="rect" id="Node000008" title=" " alt="" coords="411,240,535,265"/>
-<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="283,189,424,233,422,238,281,195"/>
+<map id="code/src/core/tool/bounding_box.cpp" name="code/src/core/tool/bounding_box.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="6,5,150,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,93,151,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,46,81,79,75,79,75,46"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../structdao_1_1GeometryVertex.html#a21c761d03a90cb237bf11da57820ed49',1,'dao::GeometryVertex']]]
+  ['type_0',['type',['../structdao_1_1PageCmd.html#a8827f7d8e6fe28ad3d820803fb9f07b7',1,'dao::PageCmd']]]
 ];

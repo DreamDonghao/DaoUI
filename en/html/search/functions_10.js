@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['window_0',['Window',['../classdao_1_1Window.html#a7871b77f1ae9767091437eadb7c9cfb6',1,'dao::Window']]],
-  ['writetobatch_1',['writeToBatch',['../classdao_1_1Rectangle.html#a3681bcb36b82fb4257960a510c91c010',1,'dao::Rectangle::writeToBatch()'],['../classdao_1_1SimpleTextButtonStyle.html#aebb191eeab6f4abcdc68ac2154b14c08',1,'dao::SimpleTextButtonStyle::writeToBatch()'],['../classdao_1_1SimpleTextureButtonStyle.html#a1d7da04151208e1e65826293f7154f8b',1,'dao::SimpleTextureButtonStyle::writeToBatch()'],['../classdao_1_1ButtonStyle.html#acde741d16eb9423028e7e5f480011c98',1,'dao::ButtonStyle::writeToBatch()'],['../classdao_1_1Drawable.html#ad5792f4317300022e7e7d071fc321ce1',1,'dao::Drawable::writeToBatch()']]]
+  ['vertexbatchbuilder_0',['VertexBatchBuilder',['../classdao_1_1VertexBatchBuilder.html#a37256aa3682923e58462fb4c61efd730',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ad32800a6b8c3cbca137dc9170f782bfe',1,'dao::VertexBatchBuilder::VertexBatchBuilder(std::string_view fontPath, float32 glyphSize, int32 atlasSize, size_t qudaCount=1024)'],['../classdao_1_1VertexBatchBuilder.html#ac1e68804164326316f2c09ce447e090d',1,'dao::VertexBatchBuilder::VertexBatchBuilder(const VertexBatchBuilder &amp;)=delete']]]
 ];

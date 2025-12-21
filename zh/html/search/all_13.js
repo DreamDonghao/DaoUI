@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['normal_0',['Normal',['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0',1,'dao']]],
+  ['normal_0',['Normal',['../namespacedao.html#ae7d5292a7122742f97a26215da2d033ba960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal'],['../namespacedao.html#a3b61a0de5777d228dd0522bc3aec593fa960b44c579bc2f6818d2daaf9e4c16f0',1,'dao::Normal']]],
   ['normalize_1',['normalize',['../classdao_1_1BoundingBox.html#ae6d7ef9eadc2c39d706136376acd0903',1,'dao::BoundingBox']]],
   ['normalizedbottom_2',['normalizedBottom',['../structdao_1_1AtlasRegion.html#ab8e8894575fbe552ec695dc9c107b404',1,'dao::AtlasRegion']]],
   ['normalizedleft_3',['normalizedLeft',['../structdao_1_1AtlasRegion.html#a17edff3f4a4d876fdd37b3043bf4c94f',1,'dao::AtlasRegion']]],

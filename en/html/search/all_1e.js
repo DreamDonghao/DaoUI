@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['_7eapp_0',['~App',['../classdao_1_1App.html#a9a9532e7781ab70dbf56825c21a42477',1,'dao::App']]],
-  ['_7eboundingbox_1',['~BoundingBox',['../classdao_1_1BoundingBox.html#a6e4b9d36fbc8fbe09805dc48b68e99fa',1,'dao::BoundingBox']]],
-  ['_7ebutton_2',['~Button',['../classdao_1_1Button.html#a66472af440e09cbd79f27b8218d9a3dd',1,'dao::Button']]],
-  ['_7ebuttonstyle_3',['~ButtonStyle',['../classdao_1_1ButtonStyle.html#a8076c5713d1de630655dc285cb562bf4',1,'dao::ButtonStyle']]],
-  ['_7edrawable_4',['~Drawable',['../classdao_1_1Drawable.html#acd199ae1f40ae641c4d79236c735b018',1,'dao::Drawable']]],
-  ['_7epage_5',['~Page',['../classdao_1_1Page.html#aa593d76b639520c4ea0287951c0cba92',1,'dao::Page']]],
-  ['_7esimplebutton_6',['~SimpleButton',['../classdao_1_1SimpleButton.html#a571d1b46d38df252d6eeada00a8e04a4',1,'dao::SimpleButton']]],
-  ['_7ewindow_7',['~Window',['../classdao_1_1Window.html#a8d53dfb54f139ee857eae1afee44afb3',1,'dao::Window']]]
+  ['y_0',['y',['../structdao_1_1GeometryVertex.html#a21c761d03a90cb237bf11da57820ed49',1,'dao::GeometryVertex']]],
+  ['your_20own_20application_20using_20daoui_1',['&lt;a class=&quot;el&quot; href=&quot;use.html&quot;&gt;Develop your own application using DaoUI&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
 ];

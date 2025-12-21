@@ -1,19 +1,11 @@
 var searchData=
 [
-  ['set_0',['set',['../classdao_1_1BoundingBox.html#a9dd1dc9331a7277dccc08a74a31b4f0e',1,'dao::BoundingBox']]],
-  ['setcolor_1',['setColor',['../classdao_1_1Text.html#abb108bc32247bbc2f372e0e6e410624e',1,'dao::Text']]],
-  ['setcontent_2',['setContent',['../classdao_1_1Text.html#a996bb80c25ab23a2ec367f1e04a8c6b1',1,'dao::Text']]],
-  ['setdown_3',['setDown',['../classdao_1_1BoundingBox.html#add5d58c61a90c33969fe50428902e46c',1,'dao::BoundingBox']]],
-  ['setfontsize_4',['setFontSize',['../classdao_1_1Text.html#aa0e0726f3981908a981546bf78e0ca26',1,'dao::Text']]],
-  ['setleft_5',['setLeft',['../classdao_1_1BoundingBox.html#af3b3eca55875d1be3ff884d84560b84b',1,'dao::BoundingBox']]],
-  ['setmode_6',['setMode',['../classdao_1_1SwitchDeleter.html#ac6ce024bcbf0ebf1a2d3216c0b9fc65b',1,'dao::SwitchDeleter']]],
-  ['setright_7',['setRight',['../classdao_1_1BoundingBox.html#af21ff407d200dae6bf10683cf2338570',1,'dao::BoundingBox']]],
-  ['setup_8',['setUp',['../classdao_1_1BoundingBox.html#acaccf53cc548817536a25483c05f514a',1,'dao::BoundingBox']]],
-  ['setx_9',['setX',['../classdao_1_1Text.html#ad3449df93fc2d437fc86e2aa5da130ba',1,'dao::Text']]],
-  ['sety_10',['setY',['../classdao_1_1Text.html#a1fbdf40c58d9f3af3ef6aca577cccd61',1,'dao::Text']]],
-  ['simplebutton_11',['SimpleButton',['../classdao_1_1SimpleButton.html#a190841b05c518b982276055dbde0d074',1,'dao::SimpleButton']]],
-  ['simpletextbuttonstyle_12',['SimpleTextButtonStyle',['../classdao_1_1SimpleTextButtonStyle.html#ad38aeb488811e7542634cdcf2621482a',1,'dao::SimpleTextButtonStyle']]],
-  ['simpletexturebuttonstyle_13',['SimpleTextureButtonStyle',['../classdao_1_1SimpleTextureButtonStyle.html#a458fc9651483a6e7af9ee1f47c6a5c4b',1,'dao::SimpleTextureButtonStyle']]],
-  ['sort_14',['sort',['../namespacedao.html#a02af220658c49a0b7ac198977f450e7f',1,'dao']]],
-  ['switchdeleter_15',['SwitchDeleter',['../classdao_1_1SwitchDeleter.html#af2039b61545c1250d4364617fcf8bc03',1,'dao::SwitchDeleter']]]
+  ['ratio_0',['ratio',['../namespacedao.html#a222caaab97ef07015c9238be7d24285c',1,'dao']]],
+  ['rectangle_1',['Rectangle',['../classdao_1_1Rectangle.html#afdb783feff29bb4cb2b6e4e223871888',1,'dao::Rectangle::Rectangle(const float32 x, const float32 y, const float32 w, const float32 h, const ColorRGBA color)'],['../classdao_1_1Rectangle.html#a093b4ec74b6f933dd2d66170a4b848e9',1,'dao::Rectangle::Rectangle(const BoundingBox box, const ColorRGBA color)']]],
+  ['registerglyph_2',['registerGlyph',['../classdao_1_1GlyphAtlas.html#ad2278fe1fea3d93f5d9318182e10f238',1,'dao::GlyphAtlas']]],
+  ['registertexture_3',['registerTexture',['../classdao_1_1Window.html#aa4ea13ba1779beb5a2aaa534bce1518a',1,'dao::Window']]],
+  ['render_4',['render',['../classdao_1_1Window.html#a0f0c2775b23a3c659dfba454a56e0b10',1,'dao::Window']]],
+  ['requestclose_5',['requestClose',['../classdao_1_1Window.html#a3de6588432138b3ebbc11be18340c0c4',1,'dao::Window']]],
+  ['resetqudaindices_6',['resetQudaIndices',['../classdao_1_1VertexBatchBuilder.html#a12c56e947f4d4948194986b560b8e3ce',1,'dao::VertexBatchBuilder']]],
+  ['run_7',['run',['../classdao_1_1App.html#a4b5486e80b896ce8140f1f844b403422',1,'dao::App']]]
 ];
